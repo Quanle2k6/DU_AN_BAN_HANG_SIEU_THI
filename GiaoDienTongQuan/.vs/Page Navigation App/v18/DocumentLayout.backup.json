@@ -1,0 +1,317 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Doan\\Page Navigation App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\view\\orders.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\orders.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\view\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\view\\shipments.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\shipments.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\view\\transactions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\transactions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\view\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\viewmodel\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\viewmodel\\shipmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\shipmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\viewmodel\\settingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\settingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\viewmodel\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\viewmodel\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\viewmodel\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\viewmodel\\customervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\customervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|c:\\doan\\page navigation app\\page navigation app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Products.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Products.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Products.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Products.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Products.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T13:04:53.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Settings.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Settings.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Settings.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Settings.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Settings.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T13:04:41.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Shipments.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Shipments.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Shipments.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Shipments.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Shipments.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T13:03:20.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Transactions.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Transactions.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Transactions.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T13:04:23.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Orders.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Orders.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Orders.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Orders.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Orders.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T13:05:08.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\MainWindow.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\MainWindow.xaml",
+              "RelativeToolTip": "Page Navigation App\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T12:57:17.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Customers.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Customers.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Customers.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Customers.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Customers.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T13:05:24.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeVM.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\HomeVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\HomeVM.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\HomeVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\HomeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:08:49.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NavigationVM.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\NavigationVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\NavigationVM.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\NavigationVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\NavigationVM.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:08:50.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderVM.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\OrderVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\OrderVM.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\OrderVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\OrderVM.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:08:59.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductVM.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\ProductVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\ProductVM.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\ProductVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\ProductVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:09:10.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SettingVM.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\SettingVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\SettingVM.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\SettingVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\SettingVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:09:18.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TransactionVM.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\TransactionVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\TransactionVM.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\TransactionVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\TransactionVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:10:07.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShipmentVM.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\ShipmentVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\ShipmentVM.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\ShipmentVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\ShipmentVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:09:53.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerVM.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\CustomerVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\CustomerVM.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\ViewModel\\CustomerVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\CustomerVM.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:03:16.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Home.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Home.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\View\\Home.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Home.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T13:06:11.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\AssemblyInfo.cs",
+              "RelativeToolTip": "Page Navigation App\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T12:57:16.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Doan\\Page Navigation App\\Page Navigation App\\App.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\App.xaml",
+              "ToolTip": "C:\\Doan\\Page Navigation App\\Page Navigation App\\App.xaml",
+              "RelativeToolTip": "Page Navigation App\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T12:56:38.303Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
