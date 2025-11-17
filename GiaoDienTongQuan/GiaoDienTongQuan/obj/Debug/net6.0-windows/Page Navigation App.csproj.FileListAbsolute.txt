@@ -174,3 +174,36 @@ C:\Doan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\refint\
 C:\Doan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Page Navigation App.pdb
 C:\Doan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Page Navigation App.genruntimeconfig.cache
 C:\Doan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\ref\Page Navigation App.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\Styles\Button.baml
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\Styles\Image.baml
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\Styles\Page.baml
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\Styles\Text.baml
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Styles\Button.baml
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Styles\Image.baml
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Styles\Page.baml
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Styles\Text.baml
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\App.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\MainWindow.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\View\Customers.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\View\Home.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\View\Orders.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\View\Products.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\View\Settings.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\View\Shipments.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App\Page Navigation App\View\Transactions.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\View\Customers.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\View\Home.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\View\Orders.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\View\Products.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\View\Settings.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\View\Shipments.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\View\Transactions.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\App.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App_Content.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App_MarkupCompile.cache
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App_MarkupCompile.lref
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\refint\Page Navigation App.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\obj\Debug\net6.0-windows\Page Navigation App.pdb
