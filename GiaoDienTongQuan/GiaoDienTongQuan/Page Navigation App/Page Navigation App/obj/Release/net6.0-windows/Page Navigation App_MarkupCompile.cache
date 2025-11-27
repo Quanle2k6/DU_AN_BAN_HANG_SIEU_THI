@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\App.xaml
-13102812901
+142053739505
 16236240406
-23234813245
-194178300874
-MainWindow.xaml;Styles\Button.xaml;Styles\Image.xaml;Styles\Page.xaml;Styles\Text.xaml;Utilities\DataTemplate.xaml;View\Customers.xaml;View\Home.xaml;View\Orders.xaml;View\Products.xaml;View\Settings.xaml;View\Shipments.xaml;View\Transactions.xaml;
+25962425784
+1951644918758
+MainWindow.xaml;Styles\Button.xaml;Styles\Image.xaml;Styles\Page.xaml;Styles\Text.xaml;Utilities\DataTemplate.xaml;View\Customers.xaml;View\Home.xaml;View\Login.xaml;View\Orders.xaml;View\Products.xaml;View\Settings.xaml;View\Shipments.xaml;View\Transactions.xaml;
 
 True
 

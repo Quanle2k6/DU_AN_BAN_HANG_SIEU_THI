@@ -161,9 +161,13 @@
             </Grid>
 
             <Grid Grid.Column="1" Margin="0,0,-250,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="22*"/>
+                    <RowDefinition Height="43*"/>
+                </Grid.RowDefinitions>
 
                 <ContentControl x:Name="Pages"
-                                Content="{Binding CurrentView}" HorizontalAlignment="Left" Width="900" />
+                                Content="{Binding CurrentView}" HorizontalAlignment="Center" Width="900" Grid.RowSpan="2" />
 
             </Grid>
 
