@@ -22,7 +22,7 @@
 
                         <Border.Background>
                             <SolidColorBrush x:Name="BorderBackground"
-                                             Color="#272B2F" />
+                                             Color="#FFAACC" />
                         </Border.Background>
 
                         <Grid>
@@ -60,7 +60,7 @@
                                 <Storyboard>
                                     <ColorAnimation Storyboard.TargetName="BorderBackground"
                                                     Storyboard.TargetProperty="Color"
-                                                    From="#272B2F"
+                                                    From="#FFAACC"
                                                     To="#3E434A"
                                                     Duration="0:0:0.3" />
                                 </Storyboard>
@@ -76,7 +76,7 @@
                                     <ColorAnimation Storyboard.TargetName="BorderBackground"
                                                     Storyboard.TargetProperty="Color"
                                                     From="#3E434A"
-                                                    To="#272B2F"
+                                                    To="#FFAACC"
                                                     Duration="0:0:0.3" />
                                 </Storyboard>
                             </BeginStoryboard>

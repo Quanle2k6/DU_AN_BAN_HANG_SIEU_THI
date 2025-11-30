@@ -233,3 +233,16 @@ D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTon
 D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Page Navigation App.pdb
 D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Page Navigation App.genruntimeconfig.cache
 D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\ref\Page Navigation App.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\Page Navigation App.dll.config
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.Data.SqlClient.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.SqlClient.dll
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Page Navigation App.csproj.AssemblyReference.cache
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\Page Nav.B3E0FCAF.Up2Date
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Login.g.cs
+D:\UIT\THUC_HANH\IT008-LTTQ\DU_AN_BAN_HANG_SIEU_THI\GiaoDienTongQuan\GiaoDienTongQuan\Page Navigation App\Page Navigation App\obj\Debug\net6.0-windows\View\Login.baml
