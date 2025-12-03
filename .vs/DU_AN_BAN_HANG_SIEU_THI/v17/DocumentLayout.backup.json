@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\MainWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GiaoDienTongQuan\\GiaoDienTongQuan\\MainWindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,11 +34,28 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-27T08:51:23.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GiaoDienTongQuan\\GiaoDienTongQuan\\MainWindow.xaml",
@@ -42,8 +63,7 @@
               "RelativeToolTip": "GiaoDienTongQuan\\GiaoDienTongQuan\\MainWindow.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-16T11:47:02.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T11:47:02.282Z"
             }
           ]
         }

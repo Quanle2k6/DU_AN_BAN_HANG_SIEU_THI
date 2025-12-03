@@ -4,8 +4,11 @@
     "\\GiaoDienTongQuan",
     "\\GiaoDienTongQuan\\GiaoDienTongQuan",
     "\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App",
-    "\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App"
+    "\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App",
+    "\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\Database",
+    "\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View",
+    "\\GiaoDienTongQuan\\GiaoDienTongQuan\\View"
   ],
-  "SelectedNode": "\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\MainWindow.xaml",
+  "SelectedNode": "\\GiaoDienTongQuan\\GiaoDienTongQuan\\View\\Transactions.xaml",
   "PreviewInSolutionExplorer": false
 }

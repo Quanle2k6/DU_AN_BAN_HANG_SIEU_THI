@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Page Navigation App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+453361571d494aa5cf2c2d0440c0c758bc1096df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae06a22153338e0786611e61dc4401b86a1ccf43")]
 [assembly: System.Reflection.AssemblyProductAttribute("Page Navigation App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Page Navigation App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

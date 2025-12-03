@@ -4,17 +4,119 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              mc:Ignorable="d"
-             d:DesignHeight="600"
-             d:DesignWidth="622"
-             Style="{StaticResource Page_Style}">
+             d:DesignHeight="700"
+             Style="{StaticResource Page_Style}" Width="1200">
 
     <UserControl.DataContext>
         <vm:ShipmentVM />
     </UserControl.DataContext>
-    
-    <Grid Margin="15">
 
-        
+    <Grid Margin="15,41,0,11" HorizontalAlignment="Left" Width="1148" RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="564*"/>
+            <ColumnDefinition Width="580*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.084"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="290*"/>
+            <RowDefinition Height="283*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Báo cáo doanh thu" HorizontalAlignment="Left" Height="63" Margin="2,-1,0,0" VerticalAlignment="Top" Width="423" FontSize="36" FontWeight="Bold"
+               FontFamily="Javanese Text"
+               Foreground="#647FBC"/>
+        <Label Content="Xem thống kê theo tuần" HorizontalAlignment="Left" Height="81" Margin="23,254,0,0" VerticalAlignment="Top" Width="231" FontSize="18" Grid.RowSpan="2" FontFamily="Javanese Text" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Margin="23,4,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="211" Height="41" Grid.Row="1"/>
+        <Button Content="Xác nhận" HorizontalAlignment="Left" Margin="279,4,0,0" VerticalAlignment="Top" Height="41" Width="118" FontSize="18"
+                Background="#FCF6D9" Grid.Row="1" FontFamily="Javanese Text" FontWeight="Bold"/>
+        <DockPanel HorizontalAlignment="Left" Height="275" LastChildFill="False" Margin="23,52,0,0" VerticalAlignment="Top" Width="390" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Grid.Row="1">
+            <DockPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.246"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.91"/>
+                </TransformGroup>
+            </DockPanel.RenderTransform>
+
+            <lvc:CartesianChart Series="{Binding RevenueByDaySeries}" LegendLocation="Right" Margin="10" FontWeight="Bold" >
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Thứ" Labels="{Binding Days}" />
+                </lvc:CartesianChart.AxisX>
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="Doanh thu (Triệu VND)" LabelFormatter="{Binding YFormatter}"/>
+                </lvc:CartesianChart.AxisY>
+            </lvc:CartesianChart>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="279" LastChildFill="False" Margin="460,54,0,0" VerticalAlignment="Top" Width="428" Grid.RowSpan="3" Grid.Row="1" Grid.ColumnSpan="2">
+            <lvc:CartesianChart Series="{Binding RevenueByDaySeries}"
+                        LegendLocation="Right"
+                        Margin="8" FontWeight="Bold">
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Quý" Labels="{Binding Days}" />
+                </lvc:CartesianChart.AxisX>
+
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="Doanh thu (triệu VND)" LabelFormatter="{Binding YFormatter}" />
+                </lvc:CartesianChart.AxisY>
+            </lvc:CartesianChart>
+
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="135" LastChildFill="False" Margin="27,0,0,0" VerticalAlignment="Center" Width="252"
+                   Background="#FF3838">
+
+            <Label Content="Số đơn hàng trong ngày" DockPanel.Dock="Bottom" Height="46" FontWeight="Bold" FontSize="18"
+                   Foreground="WhiteSmoke" HorizontalAlignment="Center" FontFamily="Javanese Text"
+                   />
+            <TextBox TextWrapping="Wrap" Text="" Width="260" FontSize="20" TextChanged="TextBox_TextChanged" 
+                     Background="Red"/>
+
+        </DockPanel>
+
+
+        <DockPanel HorizontalAlignment="Left" Height="136" LastChildFill="False" Margin="283,0,0,0" VerticalAlignment="Center" Width="250"
+                   Background="#C47BE4" RenderTransformOrigin="0.517,0.78">
+            <Label Content="Doanh thu theo ngày" RenderTransformOrigin="0.552,1.793" HorizontalAlignment="Center"
+                   Foreground="WhiteSmoke" FontSize="18" FontWeight="Bold" DockPanel.Dock="Bottom" Height="46" FontFamily="Javanese Text"/>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="139" LastChildFill="False" Margin="537,0,0,0" VerticalAlignment="Center" Width="244"
+                   Background="#9CC6DB" RenderTransformOrigin="0.494,0.597" Grid.ColumnSpan="2">
+            <DockPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.171"/>
+                    <TranslateTransform X="-0.043" Y="-0.004"/>
+                </TransformGroup>
+            </DockPanel.RenderTransform>
+            <Label Content="Doanh thu theo tháng" DockPanel.Dock="Bottom" Height="44" FontSize="18"
+                   Foreground="WhiteSmoke" FontWeight="Bold" HorizontalAlignment="Center" FontFamily="Javanese Text"/>
+
+        </DockPanel>
+        <Label Content="Xem thống kế theo quý " HorizontalAlignment="Left" Margin="497,253,0,0" VerticalAlignment="Top" Width="229" FontSize="18" FontWeight="Bold" FontFamily="Javanese Text" RenderTransformOrigin="0.5,0.5" Height="35" Grid.ColumnSpan="2">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.142"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox HorizontalAlignment="Left" Margin="495,2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="211" Height="41" Grid.ColumnSpan="2"/>
+        <Button Grid.Column="1" Content="Xác nhận" HorizontalAlignment="Left" Margin="188,1,0,0" Grid.Row="1" VerticalAlignment="Top" Height="41" Width="118" FontSize="18" FontWeight="Bold"
+                Background="#FCF6D9" FontFamily="Javanese Text"/>
     </Grid>
 </UserControl>

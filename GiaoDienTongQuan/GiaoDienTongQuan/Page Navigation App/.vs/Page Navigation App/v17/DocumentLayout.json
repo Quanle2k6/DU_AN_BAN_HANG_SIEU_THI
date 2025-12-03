@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\shipments.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\shipments.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\viewmodel\\shipmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\viewmodel\\shipmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\utilities\\datatemplate.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\utilities\\datatemplate.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\transactions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\transactions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\login.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\login.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\styles\\text.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\styles\\text.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\styles\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\styles\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\database\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\database\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -23,24 +63,8 @@
       "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\styles\\page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\styles\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\styles\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\styles\\text.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\styles\\text.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\shipments.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\shipments.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\orders.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -49,21 +73,42 @@
     {
       "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|d:\\uit\\thuc_hanh\\it008-lttq\\du_an_ban_hang_sieu_thi\\giaodientongquan\\giaodientongquan\\page navigation app\\page navigation app\\database\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{582286F1-6054-4031-89AD-B1E4C5D625E8}|Page Navigation App\\Page Navigation App.csproj|solutionrelative:page navigation app\\database\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 252,
-          "SelectedChildIndex": 14,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataTemplate.xaml",
+              "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\Utilities\\DataTemplate.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\Utilities\\DataTemplate.xaml",
+              "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\Utilities\\DataTemplate.xaml",
+              "RelativeToolTip": "Page Navigation App\\Utilities\\DataTemplate.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-03T06:45:02.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShipmentVM.cs",
+              "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\ViewModel\\ShipmentVM.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\ViewModel\\ShipmentVM.cs",
+              "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\ViewModel\\ShipmentVM.cs",
+              "RelativeToolTip": "Page Navigation App\\ViewModel\\ShipmentVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T06:43:18.464Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -78,11 +123,47 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Settings.xaml",
+              "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Settings.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Settings.xaml",
+              "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Settings.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Settings.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-01T12:58:03.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Transactions.xaml",
+              "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Transactions.xaml",
+              "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeToolTip": "Page Navigation App\\View\\Transactions.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-01T12:58:00.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "Page Navigation App\\View\\Login.xaml.cs",
+              "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Login.xaml.cs",
+              "RelativeToolTip": "Page Navigation App\\View\\Login.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T12:50:03.497Z"
             },
             {
               "$type": "Document",
@@ -93,12 +174,12 @@
               "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Login.xaml",
               "RelativeToolTip": "Page Navigation App\\View\\Login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T07:44:02.944Z",
+              "WhenOpened": "2025-11-30T14:53:08.721Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\App.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\App.xaml",
@@ -122,18 +203,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Shipments.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Shipments.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\View\\Shipments.xaml",
-              "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Shipments.xaml",
-              "RelativeToolTip": "Page Navigation App\\View\\Shipments.xaml",
+              "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Shipments.xaml*",
+              "RelativeToolTip": "Page Navigation App\\View\\Shipments.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-22T08:49:34.982Z"
+              "WhenOpened": "2025-11-22T08:49:34.982Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Products.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Products.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\View\\Products.xaml",
@@ -144,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Orders.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Orders.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\View\\Orders.xaml",
@@ -155,19 +237,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "Home.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Home.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\View\\Home.xaml",
               "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Home.xaml",
               "RelativeToolTip": "Page Navigation App\\View\\Home.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-22T08:49:26.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T08:49:26.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "App.config",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\Database\\App.config",
               "RelativeDocumentMoniker": "Page Navigation App\\Database\\App.config",
@@ -179,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Button.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\Styles\\Button.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\Styles\\Button.xaml",
@@ -191,19 +272,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\MainWindow.xaml",
               "ToolTip": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\MainWindow.xaml",
               "RelativeToolTip": "Page Navigation App\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-17T16:45:47.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T16:45:47.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Customers.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\View\\Customers.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\View\\Customers.xaml",
@@ -214,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "Page.xaml",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\Styles\\Page.xaml",
               "RelativeDocumentMoniker": "Page Navigation App\\Styles\\Page.xaml",
@@ -226,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "DBConnection.cs",
               "DocumentMoniker": "D:\\UIT\\THUC_HANH\\IT008-LTTQ\\DU_AN_BAN_HANG_SIEU_THI\\GiaoDienTongQuan\\GiaoDienTongQuan\\Page Navigation App\\Page Navigation App\\Database\\DBConnection.cs",
               "RelativeDocumentMoniker": "Page Navigation App\\Database\\DBConnection.cs",

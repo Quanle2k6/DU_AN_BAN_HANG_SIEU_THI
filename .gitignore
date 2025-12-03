@@ -1,0 +1,81 @@
+##############################################
+# General Visual Studio / .NET files
+##############################################
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.user
+*.userosscore
+*.unityproj.user
+*.suo
+*.sln.docstates
+
+# Visual Studio temporary files
+*.vspscc
+*.vssscc
+*.bak
+*.scc
+*._scc
+
+# VS Code directory
+.vscode/
+
+# Tooling
+.vs/   # Cache và user settings của Visual Studio
+
+##############################################
+# Packages / Binaries
+##############################################
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.assets.json
+
+# Compiled binaries
+*.dll
+*.exe
+
+##############################################
+# Test results
+##############################################
+TestResults/
+*.trx
+*.log
+
+##############################################
+# WPF / XAML Specific
+##############################################
+
+# Generated / temporary files
+GeneratedFiles/
+*.cache
+*.pdb
+*.tmp
+
+# Không ignore file .xaml vì đây là source code chính
+# Nếu có thư mục build tạm thì thêm vào thay vì loại bỏ toàn bộ *.xaml
+
+##############################################
+# Installer / Setup
+##############################################
+*.msi
+*.cab
+*.zip
+*.rar
+
+##############################################
+# .NET Core / .NET 5+
+##############################################
+
+# Publish output
+/publish/
+/artifacts/
+
+# Local NuGet package cache
+.templateengine/
