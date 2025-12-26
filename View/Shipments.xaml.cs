@@ -1,0 +1,68 @@
+﻿using LiveCharts;
+using LiveCharts.Wpf;
+using Page_Navigation_App.ViewModel;
+using System;
+using System.Collections.Generic;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace Page_Navigation_App.View
+{
+    /// <summary>
+    /// Interaction logic for Shipments.xaml
+    /// </summary>
+    public partial class Shipments : UserControl
+    {
+        public Shipments()
+        {
+            InitializeComponent();
+
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void CartesianChart_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void CartesianChart_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CartesianChart_Loaded_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CartesianChart_Loaded_3(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
+}
