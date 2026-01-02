@@ -24,5 +24,16 @@ namespace Page_Navigation_App.View
         {
             InitializeComponent();
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var main = (MainWindow)Application.Current.MainWindow;
+            main.ShowOverlay(new PageThemNhapHang());
+        }
     }
 }

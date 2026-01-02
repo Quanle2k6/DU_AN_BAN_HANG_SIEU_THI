@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11222.16 d18.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Page Navigation App", "Page Navigation App.csproj", "{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6742D07-D430-4EEA-8F2F-CEE7056AFFD6}
+	EndGlobalSection
+EndGlobal

@@ -1,20 +1,153 @@
 ﻿<UserControl x:Class="Page_Navigation_App.View.Transactions"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
-             mc:Ignorable="d"
-             d:DesignHeight="600"
-             d:DesignWidth="622"
-             Style="{StaticResource Page_Style}">
+             >
+
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="PrimaryColor" Color="#4F6BED"/>
+        <SolidColorBrush x:Key="DangerColor" Color="#EF4444"/>
+
+        <Style x:Key="ModernButton" TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="18,8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Padding" Value="16"/>
+            <Setter Property="Margin" Value="0,16,0,0"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10"
+                                      ShadowDepth="2"
+                                      Opacity="0.15"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
 
     <UserControl.DataContext>
-        <vm:TransactionVM />
+        <vm:TransactionVM/>
     </UserControl.DataContext>
 
-    <Grid Margin="15">
-        <Label Content="Quán lí nhập xuất kho hàng" HorizontalAlignment="Left" Height="65" Margin="18,0,0,0" VerticalAlignment="Top" Width="514" FontSize="36" FontWeight="Bold"/>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <TextBlock Text="Quản lý nhập kho"
+                   FontSize="32"
+                   FontWeight="Bold"
+                   Foreground="#1F2937"/>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    Margin="0,20,0,0">
+            <Button Content="➕ Thêm"
+                    Background="{StaticResource PrimaryColor}"
+                    Style="{StaticResource ModernButton}"
+                    Margin="0,0,10,0" Click="Button_Click"/>
+
+            <Button Content="✏️ Chỉnh sửa"
+                    Background="{StaticResource PrimaryColor}"
+                    Style="{StaticResource ModernButton}"
+                    Margin="0,0,10,0"/>
+
+            <Button Content="🗑 Xoá"
+                    Background="{StaticResource DangerColor}"
+                    Style="{StaticResource ModernButton}"/>
+        </StackPanel>
+
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}">
+            <StackPanel Orientation="Horizontal">
+                <ComboBox Width="180" Height="32" Background="#F9FAFB" Margin="0,0,12,0"/>
+
+                <StackPanel Margin="0,0,12,0">
+                    <TextBlock Text="Từ ngày" FontSize="12"/>
+                    <DatePicker Width="140"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,0,12,0">
+                    <TextBlock Text="Đến ngày" FontSize="12"/>
+                    <DatePicker Width="140"/>
+                </StackPanel>
+
+                <Button Content="Lấy dữ liệu"
+                        VerticalAlignment="Bottom"
+                        Background="{StaticResource PrimaryColor}"
+                        Style="{StaticResource ModernButton}"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="3" Style="{StaticResource CardStyle}">
+            <DataGrid AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      GridLinesVisibility="None"
+                      HeadersVisibility="Column"
+                      RowHeight="40">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="STT" Width="60"/>
+                    <DataGridTextColumn Header="Mã lô" Width="100"/>
+                    <DataGridTextColumn Header="Mã NCC" Width="120"/>
+                    <DataGridTextColumn Header="Tên NCC" Width="200"/>
+                    <DataGridTextColumn Header="SĐT" Width="120"/>
+                    <DataGridTextColumn Header="Ngày nhập" Width="130"/>
+                    <DataGridTextColumn Header="Hạn sử dụng" Width="130"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+        <Border Grid.Row="4" Style="{StaticResource CardStyle}" Height="250">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="363*"/>
+                    <ColumnDefinition Width="499*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Chi tiết lô hàng"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10" Grid.ColumnSpan="2"/>
+
+                <DataGrid Grid.Row="1" 
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False"
+                          GridLinesVisibility="None"
+                          RowHeight="38" Grid.ColumnSpan="2">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="STT" Width="60"/>
+                        <DataGridTextColumn Header="Mã sản phẩm" Width="150"/>
+                        <DataGridTextColumn Header="Số lượng" Width="120"/>
+                        <DataGridTextColumn Header="Đơn giá" Width="150"/>
+                        <DataGridTextColumn Header="Thành tiền" Width="180"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
     </Grid>
 </UserControl>

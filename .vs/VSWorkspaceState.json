@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Database",
-    "\\Fonts",
-    "\\Images",
     "\\View"
   ],
-  "SelectedNode": "\\Database\\DBConnection.cs",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }

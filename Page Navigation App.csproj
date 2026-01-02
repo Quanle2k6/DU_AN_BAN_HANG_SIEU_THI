@@ -109,6 +109,7 @@
   <ItemGroup>
     <PackageReference Include="LiveCharts" Version="0.9.7" />
     <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.2.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>

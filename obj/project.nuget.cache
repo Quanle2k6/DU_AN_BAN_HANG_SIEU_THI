@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "L2ADq7Ri+uU=",
+  "dgSpecHash": "RQ9DGmMGN+I=",
   "success": true,
   "projectFilePath": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\Page Navigation App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HOME\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\HOME\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
+    "C:\\Users\\HOME\\.nuget\\packages\\oxyplot.core\\2.2.0\\oxyplot.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\HOME\\.nuget\\packages\\oxyplot.wpf\\2.2.0\\oxyplot.wpf.2.2.0.nupkg.sha512",
+    "C:\\Users\\HOME\\.nuget\\packages\\oxyplot.wpf.shared\\2.2.0\\oxyplot.wpf.shared.2.2.0.nupkg.sha512",
     "C:\\Users\\HOME\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\HOME\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\HOME\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

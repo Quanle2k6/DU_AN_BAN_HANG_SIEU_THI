@@ -46,5 +46,10 @@ namespace Page_Navigation_App.ViewModel
             // Startup Page
             CurrentView = new HomeVM();
         }
+
+        public void Navigate(object view)
+        {
+            CurrentView = view;
+        }
     }
 }

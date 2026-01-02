@@ -34,5 +34,17 @@ namespace Page_Navigation_App
         {
 
         }
+
+        public void ShowOverlay(UserControl content)
+        {
+            OverlayContent.Content = content;
+            Overlay.Visibility = Visibility.Visible;
+        }
+
+        public void CloseOverlay()
+        {
+            Overlay.Visibility = Visibility.Collapsed;
+            OverlayContent.Content = null;
+        }
     }
 }

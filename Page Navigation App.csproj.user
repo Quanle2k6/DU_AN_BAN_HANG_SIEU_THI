@@ -19,6 +19,12 @@
     <Compile Update="View\Orders.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\PageCTHD.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PageThemNhapHang.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Products.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

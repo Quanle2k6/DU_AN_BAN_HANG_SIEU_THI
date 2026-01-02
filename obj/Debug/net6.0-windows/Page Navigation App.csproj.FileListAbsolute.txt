@@ -393,3 +393,25 @@ C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\refint\Page 
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\Page Navigation App.pdb
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\Page Navigation App.genruntimeconfig.cache
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\ref\Page Navigation App.dll
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\Page Navigation App.sourcelink.json
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\View\PageCTHD.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\View\PageCTHD.baml
+C:\Users\HOME\Pictures\Page Navigation App\bin\Debug\net6.0-windows\OxyPlot.dll
+C:\Users\HOME\Pictures\Page Navigation App\bin\Debug\net6.0-windows\OxyPlot.Wpf.dll
+C:\Users\HOME\Pictures\Page Navigation App\bin\Debug\net6.0-windows\OxyPlot.Wpf.Shared.dll
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\View\PageThemNhapHang.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\View\PageThemNhapHang.baml
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\Styles\Button.baml
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\Styles\Image.baml
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\Styles\Page.baml
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\Styles\Text.baml
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\App.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\MainWindow.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Customers.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Home.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Login.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Orders.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Products.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Settings.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Shipments.g.cs
+C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Transactions.g.cs

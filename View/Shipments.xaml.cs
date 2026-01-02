@@ -1,4 +1,8 @@
-﻿using System;
+﻿using LiveCharts;
+using LiveCharts.Wpf;
+using Page_Navigation_App.ViewModel;
+using System;
+using System.Collections.Generic;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +27,7 @@ namespace Page_Navigation_App.View
         public Shipments()
         {
             InitializeComponent();
+
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -36,6 +41,26 @@ namespace Page_Navigation_App.View
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void CartesianChart_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void CartesianChart_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CartesianChart_Loaded_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CartesianChart_Loaded_3(object sender, RoutedEventArgs e)
         {
 
         }
