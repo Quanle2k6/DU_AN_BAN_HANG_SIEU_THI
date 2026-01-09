@@ -4,12 +4,237 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Page_Navigation_App.View"
-             mc:Ignorable="d"
-             d:DesignHeight="600"
-             d:DesignWidth="622">
+             mc:Ignorable="d" 
+             Height="748" 
+             Width="926"
+             Style="{StaticResource Page_Style}">
 
-    <Grid>
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="PrimaryColor" Color="#FF87BAC3"/>
+        <SolidColorBrush x:Key="DarkBlue" Color="#FF0B3B9A"/>
+        <SolidColorBrush x:Key="Purple" Color="#FF870788"/>
+        <SolidColorBrush x:Key="Green" Color="#FF0F7D25"/>
+        <SolidColorBrush x:Key="Orange" Color="#FF922811"/>
 
 
+        <LinearGradientBrush x:Key="HeaderGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF4A90E2" Offset="0"/>
+            <GradientStop Color="#FF87BAC3" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="GreenGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF0F9D58" Offset="0"/>
+            <GradientStop Color="#FF0F7D25" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="PurpleGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF9C27B0" Offset="0"/>
+            <GradientStop Color="#FF870788" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BlueGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF4285F4" Offset="0"/>
+            <GradientStop Color="#FF0B3B9A" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="OrangeGradient" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FFE74C3C" Offset="0"/>
+            <GradientStop Color="#FF922811" Offset="1"/>
+        </LinearGradientBrush>
+
+        <Style x:Key="StatCardStyle" TargetType="Border">
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="150"/>
+            <Setter Property="Margin" Value="10,20"/>
+        </Style>
+
+        <Style x:Key="StatNumberStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="28"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="StatTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="15,5,15,15"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style x:Key="IconStyle" TargetType="Image">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="40"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,15,0,5"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Margin="0,0,10,0">
+        <Border Height="95"
+                Background="{StaticResource HeaderGradient}"
+                CornerRadius="20,20,0,0"
+                VerticalAlignment="Top" Margin="20,10,34,0">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15" 
+                                ShadowDepth="5" 
+                                Opacity="0.3"/>
+            </Border.Effect>
+
+            <Label Content="TRANG CHỦ"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI"
+                   FontSize="42"
+                   FontWeight="Bold"
+                   Foreground="White">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="10" 
+                                    ShadowDepth="3" 
+                                    Opacity="0.5"/>
+                </Label.Effect>
+            </Label>
+        </Border>
+
+        <Grid Margin="20,110,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" 
+                       Style="{StaticResource StatCardStyle}"
+                       Background="{StaticResource GreenGradient}">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" 
+                                        ShadowDepth="3" 
+                                        Opacity="0.2"
+                                        Direction="270"/>
+                    </Border.Effect>
+
+                    <StackPanel VerticalAlignment="Center">
+                        <Image Source="/View/sale.png" 
+                               Style="{StaticResource IconStyle}"/>
+                        <TextBlock Text="15.000.000" 
+                                   Style="{StaticResource StatNumberStyle}"/>
+                        <TextBlock Text="Doanh Số Hằng Ngày" 
+                                   Style="{StaticResource StatTitleStyle}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="1" 
+                       Style="{StaticResource StatCardStyle}"
+                       Background="{StaticResource PurpleGradient}">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" 
+                                        ShadowDepth="3" 
+                                        Opacity="0.2"
+                                        Direction="270"/>
+                    </Border.Effect>
+
+                    <StackPanel VerticalAlignment="Center">
+                        <Image Source="/View/product-removebg-preview.png" 
+                               Style="{StaticResource IconStyle}"/>
+                        <TextBlock Text="50" 
+                                   Style="{StaticResource StatNumberStyle}"/>
+                        <TextBlock Text="Tổng Lượng Sản Phẩm" 
+                                   Style="{StaticResource StatTitleStyle}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="2" 
+                       Style="{StaticResource StatCardStyle}"
+                       Background="{StaticResource BlueGradient}">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" 
+                                        ShadowDepth="3" 
+                                        Opacity="0.2"
+                                        Direction="270"/>
+                    </Border.Effect>
+
+                    <StackPanel VerticalAlignment="Center">
+                        <Image Source="/View/stock.png" 
+                               Style="{StaticResource IconStyle}"/>
+                        <TextBlock Text="285" 
+                                   Style="{StaticResource StatNumberStyle}"/>
+                        <TextBlock Text="Hàng Sẵn Trong Kho" 
+                                   Style="{StaticResource StatTitleStyle}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="3" 
+                       Style="{StaticResource StatCardStyle}"
+                       Background="{StaticResource OrangeGradient}">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" 
+                                        ShadowDepth="3" 
+                                        Opacity="0.2"
+                                        Direction="270"/>
+                    </Border.Effect>
+
+                    <StackPanel VerticalAlignment="Center">
+                        <Image Source="/View/critical item.png" 
+                               Style="{StaticResource IconStyle}"/>
+                        <TextBlock Text="5" 
+                                   Style="{StaticResource StatNumberStyle}"/>
+                        <TextBlock Text="Sản Phẩm Thiết Yếu" 
+                                   Style="{StaticResource StatTitleStyle}"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <Border Grid.Row="1" 
+                   Margin="0,40,0,0" 
+                   CornerRadius="15"
+                   Background="White">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="15" 
+                                    ShadowDepth="5" 
+                                    Opacity="0.2"/>
+                </Border.Effect>
+
+                <Grid>
+                    <Image Source="/View/iventory2.jpg" 
+                           Stretch="UniformToFill"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+
+                    <Border Background="#80000000"
+                           CornerRadius="15,15,0,0"
+                           VerticalAlignment="Bottom"
+                           Height="100">
+                        <StackPanel VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center">
+                            <TextBlock Text="HỆ THỐNG QUẢN LÝ KHO HÀNG" 
+                                       FontSize="24"
+                                       FontWeight="Bold"
+                                       Foreground="White"
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Quản lý thông minh - Vận hành hiệu quả" 
+                                       FontSize="16"
+                                       FontWeight="Normal"
+                                       Foreground="#FFEEEEEE"
+                                       HorizontalAlignment="Center"
+                                       Margin="0,5,0,0"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
     </Grid>
 </UserControl>
