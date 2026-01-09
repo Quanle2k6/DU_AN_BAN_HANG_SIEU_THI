@@ -415,3 +415,27 @@ C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HA
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Settings.g.cs
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Shipments.g.cs
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Transactions.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.csproj.AssemblyReference.cache
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Styles\Button.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Styles\Image.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Styles\Page.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Styles\Text.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Customers.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Home.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Login.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Orders.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\PageCTHD.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\PageThemNhapHang.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Products.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Settings.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Shipments.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Transactions.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\App.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App_Content.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App_MarkupCompile.cache
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App_MarkupCompile.lref
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.dll
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\refint\Page Navigation App.dll
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.pdb
