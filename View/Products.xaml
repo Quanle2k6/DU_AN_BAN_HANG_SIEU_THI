@@ -12,10 +12,271 @@
     <UserControl.DataContext>
         <vm:ProductVM />
     </UserControl.DataContext>
-    
-    <Grid Margin="15">
 
-        
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Grid.Row="0" 
+                   Text="Danh mục Kho" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Foreground="#333333"
+                   Margin="0,0,0,20"/>
+
+
+        <Border Grid.Row="1" 
+                Background="#F5F5F5" 
+                BorderBrush="#E0E0E0" 
+                BorderThickness="1"
+                CornerRadius="5"
+                Padding="15"
+                Margin="0,0,0,20">
+            <StackPanel Orientation="Horizontal">
+
+
+                <Button Content="Nhập kho" 
+                        Background="#4CAF50" 
+                        Foreground="White"
+                        FontWeight="Bold"
+                        Padding="15,8"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Command="{Binding ShowStockEntryCommand}">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+                <Button Content="Xem chi tiết nhập kho" 
+                        Background="#2196F3" 
+                        Foreground="White"
+                        FontWeight="Bold"
+                        Padding="15,8"
+                        BorderThickness="0"
+                        Margin="10,0,0,0"
+                        Cursor="Hand"
+                        Command="{Binding ShowImportDetailCommand}">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+                <Button Content="Sản phẩm sắp hết hàng" 
+                        Background="#FF9800" 
+                        Foreground="White"
+                        FontWeight="Bold"
+                        Padding="15,8"
+                        BorderThickness="0"
+                        Margin="10,0,0,0"
+                        Cursor="Hand"
+                        Command="{Binding ShowLowStockCommand}">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="3"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+                <Border Background="White" 
+                        BorderBrush="#CCCCCC" 
+                        BorderThickness="1"
+                        CornerRadius="3"
+                        Margin="30,0,0,0"
+                        Width="300">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox Grid.Column="0" 
+                                 Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                                 BorderThickness="0"
+                                 Padding="10,8"
+                                 FontSize="14"
+                                 VerticalContentAlignment="Center">
+                            <TextBox.InputBindings>
+                                <KeyBinding Key="Enter" Command="{Binding SearchCommand}"/>
+                            </TextBox.InputBindings>
+                        </TextBox>
+
+                        <Button Grid.Column="1" 
+                                Background="Transparent" 
+                                BorderThickness="0"
+                                Padding="10"
+                                Command="{Binding SearchCommand}">
+                            <TextBlock Text="🔍"
+                                       FontSize="14"/>
+                        </Button>
+                    </Grid>
+                </Border>
+
+            </StackPanel>
+        </Border>
+
+
+        <Border Grid.Row="2" 
+                BorderBrush="#E0E0E0" 
+                BorderThickness="1"
+                CornerRadius="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <Border Grid.Row="0" 
+                        Background="#87BAC3" 
+                        BorderBrush="#E0E0E0" 
+                        BorderThickness="0,0,0,1"
+                        CornerRadius="5,5,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" 
+                                   Text="Mã số" 
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   Padding="15,12"
+                                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Grid.Column="1" 
+                                   Text="Tên sản phẩm" 
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   Padding="15,12"
+                                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Grid.Column="2" 
+                                   Text="Số lượng trong kho" 
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   Padding="15,12"
+                                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Grid.Column="3" 
+                                   Text="Đơn vị" 
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   Padding="15,12"
+                                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Grid.Column="4" 
+                                   Text="Loại" 
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   Padding="15,12"
+                                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Grid.Column="5" 
+                                   Text="Giá nhập" 
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   Padding="15,12"
+                                   HorizontalAlignment="Left"/>
+                    </Grid>
+                </Border>
+
+
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                    <ItemsControl ItemsSource="{Binding StockItems}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="#E0E0E0" 
+                                        BorderThickness="0,0,0,1"
+                                        Background="Transparent">
+                                    <Grid Height="45">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="80"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="150"/>
+                                            <ColumnDefinition Width="120"/>
+                                            <ColumnDefinition Width="150"/>
+                                            <ColumnDefinition Width="150"/>
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <TextBlock Grid.Column="0" 
+                                                   Text="{Binding ProductId}"
+                                                   Foreground="#333333"
+                                                   Padding="15,0"
+                                                   VerticalAlignment="Center"/>
+
+
+                                        <TextBlock Grid.Column="1" 
+                                                   Text="{Binding ProductName}"
+                                                   Foreground="#333333"
+                                                   Padding="15,0"
+                                                   VerticalAlignment="Center"/>
+
+
+                                        <Border Grid.Column="2" 
+                                                Background="{Binding QuantityColor}"
+                                                CornerRadius="3"
+                                                Margin="10,5"
+                                                VerticalAlignment="Center"
+                                                Height="30">
+                                            <TextBlock Text="{Binding Quantity}"
+                                                       Foreground="White"
+                                                       FontWeight="Bold"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"/>
+                                        </Border>
+
+                                        <TextBlock Grid.Column="3" 
+                                                   Text="{Binding Unit}"
+                                                   Foreground="#333333"
+                                                   Padding="15,0"
+                                                   VerticalAlignment="Center"/>
+
+
+                                        <Border Grid.Column="4" 
+                                                Background="{Binding CategoryColor}"
+                                                CornerRadius="3"
+                                                Margin="10,5"
+                                                VerticalAlignment="Center"
+                                                Height="30">
+                                            <TextBlock Text="{Binding Category}"
+                                                       Foreground="White"
+                                                       FontWeight="Bold"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"/>
+                                        </Border>
+
+
+                                        <TextBlock Grid.Column="5" 
+                                                   Text="{Binding ImportPrice, StringFormat='{}{0:N0} VND'}"
+                                                   Foreground="#333333"
+                                                   Padding="15,0"
+                                                   VerticalAlignment="Center"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+        </Border>
 
     </Grid>
 </UserControl>

@@ -401,20 +401,6 @@ C:\Users\HOME\Pictures\Page Navigation App\bin\Debug\net6.0-windows\OxyPlot.Wpf.
 C:\Users\HOME\Pictures\Page Navigation App\bin\Debug\net6.0-windows\OxyPlot.Wpf.Shared.dll
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\View\PageThemNhapHang.g.cs
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\View\PageThemNhapHang.baml
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\Styles\Button.baml
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\Styles\Image.baml
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\Styles\Page.baml
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\Styles\Text.baml
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\App.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\MainWindow.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Customers.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Home.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Login.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Orders.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Products.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Settings.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Shipments.g.cs
-C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\DU_AN_BAN_HANG_SIEU_THI\View\Transactions.g.cs
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.csproj.AssemblyReference.cache
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Styles\Button.baml
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Styles\Image.baml

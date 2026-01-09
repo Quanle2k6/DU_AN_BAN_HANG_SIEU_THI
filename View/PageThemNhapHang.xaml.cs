@@ -24,5 +24,10 @@ namespace Page_Navigation_App.View
         {
             InitializeComponent();
         }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // Viết code xử lý khi nhấn nút ở đây
+        }
     }
 }
