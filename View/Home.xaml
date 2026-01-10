@@ -130,7 +130,7 @@
                     </Border.Effect>
                     
                     <StackPanel VerticalAlignment="Center">
-                        <Image Source="/View/sale.png" 
+                        <Image Source="/Images/sale.jpg"
                                Style="{StaticResource IconStyle}"/>
                         <TextBlock Text="15.000.000" 
                                    Style="{StaticResource StatNumberStyle}"/>
@@ -152,7 +152,7 @@
                     </Border.Effect>
                 
                     <StackPanel VerticalAlignment="Center">
-                        <Image Source="/View/product-removebg-preview.png" 
+                        <Image Source="/Images/hop.jpg" 
                                Style="{StaticResource IconStyle}"/>
                         <TextBlock Text="50" 
                                    Style="{StaticResource StatNumberStyle}"/>
@@ -175,7 +175,7 @@
                     </Border.Effect>
 
                     <StackPanel VerticalAlignment="Center">
-                        <Image Source="/View/stock.png" 
+                        <Image Source="/Images/hopq.jpg" 
                                Style="{StaticResource IconStyle}"/>
                         <TextBlock Text="285" 
                                    Style="{StaticResource StatNumberStyle}"/>
@@ -196,7 +196,7 @@
                     </Border.Effect>
 
                     <StackPanel VerticalAlignment="Center">
-                        <Image Source="/View/critical item.png" 
+                        <Image Source="/Images/hhh.jpg" 
                                Style="{StaticResource IconStyle}"/>
                         <TextBlock Text="5" 
                                    Style="{StaticResource StatNumberStyle}"/>
@@ -217,7 +217,7 @@
                 </Border.Effect>
 
                 <Grid>
-                    <Image Source="/View/iventory2.jpg" 
+                    <Image Source="/Images/home.jpg"
                            Stretch="UniformToFill"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"/>
