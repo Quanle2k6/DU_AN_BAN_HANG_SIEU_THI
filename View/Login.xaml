@@ -38,5 +38,7 @@
                 <Button Content="Đăng Nhập" Margin="0,40,0,0" Height="40" Background="#87BAC3" Foreground="White" FontWeight="Bold" Click="btnLogin_Click"/>
             </StackPanel>
         </Border>
+        <Button x:Name="CloseApp" Style="{StaticResource ExitApp}" Click="CloseApp_Click" HorizontalAlignment="Left" Margin="750,15,0,0" />
+
     </Grid>
 </Page>
