@@ -121,7 +121,7 @@
                        Style="{StaticResource StatCardStyle}"
                        Background="{StaticResource GreenGradient}"
                        MouseLeftButtonDown="ChangeIntoDoanhSoPage"
-                        Cursor="Hand">
+                       Cursor="Hand">
                     <Border.Effect>
                         <DropShadowEffect BlurRadius="10" 
                                         ShadowDepth="3" 
@@ -187,7 +187,9 @@
 
                 <Border Grid.Column="3" 
                        Style="{StaticResource StatCardStyle}"
-                       Background="{StaticResource OrangeGradient}">
+                       Background="{StaticResource OrangeGradient}"
+                        MouseLeftButtonDown="ChangeIntoDoanhSoPage"
+                        Cursor="Hand">
                     <Border.Effect>
                         <DropShadowEffect BlurRadius="10" 
                                         ShadowDepth="3" 

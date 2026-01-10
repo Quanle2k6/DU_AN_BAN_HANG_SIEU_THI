@@ -12,11 +12,23 @@
   <ItemGroup>
     <None Remove="Fonts\Rubik-Medium.ttf" />
     <None Remove="Fonts\Rubik-Regular.ttf" />
+    <None Remove="Images\1486564407-plus-green_81521.png.crdownload" />
+    <None Remove="Images\1486564411-checkmark_81522.png" />
     <None Remove="Images\bin-file.png" />
+    <None Remove="Images\check-mark.png" />
+    <None Remove="Images\check.png" />
+    <None Remove="Images\checklist.png" />
+    <None Remove="Images\critical item.png" />
     <None Remove="Images\customer_page.png" />
+    <None Remove="Images\delete-file256_25240.png" />
     <None Remove="Images\delete.png" />
+    <None Remove="Images\diagram.png" />
     <None Remove="Images\find.png" />
+    <None Remove="Images\hhh.jpg" />
+    <None Remove="Images\home.jpg" />
     <None Remove="Images\home_page.png" />
+    <None Remove="Images\hop.jpg" />
+    <None Remove="Images\hopq.jpg" />
     <None Remove="Images\img_customer.png" />
     <None Remove="Images\img_home.png" />
     <None Remove="Images\img_order.png" />
@@ -25,17 +37,34 @@
     <None Remove="Images\img_shipment.png" />
     <None Remove="Images\img_transaction.png" />
     <None Remove="Images\minus.png" />
+    <None Remove="Images\minuscirclehd_106108.png.crdownload" />
     <None Remove="Images\order_page.png" />
+    <None Remove="Images\plus.png" />
     <None Remove="Images\product_page.png" />
+    <None Remove="Images\sale.jpg" />
+    <None Remove="Images\search.png" />
     <None Remove="Images\setting_page.png" />
     <None Remove="Images\shipment_page.png" />
     <None Remove="Images\shutdown_def.png" />
     <None Remove="Images\shutdown_mo.png" />
     <None Remove="Images\supermarket.webp" />
     <None Remove="Images\transaction_page.png" />
+    <None Remove="Images\trash.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\1486564407-plus-green_81521.png.crdownload" />
+    <Resource Include="Images\1486564411-checkmark_81522.png" />
+    <Resource Include="Images\check-mark.png" />
+    <Resource Include="Images\check.png" />
+    <Resource Include="Images\checklist.png" />
+    <Resource Include="Images\critical item.png" />
+    <Resource Include="Images\delete-file256_25240.png" />
+    <Resource Include="Images\diagram.png" />
+    <Resource Include="Images\hhh.jpg" />
+    <Resource Include="Images\home.jpg" />
+    <Resource Include="Images\hop.jpg" />
+    <Resource Include="Images\hopq.jpg" />
     <Resource Include="Images\minus.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -57,55 +86,60 @@
     <Resource Include="Images\find.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\minuscirclehd_106108.png.crdownload" />
+    <Resource Include="Images\plus.png" />
+    <Resource Include="Images\sale.jpg" />
+    <Resource Include="Images\search.png" />
     <Resource Include="Images\supermarket.webp" />
-    <Content Include="Images\customer_page.png">
+    <Resource Include="Images\customer_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\home_page.png">
+    </Resource>
+    <Resource Include="Images\home_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\img_customer.png">
+    </Resource>
+    <Resource Include="Images\img_customer.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\img_home.png">
+    </Resource>
+    <Resource Include="Images\img_home.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\img_order.png">
+    </Resource>
+    <Resource Include="Images\img_order.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\img_product.png">
+    </Resource>
+    <Resource Include="Images\img_product.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\img_setting.png">
+    </Resource>
+    <Resource Include="Images\img_setting.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\img_shipment.png">
+    </Resource>
+    <Resource Include="Images\img_shipment.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\img_transaction.png">
+    </Resource>
+    <Resource Include="Images\img_transaction.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\order_page.png">
+    </Resource>
+    <Resource Include="Images\order_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\product_page.png">
+    </Resource>
+    <Resource Include="Images\product_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\setting_page.png">
+    </Resource>
+    <Resource Include="Images\setting_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\shipment_page.png">
+    </Resource>
+    <Resource Include="Images\shipment_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\shutdown_def.png">
+    </Resource>
+    <Resource Include="Images\shutdown_def.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\shutdown_mo.png">
+    </Resource>
+    <Resource Include="Images\shutdown_mo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\transaction_page.png">
+    </Resource>
+    <Resource Include="Images\transaction_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
+    <Resource Include="Images\trash.png" />
   </ItemGroup>
 
   <ItemGroup>

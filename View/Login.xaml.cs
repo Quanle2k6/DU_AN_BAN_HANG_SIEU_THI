@@ -24,5 +24,9 @@ namespace Page_Navigation_App.View
         {
             InitializeComponent();
         }
+        public void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("View/Home.xaml", UriKind.Relative));
+        }
     }
 }
