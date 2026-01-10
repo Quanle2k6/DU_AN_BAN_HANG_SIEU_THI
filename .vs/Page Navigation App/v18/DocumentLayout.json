@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\products.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\pagethemnhaphang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -124,7 +124,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -165,12 +165,11 @@
               "RelativeToolTip": "View\\PageThemNhapHang.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T07:15:41.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T07:15:41.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Home.xaml",
               "RelativeDocumentMoniker": "View\\Home.xaml",
@@ -182,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Products.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Products.xaml",
               "RelativeDocumentMoniker": "View\\Products.xaml",
@@ -194,19 +193,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Customers.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Customers.xaml",
               "RelativeDocumentMoniker": "View\\Customers.xaml",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Customers.xaml",
               "RelativeToolTip": "View\\Customers.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-09T16:47:24.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T16:47:24.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Customers.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Customers.xaml.cs",
               "RelativeDocumentMoniker": "View\\Customers.xaml.cs",
@@ -226,8 +224,7 @@
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\PageThemNhapHang.xaml",
               "RelativeToolTip": "View\\PageThemNhapHang.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-21T07:01:50.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-21T07:01:50.537Z"
             },
             {
               "$type": "Document",
