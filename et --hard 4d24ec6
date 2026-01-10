@@ -1,0 +1,33 @@
+[33m1aa540c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mChange[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #14 from Quanle2k6/Change
+[33m3697bfa[m[33m ([m[1;31morigin/Change[m[33m)[m Merge branch 'main' of https://github.com/Quanle2k6/DU_AN_BAN_HANG_SIEU_THI into Change
+[33m0a82323[m Change 10/01/2026 11:19
+[33m6068f96[m Merge pull request #13 from Quanle2k6/Change
+[33m7e2742f[m 10/1/2026_10:31
+[33m61a4bf6[m Remove bin, obj and vs folders from git tracking
+[33m5ab5eeb[m Change_10/10/2026
+[33m4d24ec6[m[33m ([m[1;31morigin/update-_10_17_10.1.26[m[33m)[m 10.1.2026.9:46
+[33m0a822a0[m[33m ([m[1;32mmain[m[33m)[m Change 01/10/2026
+[33m083f122[m[33m ([m[1;31morigin/Update_10/01/2026[m[33m)[m Merge pull request #11 from Quanle2k6/Update-9.1.2026
+[33m18c2119[m[33m ([m[1;31morigin/Update-9.1.2026[m[33m)[m 9.1.2026
+[33m3bfa663[m Merge pull request #10 from Quanle2k6/Update-26-12-25-MaiPhuTan
+[33m1743e58[m[33m ([m[1;31morigin/Update-26-12-25-MaiPhuTan[m[33m)[m Merge pull request #9 from Quanle2k6/main
+[33mcb12e22[m Merge pull request #8 from Quanle2k6/Update-26-12-25-MaiPhuTan
+[33m579a953[m Merge pull request #7 from Quanle2k6/main
+[33mfbcba0f[m Update
+[33ma68afd2[m Merge pull request #6 from Quanle2k6/Update-26-12-25-MaiPhuTan
+[33md0782b8[m 26.12
+[33m22b2665[m Fix gitignore: remove tracking of ignored files
+[33m2a4c07c[m UI + Report + Order
+[33m9396cd7[m Delete GiaoDienTongQuan directory
+[33m331d65f[m Delete .vs directory
+[33m3f016bf[m Merge pull request #4 from Quanle2k6/Change
+[33m0e2a0b0[m Cleanup: Add .gitignore and remove temp files
+[33mae06a22[m Merge pull request #1 from Quanle2k6/main
+[33m78770be[m Change
+[33m6fd07bb[m Add .gitignore file for Visual Studio and .NET
+[33m04cbbd7[m Change
+[33m4533615[m Change
+[33m5f22d59[m FirstUpdate
+[33m33a9a32[m First Change
+[33mcf02cf9[m A
+[33m9f3f86d[m Initial commit
