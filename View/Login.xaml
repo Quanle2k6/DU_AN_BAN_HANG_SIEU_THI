@@ -9,11 +9,11 @@
       Title="Login">
 
     <Grid>
-        <Grid HorizontalAlignment="Left" Width="313">
+        <Grid HorizontalAlignment="Left" Width="313" >
             <Image Source="/Images/supermarket.webp" 
                Stretch="UniformToFill" 
                Opacity="0.5"/>
-            <Border Opacity="0.5">
+            <Border Opacity="0.5" Margin="0,0,-18,0">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                         <GradientStop Color="Blue" Offset="0.0" />
@@ -24,7 +24,8 @@
         </Grid>
 
         <Border Background="#213448" Width="487" Height="450" 
-            VerticalAlignment="Center" HorizontalAlignment="Left" Margin="313,0,0,0">
+            VerticalAlignment="Center" HorizontalAlignment="Left" Margin="313,0,0,0"
+           CornerRadius="0,20,20,0">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="20" ShadowDepth="0" Opacity="0.5"/>
             </Border.Effect>
