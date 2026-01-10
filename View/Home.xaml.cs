@@ -69,9 +69,9 @@ namespace Page_Navigation_App.View
             {
                 // LỖI CŨ: Kiểm tra Orders nhưng Execute Shipments -> Đã sửa lại đồng bộ
                 // Thay OrdersCommand bằng Command tương ứng với Doanh số trong VM của bạn
-                if (navVM.OrdersCommand != null && navVM.OrdersCommand.CanExecute(null))
+                if (navVM.ShipmentsCommand != null && navVM.ShipmentsCommand.CanExecute(null))
                 {
-                    navVM.OrdersCommand.Execute(null);
+                    navVM.ShipmentsCommand.Execute(null);
                 }
             }
         }
