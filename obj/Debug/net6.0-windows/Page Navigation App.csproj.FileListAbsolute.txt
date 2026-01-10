@@ -401,6 +401,41 @@ C:\Users\HOME\Pictures\Page Navigation App\bin\Debug\net6.0-windows\OxyPlot.Wpf.
 C:\Users\HOME\Pictures\Page Navigation App\bin\Debug\net6.0-windows\OxyPlot.Wpf.Shared.dll
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\View\PageThemNhapHang.g.cs
 C:\Users\HOME\Pictures\Page Navigation App\obj\Debug\net6.0-windows\View\PageThemNhapHang.baml
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Page Navigation App.exe
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\customer_page.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\home_page.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\img_customer.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\img_home.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\img_order.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\img_product.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\img_setting.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\img_shipment.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\img_transaction.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\order_page.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\product_page.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\setting_page.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\shipment_page.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\shutdown_def.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\shutdown_mo.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Images\transaction_page.png
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Page Navigation App.dll.config
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Page Navigation App.deps.json
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Page Navigation App.runtimeconfig.json
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Page Navigation App.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\Page Navigation App.pdb
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\LiveCharts.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\OxyPlot.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\OxyPlot.Wpf.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\OxyPlot.Wpf.Shared.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.Data.SqlClient.dll
+D:\UIT\DU_AN_BAN_HANG\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.SqlClient.dll
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.csproj.AssemblyReference.cache
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Styles\Button.baml
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Styles\Image.baml
@@ -422,6 +457,28 @@ D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App_Content.g.cs
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App_MarkupCompile.cache
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App_MarkupCompile.lref
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\App.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\MainWindow.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Utilities\DataTemplate.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Customers.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Home.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Login.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Orders.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\PageCTHD.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\PageThemNhapHang.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Products.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Settings.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Shipments.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\View\Transactions.baml
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.g.resources
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.GeneratedMSBuildEditorConfig.editorconfig
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.AssemblyInfoInputs.cache
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.AssemblyInfo.cs
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.csproj.CoreCompileInputs.cache
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.sourcelink.json
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Nav.B3E0FCAF.Up2Date
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.dll
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\refint\Page Navigation App.dll
 D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.pdb
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\Page Navigation App.genruntimeconfig.cache
+D:\UIT\DU_AN_BAN_HANG\obj\Debug\net6.0-windows\ref\Page Navigation App.dll

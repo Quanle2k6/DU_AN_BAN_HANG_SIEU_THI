@@ -116,17 +116,19 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-
+            
                 <Border Grid.Column="0" 
                        Style="{StaticResource StatCardStyle}"
-                       Background="{StaticResource GreenGradient}">
+                       Background="{StaticResource GreenGradient}"
+                       MouseLeftButtonDown="ChangeIntoDoanhSoPage"
+                        Cursor="Hand">
                     <Border.Effect>
                         <DropShadowEffect BlurRadius="10" 
                                         ShadowDepth="3" 
                                         Opacity="0.2"
                                         Direction="270"/>
                     </Border.Effect>
-
+                    
                     <StackPanel VerticalAlignment="Center">
                         <Image Source="/View/sale.png" 
                                Style="{StaticResource IconStyle}"/>
@@ -139,14 +141,16 @@
 
                 <Border Grid.Column="1" 
                        Style="{StaticResource StatCardStyle}"
-                       Background="{StaticResource PurpleGradient}">
+                       Background="{StaticResource PurpleGradient}"
+                        MouseLeftButtonDown="ChangeIntoProductPage"
+                        Cursor="Hand">
                     <Border.Effect>
                         <DropShadowEffect BlurRadius="10" 
                                         ShadowDepth="3" 
                                         Opacity="0.2"
                                         Direction="270"/>
                     </Border.Effect>
-
+                
                     <StackPanel VerticalAlignment="Center">
                         <Image Source="/View/product-removebg-preview.png" 
                                Style="{StaticResource IconStyle}"/>
@@ -159,7 +163,10 @@
 
                 <Border Grid.Column="2" 
                        Style="{StaticResource StatCardStyle}"
-                       Background="{StaticResource BlueGradient}">
+                       Background="{StaticResource BlueGradient}"
+                        MouseLeftButtonDown="ChangeIntoHangTonPage" 
+                        Cursor="Hand">
+                    
                     <Border.Effect>
                         <DropShadowEffect BlurRadius="10" 
                                         ShadowDepth="3" 
@@ -174,6 +181,7 @@
                                    Style="{StaticResource StatNumberStyle}"/>
                         <TextBlock Text="Hàng Sẵn Trong Kho" 
                                    Style="{StaticResource StatTitleStyle}"/>
+                          
                     </StackPanel>
                 </Border>
 
