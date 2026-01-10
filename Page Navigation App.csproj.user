@@ -7,13 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Customers.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Home.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Orders.xaml.cs">

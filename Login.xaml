@@ -1,0 +1,57 @@
+﻿<Window x:Class="Page_Navigation_App.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Page_Navigation_App.View"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen">
+
+    <Border CornerRadius="20, 20, 20, 20" ClipToBounds="True" Background="White">
+        <Grid>
+            <Grid HorizontalAlignment="Left" Width="313">
+                <Image Source="/Images/supermarket.webp" 
+                       Stretch="UniformToFill" 
+                       Opacity="1" HorizontalAlignment="Right" Width="320"/>
+                <Border CornerRadius="20,0,0,20" Opacity="0.5" Margin="-22,0,0,0" HorizontalAlignment="Left" Width="353">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="Blue" Offset="0.0" />
+                            <GradientStop Color="Black" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
+            </Grid>
+
+            <Border Background="#213448" Width="487" Height="450" 
+                    VerticalAlignment="Center" HorizontalAlignment="Left" Margin="313,0,0,0"
+                    CornerRadius="0,20,20,0">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="20" ShadowDepth="0" Opacity="0.5"/>
+                </Border.Effect>
+
+                <StackPanel Margin="30">
+                    <TextBlock Text="ĐĂNG NHẬP" Foreground="White" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+
+                    <TextBlock Text="Tài khoản:" Foreground="White" Margin="0,10,0,5"/>
+                    <TextBox x:Name="txtUser" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+
+                    <TextBlock Text="Mật khẩu:" Foreground="White" Margin="0,15,0,5"/>
+                    <PasswordBox x:Name="txtPass" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+
+                    <Button Content="Đăng Nhập" Margin="0,40,0,0" Height="40" 
+                            Background="#87BAC3" Foreground="White" FontWeight="Bold" 
+                            Click="btnLogin_Click"/>
+                </StackPanel>
+            </Border>
+
+            <Button x:Name="CloseApp" Style="{StaticResource ExitApp}" 
+                    Click="CloseApp_Click" HorizontalAlignment="Left" 
+                    Margin="750,15,0,0" />
+        </Grid>
+    </Border>
+</Window>

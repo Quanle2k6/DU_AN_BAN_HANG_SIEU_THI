@@ -26,38 +26,56 @@ namespace Page_Navigation_App.View
         }
         public void ChangeIntoHangTonPage(object sender, RoutedEventArgs e)
         {
+            // Lấy ViewModel từ MainWindow
             if (Application.Current.MainWindow.DataContext is Page_Navigation_App.ViewModel.NavigationVM navVM)
             {
-                // Chuyển sang trang Quản lý nhập xuất
-                if (navVM.TransactionsCommand?.CanExecute(null) == true)
+                // Kiểm tra đúng tên Command (thường là TransactionsCommand cho hàng tồn/giao dịch)
+                if (navVM.TransactionsCommand != null && navVM.TransactionsCommand.CanExecute(null))
                 {
                     navVM.TransactionsCommand.Execute(null);
-                    // Menu:Btn tương ứng trong MainWindow sẽ tự IsChecked nhờ Converter đã set ở trên
                 }
             }
         }
 
         public void ChangeIntoProductPage(object sender, RoutedEventArgs e)
         {
-            if (Application.Current.MainWindow.DataContext is Page_Navigation_App.ViewModel.NavigationVM navVM)
+            // Tìm MainWindow của ứng dụng
+            var mainWindow = Application.Current.MainWindow;
+
+            // Kiểm tra DataContext của MainWindow
+            if (mainWindow != null && mainWindow.DataContext != null)
             {
-                // Chuyển sang trang Sản phẩm
-                if (navVM.CustomersCommand?.CanExecute(null) == true)
+                // Sử dụng dynamic để bỏ qua kiểm tra kiểu dữ liệu khắt khe lúc biên dịch nếu bạn không chắc chắn Namespace
+                dynamic navVM = mainWindow.DataContext;
+
+                try
                 {
-                    navVM.CustomersCommand.Execute(null);
+                    // Thay "CustomersCommand" bằng tên chính xác trong NavigationVM của bạn
+                    if (navVM.CustomersCommand != null)
+                    {
+                        navVM.CustomersCommand.Execute(null);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: Không tìm thấy lệnh chuyển trang! " + ex.Message);
                 }
             }
         }
+
         public void ChangeIntoDoanhSoPage(object sender, RoutedEventArgs e)
         {
             if (Application.Current.MainWindow.DataContext is Page_Navigation_App.ViewModel.NavigationVM navVM)
             {
-                // Chuyển sang trang Doanh số
-                if (navVM.OrdersCommand?.CanExecute(null) == true)
+                // LỖI CŨ: Kiểm tra Orders nhưng Execute Shipments -> Đã sửa lại đồng bộ
+                // Thay OrdersCommand bằng Command tương ứng với Doanh số trong VM của bạn
+                if (navVM.OrdersCommand != null && navVM.OrdersCommand.CanExecute(null))
                 {
-                    navVM.ShipmentsCommand.Execute(null);
+                    navVM.OrdersCommand.Execute(null);
                 }
             }
         }
+
+
     }
 }
