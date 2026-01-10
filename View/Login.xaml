@@ -9,9 +9,34 @@
       Title="Login">
 
     <Grid>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Margin="315,225,140,195" FontFamily="Rubik Medium" FontSize="20"/>
-        <TextBox TextWrapping="Wrap" Text="TextBox" Margin="315,290,140,130" FontFamily="Rubik Medium" FontSize="20"/>
+        <Grid HorizontalAlignment="Left" Width="313">
+            <Image Source="/Images/supermarket.webp" 
+               Stretch="UniformToFill" 
+               Opacity="0.5"/>
+            <Border Opacity="0.5">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="Blue" Offset="0.0" />
+                        <GradientStop Color="Black" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+        </Grid>
 
+        <Border Background="#213448" Width="487" Height="450" 
+            VerticalAlignment="Center" HorizontalAlignment="Left" Margin="313,0,0,0">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" ShadowDepth="0" Opacity="0.5"/>
+            </Border.Effect>
 
+            <StackPanel Margin="30">
+                <TextBlock Text="ĐĂNG NHẬP" Foreground="White" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+                <TextBlock Text="Tài khoản:" Foreground="White" Margin="0,10,0,5"/>
+                <TextBox x:Name="txtUser" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                <TextBlock Text="Mật khẩu:" Foreground="White" Margin="0,15,0,5"/>
+                <PasswordBox x:Name="txtPass" Height="35" VerticalContentAlignment="Center" Padding="5"/>
+                <Button Content="Đăng Nhập" Margin="0,40,0,0" Height="40" Background="#87BAC3" Foreground="White" FontWeight="Bold" Click="btnLogin_Click"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Page>

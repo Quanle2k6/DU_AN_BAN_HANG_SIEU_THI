@@ -61,7 +61,7 @@ namespace Page_Navigation_App.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Page Navigation App;component/view/pagecthd.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Page Navigation App;V1.0.0.0;component/view/pagecthd.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\PageCTHD.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
