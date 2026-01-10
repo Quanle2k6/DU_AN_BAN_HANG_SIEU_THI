@@ -24,5 +24,40 @@ namespace Page_Navigation_App.View
         {
             InitializeComponent();
         }
+        public void ChangeIntoHangTonPage(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow.DataContext is Page_Navigation_App.ViewModel.NavigationVM navVM)
+            {
+                // Chuyển sang trang Quản lý nhập xuất
+                if (navVM.TransactionsCommand?.CanExecute(null) == true)
+                {
+                    navVM.TransactionsCommand.Execute(null);
+                    // Menu:Btn tương ứng trong MainWindow sẽ tự IsChecked nhờ Converter đã set ở trên
+                }
+            }
+        }
+
+        public void ChangeIntoProductPage(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow.DataContext is Page_Navigation_App.ViewModel.NavigationVM navVM)
+            {
+                // Chuyển sang trang Sản phẩm
+                if (navVM.CustomersCommand?.CanExecute(null) == true)
+                {
+                    navVM.CustomersCommand.Execute(null);
+                }
+            }
+        }
+        public void ChangeIntoDoanhSoPage(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow.DataContext is Page_Navigation_App.ViewModel.NavigationVM navVM)
+            {
+                // Chuyển sang trang Doanh số
+                if (navVM.OrdersCommand?.CanExecute(null) == true)
+                {
+                    navVM.ShipmentsCommand.Execute(null);
+                }
+            }
+        }
     }
 }

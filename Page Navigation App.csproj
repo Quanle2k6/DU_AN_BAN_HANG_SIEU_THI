@@ -31,6 +31,7 @@
     <None Remove="Images\shipment_page.png" />
     <None Remove="Images\shutdown_def.png" />
     <None Remove="Images\shutdown_mo.png" />
+    <None Remove="Images\supermarket.webp" />
     <None Remove="Images\transaction_page.png" />
   </ItemGroup>
 
@@ -56,6 +57,7 @@
     <Resource Include="Images\find.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\supermarket.webp" />
     <Content Include="Images\customer_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

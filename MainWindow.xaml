@@ -18,145 +18,93 @@
         <vm:NavigationVM />
     </Window.DataContext>
 
-    <Grid>
+    <Window.Resources>
+        <Menu:ViewToCheckedConverter x:Key="ViewToCheckedConverter" />
+    </Window.Resources>
 
-        <Border Background="#E7F2EF"
-                CornerRadius="20" />
+    <Grid>
+        <Border Background="#E7F2EF" CornerRadius="20" />
 
         <Grid>
-
-
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300" />
                 <ColumnDefinition Width="650" />
             </Grid.ColumnDefinitions>
 
             <Grid Margin="0,0,72,0">
-
                 <Border Background="#213448"
                         CornerRadius="20,0,0,20" HorizontalAlignment="Left" Width="578" />
 
-                <StackPanel Height="400"
-                            Width="228">
+                <StackPanel Height="400" Width="228">
 
                     <Menu:Btn Style="{StaticResource BtnStyle}"
                               Command="{Binding HomeCommand}"
-                              IsChecked="True"
-                              Background="#87BAC3">
-
+                              IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=HomeVM, Mode=OneWay}">
                         <Grid HorizontalAlignment="Left" Width="228">
-
-                            <Image Source="Images/img_home.png"
-                                   Style="{StaticResource Image_Style}" />
-
-                            <TextBlock Text="Trang chủ"
-                                       Style="{StaticResource Text_Style}" />
-
+                            <Image Source="Images/img_home.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Trang chủ" Style="{StaticResource Text_Style}" />
                         </Grid>
-
                     </Menu:Btn>
 
-
                     <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding CustomersCommand}">
-
+                              Command="{Binding CustomersCommand}"
+                              IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=CustomerVM, Mode=OneWay}">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="25*"/>
                                 <ColumnDefinition Width="89*"/>
                             </Grid.ColumnDefinitions>
-
-                            <Image Source="Images/img_customer.png"
-                                   Style="{StaticResource Image_Style}" Grid.ColumnSpan="2" Margin="22,0,0,0" />
-
-                            <TextBlock Text="Sản phẩm"
-                                       Style="{StaticResource Text_Style}" Grid.Column="1" Margin="20,0,0,0" />
-
+                            <Image Source="Images/img_customer.png" Style="{StaticResource Image_Style}" Grid.ColumnSpan="2" Margin="22,0,0,0" />
+                            <TextBlock Text="Sản phẩm" Style="{StaticResource Text_Style}" Grid.Column="1" Margin="20,0,0,0" />
                         </Grid>
-
-                    </Menu:Btn>
-
-
-                    <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding ProductsCommand}">
-
-                        <Grid>
-
-                            <Image Source="Images/img_product.png"
-                                   Style="{StaticResource Image_Style}" />
-
-                            <TextBlock Text="Hàng tồn"
-                                       Style="{StaticResource Text_Style}" />
-
-                        </Grid>
-
                     </Menu:Btn>
 
                     <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding OrdersCommand}">
-
+                              Command="{Binding ProductsCommand}"
+                              IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=ProductVM, Mode=OneWay}">
                         <Grid>
-
-                            <Image Source="Images/img_order.png"
-                                   Style="{StaticResource Image_Style}" />
-
-                            <TextBlock Text="Hoá đơn"
-                                       Style="{StaticResource Text_Style}" />
-
+                            <Image Source="Images/img_product.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Hàng tồn" Style="{StaticResource Text_Style}" />
                         </Grid>
-
                     </Menu:Btn>
 
                     <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding TransactionsCommand}">
-
+                              Command="{Binding OrdersCommand}"
+                              IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=OrderVM, Mode=OneWay}">
                         <Grid>
-
-                            <Image Source="Images/img_transaction.png"
-                                   Style="{StaticResource Image_Style}" />
-
-                            <TextBlock Text="Quản lí nhập xuất"
-                                       Style="{StaticResource Text_Style}" />
-
+                            <Image Source="Images/img_order.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Hoá đơn" Style="{StaticResource Text_Style}" />
                         </Grid>
-
                     </Menu:Btn>
 
-
                     <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding ShipmentsCommand}">
-
+                              Command="{Binding TransactionsCommand}"
+                              IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=TransactionVM, Mode=OneWay}">
                         <Grid>
-
-                            <Image Source="Images/img_shipment.png"
-                                   Style="{StaticResource Image_Style}" />
-
-                            <TextBlock Text="Báo cáo"
-                                       Style="{StaticResource Text_Style}" />
-
+                            <Image Source="Images/img_transaction.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Quản lí nhập xuất" Style="{StaticResource Text_Style}" />
                         </Grid>
-
                     </Menu:Btn>
 
-
+                    <Menu:Btn Style="{StaticResource BtnStyle}"
+                              Command="{Binding ShipmentsCommand}"
+                              IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=ShipmentVM, Mode=OneWay}">
+                        <Grid>
+                            <Image Source="Images/img_shipment.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Báo cáo" Style="{StaticResource Text_Style}" />
+                        </Grid>
+                    </Menu:Btn>
 
                     <Menu:Btn Style="{StaticResource BtnStyle}"
-                              Command="{Binding SettingsCommand}">
-
+                              Command="{Binding SettingsCommand}"
+                              IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=SettingVM, Mode=OneWay}">
                         <Grid>
-
-                            <Image Source="Images/img_setting.png"
-                                   Style="{StaticResource Image_Style}" />
-
-                            <TextBlock Text="Cài đặt"
-                                       Style="{StaticResource Text_Style}" />
-
+                            <Image Source="Images/img_setting.png" Style="{StaticResource Image_Style}" />
+                            <TextBlock Text="Cài đặt" Style="{StaticResource Text_Style}" />
                         </Grid>
-
                     </Menu:Btn>
 
                 </StackPanel>
-
             </Grid>
 
             <Grid Grid.Column="1" Margin="0,0,-250,0">
@@ -166,28 +114,15 @@
                 </Grid.RowDefinitions>
 
                 <ContentControl x:Name="Pages"
-                                Content="{Binding CurrentView}" HorizontalAlignment="Center" Width="900" Grid.RowSpan="2" 
-                                />
-                <Grid x:Name="Overlay"
-                   Grid.RowSpan="2"
-                   Visibility="Collapsed"
-                   Background="#10000000">
+                                Content="{Binding CurrentView}" 
+                                HorizontalAlignment="Center" Width="900" Grid.RowSpan="2" />
 
-                    <ContentControl x:Name="OverlayContent"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"/>
+                <Grid x:Name="Overlay" Grid.RowSpan="2" Visibility="Collapsed" Background="#10000000">
+                    <ContentControl x:Name="OverlayContent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
-
             </Grid>
-
         </Grid>
 
-        <Button x:Name="CloseApp"
-                Style="{StaticResource ExitApp}"
-                Click="CloseApp_Click" HorizontalAlignment="Left" Margin="1145,15,0,0" />
-        
-        
-
+        <Button x:Name="CloseApp" Style="{StaticResource ExitApp}" Click="CloseApp_Click" HorizontalAlignment="Left" Margin="1145,15,0,0" />
     </Grid>
-
 </Window>
