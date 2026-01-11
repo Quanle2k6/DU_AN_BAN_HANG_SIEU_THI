@@ -14,6 +14,53 @@
     </UserControl.DataContext>
 
     <UserControl.Resources>
+        <Style x:Key="RoundedComboBox" TargetType="ComboBox">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#D1D5DB"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton x:Name="ToggleButton" 
+                                  BorderBrush="{TemplateBinding BorderBrush}" 
+                                  BorderThickness="{TemplateBinding BorderThickness}" 
+                                  Background="{TemplateBinding Background}" 
+                                  Grid.Column="2" IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" 
+                                  Focusable="false"
+                                  ClickMode="Press">
+                                <ToggleButton.Template>
+                                    <ControlTemplate TargetType="ToggleButton">
+                                        <Border x:Name="Border" CornerRadius="8" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                            <Grid HorizontalAlignment="Right" Width="30">
+                                                <Path x:Name="Arrow" Fill="#6B7280" Data="M 0 0 L 4 4 L 8 0 Z" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Grid>
+                                        </Border>
+                                    </ControlTemplate>
+                                </ToggleButton.Template>
+                            </ToggleButton>
+
+                            <ContentPresenter x:Name="ContentSite" IsHitTestVisible="False"  Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" Margin="10,3,33,3" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                            <Popup x:Name="Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="True" Focusable="False" PopupAnimation="Slide">
+                                <Grid x:Name="DropDown" SnapsToDevicePixels="True" MinWidth="{TemplateBinding ActualWidth}" MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                    <Border x:Name="DropDownBorder" Background="White" BorderThickness="1" BorderBrush="#D1D5DB" CornerRadius="8" Margin="0,2,0,0">
+                                        <ScrollViewer Margin="0,2" SnapsToDevicePixels="True">
+                                            <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                        </ScrollViewer>
+                                    </Border>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <Style x:Key="RoundedTextBox" TargetType="TextBox">
             <Setter Property="Background" Value="#FFFFFF"/>
             <Setter Property="BorderBrush" Value="#D1D5DB"/>
@@ -301,31 +348,28 @@
         <Label Content="Mã sản phẩm:" HorizontalAlignment="Left" Margin="5,27,0,0" VerticalAlignment="Top" Width="149" Height="31" FontWeight="Bold" FontSize="14"/>
         <Label Content="Tên sản phẩm:" HorizontalAlignment="Left" Margin="5,68,0,0" VerticalAlignment="Top" Width="149" Height="31" FontWeight="Bold" FontSize="14"/>
         <Label Content="Mã loại sản phẩm:" HorizontalAlignment="Left" Margin="5,109,0,0" VerticalAlignment="Top" Width="149" Height="31" FontWeight="Bold" FontSize="14"/>
-        <Label Content="Số lượng:" HorizontalAlignment="Left" Margin="5,151,0,0" VerticalAlignment="Top" Width="149" Height="31" FontWeight="Bold" FontSize="14"/>
-        <Label Content="Đơn giá:" HorizontalAlignment="Left" Margin="5,192,0,0" VerticalAlignment="Top" Width="149" Height="30" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Đơn giá:" HorizontalAlignment="Left" Margin="5,152,0,0" VerticalAlignment="Top" Width="149" Height="30" FontWeight="Bold" FontSize="14"/>
 
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,27,0,0" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,68,0,0" 
-                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14"/>
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,109,0,0" 
-                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14"/>
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,150,0,0" 
-                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14"/>
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,192,0,0" 
-                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14"/>
+        <TextBox x:Name="txtMaSP" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,27,0,0" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="14" Text="Hãy nhập mã gồm 5 chữ số" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"/>
+        <TextBox x:Name="txtTenSP" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,68,0,0" 
+                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="Hãy nhập tên sản phẩm" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt2_LostFocus"/>
+        <TextBox x:Name="txtMaLSP" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,109,0,0" 
+                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14"  Text="Hãy nhập mã loại sản phẩm gồm 5 kí tự" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt3_LostFocus"/>
+        <TextBox x:Name="txtDonGia" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,152,0,0" 
+                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="Hãy nhập đơn giá sản phẩm" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt1_LostFocus"/>
 
-        <Button Content="Xem" HorizontalAlignment="Left" Height="40" Margin="62,249,0,0" 
-                VerticalAlignment="Top" Width="85" Style="{StaticResource ViewButton}" Click="Button_Click"/>
-        <Button Content="Thêm" HorizontalAlignment="Left" Height="40" Margin="16,249,0,0" 
+        <Button Content="Xem" HorizontalAlignment="Left" Height="40" Margin="5,206,0,0" 
+                VerticalAlignment="Top" Width="84" Style="{StaticResource ViewButton}" Click="Xem_Click"/>
+        <Button Content="Thêm" HorizontalAlignment="Left" Height="40" Margin="94,257,0,0" 
                 VerticalAlignment="Top" Width="85" Style="{StaticResource AddButton}" Grid.Column="1" Background="#FFB03BF6"/>
-        <Button Content="Xóa" HorizontalAlignment="Left" Height="40" Margin="109,249,0,0" 
+        <Button Content="Xóa" HorizontalAlignment="Left" Height="40" Margin="187,257,0,0" 
                 VerticalAlignment="Top" Width="85" Style="{StaticResource DeleteButton}" Grid.Column="1"/>
-        <Button Content="Sửa" HorizontalAlignment="Left" Height="40" Margin="201,249,0,0" 
+        <Button Content="Sửa" HorizontalAlignment="Left" Height="40" Margin="279,257,0,0" 
                 VerticalAlignment="Top" Width="85" Style="{StaticResource EditButton}" Grid.Column="1"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="10,311,0,0" TextWrapping="Wrap" 
                    Text="Thông tin sản phẩm" VerticalAlignment="Top" Width="162" FontSize="16" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="194,-5,0,0" TextWrapping="Wrap" 
+        <TextBlock HorizontalAlignment="Left" Margin="218,-5,0,0" TextWrapping="Wrap" 
                    Text="Tìm kiếm sản phẩm" VerticalAlignment="Top" Width="194" FontSize="20" 
                    FontWeight="Bold" Foreground="#FF2A2DE6" Height="26" Grid.ColumnSpan="2"/>
 
@@ -338,24 +382,35 @@
                   CanUserAddRows="False"
                   IsReadOnly="True"
                   SelectionMode="Single"
-                  SelectionUnit="FullRow">
+                  SelectionUnit="FullRow"
+                  LoadingRow="ProductsDataGrid_LoadingRow">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="STT" 
-                                    Width="60"
-                                    Binding="{Binding STT}">
+                <DataGridTextColumn Header="STT" Width="60">
+                    <DataGridTextColumn.Binding>
+                        <Binding RelativeSource="{RelativeSource AncestorType=DataGridRow}" Path="Header"/>
+                    </DataGridTextColumn.Binding>
+
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="HorizontalAlignment" Value="Center"/>
                             <Setter Property="VerticalAlignment" Value="Center"/>
                             <Setter Property="FontWeight" Value="SemiBold"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding MaSP}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding MaSP}" Value="">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
                         </Style>
                     </DataGridTextColumn.ElementStyle>
                 </DataGridTextColumn>
 
                 <DataGridTextColumn Header="Mã sản phẩm" 
                                     Width="120"
-                                    Binding="{Binding MaSanPham}">
+                                    Binding="{Binding MaSP}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="VerticalAlignment" Value="Center"/>
@@ -365,7 +420,7 @@
 
                 <DataGridTextColumn Header="Tên sản phẩm" 
                                     Width="200"
-                                    Binding="{Binding TenSanPham}">
+                                    Binding="{Binding TenSP}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="VerticalAlignment" Value="Center"/>
@@ -375,7 +430,7 @@
 
                 <DataGridTextColumn Header="Mã loại" 
                                     Width="100"
-                                    Binding="{Binding MaLoaiSanPham}">
+                                    Binding="{Binding MaLSP}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -386,7 +441,7 @@
 
                 <DataGridTextColumn Header="Số lượng" 
                                     Width="100"
-                                    Binding="{Binding SoLuong, StringFormat=N0}">
+                                    Binding="{Binding SoLuongCon, StringFormat=N0}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="HorizontalAlignment" Value="Right"/>
@@ -398,7 +453,7 @@
 
                 <DataGridTextColumn Header="Đơn giá (VNĐ)" 
                                     Width="120"
-                                    Binding="{Binding DonGia, StringFormat='0 VNĐ'}">
+                                    Binding="{Binding GiaBan, StringFormat='0 VNĐ'}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="HorizontalAlignment" Value="Right"/>
@@ -424,5 +479,18 @@
             </DataGrid.Columns>
 
         </DataGrid>
+        <ComboBox x:Name="cbSearchType" 
+          HorizontalAlignment="Left" 
+          Margin="5,260,0,0" 
+          VerticalAlignment="Top" 
+          Width="144" Height="38" 
+          Style="{StaticResource RoundedComboBox}"
+          SelectedIndex="-1">
+
+            <ComboBoxItem Content="Tìm kiếm theo mã" Tag="MaSP"/>
+            <ComboBoxItem Content="Tìm kiếm theo tên" Tag="TenSP"/>
+        </ComboBox>
+        <TextBox x:Name="txtTenSP_Copy" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,260,0,0" 
+            VerticalAlignment="Top" Width="122" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="" Foreground="Gray"/>
     </Grid>
 </UserControl>
