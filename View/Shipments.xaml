@@ -5,13 +5,63 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
-             mc:Ignorable="d" 
-             d:DesignHeight="900" d:DesignWidth="1300"
-             HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-             Style="{StaticResource Page_Style}" >
+             mc:Ignorable="d"
+             d:DesignHeight="900"
+             d:DesignWidth="1300"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             Style="{StaticResource Page_Style}">
+
     <UserControl.DataContext>
         <vm:ShipmentVM/>
     </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <Style x:Key="WatermarkTextBox" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+
+                            <TextBlock x:Name="watermark"
+                                   Text="{TemplateBinding Tag}"
+                                   Foreground="Gray"
+                                   Margin="6,0,0,0"
+                                   VerticalAlignment="Center"
+                                   IsHitTestVisible="False"
+                                   Visibility="Collapsed"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="Text" Value=""/>
+                                    <Condition Property="IsFocused" Value="False"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="watermark" Property="Visibility" Value="Visible"/>
+                            </MultiTrigger>
+
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="Text" Value="{x:Null}"/>
+                                    <Condition Property="IsFocused" Value="False"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="watermark" Property="Visibility" Value="Visible"/>
+                            </MultiTrigger>
+
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="watermark" Property="Visibility" Value="Collapsed"/>
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -20,8 +70,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Báo cáo doanh thu" FontSize="36" FontWeight="Bold"
-               FontFamily="Javanese Text" Foreground="#647FBC" Grid.Row="0"/>
+        <Label Content="Báo cáo doanh thu"
+               FontSize="36"
+               FontWeight="Bold"
+               FontFamily="Javanese Text"
+               Foreground="#647FBC"
+               Grid.Row="0"/>
 
         <UniformGrid Columns="3" Grid.Row="1" Height="150" Margin="0,10">
             <Border Background="#FF3838" Margin="5" CornerRadius="8">
@@ -30,12 +84,14 @@
                     <Label Content="Số đơn hàng trong ngày" Foreground="White" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
+
             <Border Background="#C47BE4" Margin="5" CornerRadius="8">
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock Text="0" FontSize="32" Foreground="White" HorizontalAlignment="Center" FontWeight="Bold"/>
                     <Label Content="Doanh thu theo ngày" Foreground="White" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
                 </StackPanel>
             </Border>
+
             <Border Background="#9CC6DB" Margin="5" CornerRadius="8">
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock Text="0" FontSize="32" Foreground="White" HorizontalAlignment="Center" FontWeight="Bold"/>
@@ -59,13 +115,24 @@
                 <StackPanel Grid.Row="0">
                     <Label Content="Xem thống kê theo tuần" FontSize="18" FontWeight="Bold" FontFamily="Javanese Text"/>
                     <StackPanel Orientation="Horizontal" Margin="0,5">
-                        <TextBox Width="180" Height="30" VerticalContentAlignment="Center"/>
-                        <Button Content="Xác nhận" Width="100" Margin="10,0,0,0" Command="{Binding LoadWeeklyCommand}" Background="#FCF6D9" FontWeight="Bold"/>
+                        <TextBox Width="180"
+                                 Height="30"
+                                 VerticalContentAlignment="Center"
+                                 Style="{StaticResource WatermarkTextBox}"
+                                 Tag="Nhập dạng dd/mm/yyyy"/>
+                        <Button Content="Xác nhận"
+                                Width="100"
+                                Margin="10,0,0,0"
+                                Command="{Binding LoadWeeklyCommand}"
+                                Background="#FCF6D9"
+                                FontWeight="Bold"/>
                     </StackPanel>
                 </StackPanel>
 
-                <lvc:CartesianChart Grid.Row="1" Series="{Binding RevenueByDaySeries}" 
-                                    LegendLocation="Bottom" Margin="0,10,0,20">
+                <lvc:CartesianChart Grid.Row="1"
+                                    Series="{Binding RevenueByDaySeries}"
+                                    LegendLocation="Bottom"
+                                    Margin="0,10,0,20">
                     <lvc:CartesianChart.AxisX>
                         <lvc:Axis Title="Thứ" Labels="{Binding Days}">
                             <lvc:Axis.Separator>
@@ -74,7 +141,9 @@
                         </lvc:Axis>
                     </lvc:CartesianChart.AxisX>
                     <lvc:CartesianChart.AxisY>
-                        <lvc:Axis Title="Doanh thu (Triệu VND)" LabelFormatter="{Binding YFormatter}" MinValue="0"/>
+                        <lvc:Axis Title="Doanh thu (Triệu VND)"
+                                  LabelFormatter="{Binding YFormatter}"
+                                  MinValue="0"/>
                     </lvc:CartesianChart.AxisY>
                 </lvc:CartesianChart>
             </Grid>
@@ -88,13 +157,24 @@
                 <StackPanel Grid.Row="0">
                     <Label Content="Xem thống kê theo quý" FontSize="18" FontWeight="Bold" FontFamily="Javanese Text"/>
                     <StackPanel Orientation="Horizontal" Margin="0,5">
-                        <TextBox Width="180" Height="30" VerticalContentAlignment="Center"/>
-                        <Button Content="Xác nhận" Width="100" Margin="10,0,0,0" Command="{Binding LoadQuarterlyCommand}" Background="#FCF6D9" FontWeight="Bold"/>
+                        <TextBox Width="180"
+                                 Height="30"
+                                 VerticalContentAlignment="Center"
+                                 Style="{StaticResource WatermarkTextBox}"
+                                 Tag="Nhập dạng dd/mm/yyyy"/>
+                        <Button Content="Xác nhận"
+                                Width="100"
+                                Margin="10,0,0,0"
+                                Command="{Binding LoadQuarterlyCommand}"
+                                Background="#FCF6D9"
+                                FontWeight="Bold"/>
                     </StackPanel>
                 </StackPanel>
 
-                <lvc:CartesianChart Grid.Row="1" Series="{Binding ThongKeTheoQuy}" 
-                                    LegendLocation="Bottom" Margin="0,10,0,20" Loaded="CartesianChart_Loaded_3">
+                <lvc:CartesianChart Grid.Row="1"
+                                    Series="{Binding ThongKeTheoQuy}"
+                                    LegendLocation="Bottom"
+                                    Margin="0,10,0,20">
                     <lvc:CartesianChart.AxisX>
                         <lvc:Axis Title="Quý" Labels="{Binding Quarters}">
                             <lvc:Axis.Separator>
@@ -103,7 +183,9 @@
                         </lvc:Axis>
                     </lvc:CartesianChart.AxisX>
                     <lvc:CartesianChart.AxisY>
-                        <lvc:Axis Title="Doanh thu (Triệu VND)" LabelFormatter="{Binding YFormatter}" MinValue="0"/>
+                        <lvc:Axis Title="Doanh thu (Triệu VND)"
+                                  LabelFormatter="{Binding YFormatter}"
+                                  MinValue="0"/>
                     </lvc:CartesianChart.AxisY>
                 </lvc:CartesianChart>
             </Grid>

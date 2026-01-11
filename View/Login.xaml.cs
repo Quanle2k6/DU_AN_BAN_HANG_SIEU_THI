@@ -24,5 +24,10 @@ namespace Page_Navigation_App.View
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

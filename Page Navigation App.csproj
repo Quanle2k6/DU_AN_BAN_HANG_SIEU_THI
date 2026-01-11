@@ -16,7 +16,11 @@
     <None Remove="Images\customer_page.png" />
     <None Remove="Images\delete.png" />
     <None Remove="Images\find.png" />
+    <None Remove="Images\hhh.jpg" />
+    <None Remove="Images\home.jpg" />
     <None Remove="Images\home_page.png" />
+    <None Remove="Images\hop.jpg" />
+    <None Remove="Images\hopq.jpg" />
     <None Remove="Images\img_customer.png" />
     <None Remove="Images\img_home.png" />
     <None Remove="Images\img_order.png" />
@@ -27,6 +31,7 @@
     <None Remove="Images\minus.png" />
     <None Remove="Images\order_page.png" />
     <None Remove="Images\product_page.png" />
+    <None Remove="Images\sale.jpg" />
     <None Remove="Images\setting_page.png" />
     <None Remove="Images\shipment_page.png" />
     <None Remove="Images\shutdown_def.png" />
@@ -36,6 +41,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\hhh.jpg" />
+    <Resource Include="Images\home.jpg" />
+    <Resource Include="Images\hop.jpg" />
+    <Resource Include="Images\hopq.jpg" />
     <Resource Include="Images\minus.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -57,6 +66,7 @@
     <Resource Include="Images\find.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\sale.jpg" />
     <Resource Include="Images\supermarket.webp" />
     <Content Include="Images\customer_page.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

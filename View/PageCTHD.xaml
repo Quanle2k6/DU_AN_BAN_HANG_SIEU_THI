@@ -45,7 +45,7 @@
 
         </StatusBar>
 
-        <ListView HorizontalAlignment="Left" Height="181" Margin="54,240,0,0" VerticalAlignment="Top" Width="378" d:ItemsSource="{d:SampleData ItemCount=5}">
+        <ListView HorizontalAlignment="Left" Height="181" Margin="54,240,0,0" VerticalAlignment="Top" Width="378" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.472,0.472">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Danh sách mặt hàng" Width="283"/>

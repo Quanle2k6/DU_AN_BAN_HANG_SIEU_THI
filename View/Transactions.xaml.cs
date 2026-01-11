@@ -35,5 +35,11 @@ namespace Page_Navigation_App.View
             var main = (MainWindow)Application.Current.MainWindow;
             main.ShowOverlay(new PageThemNhapHang());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var main = (MainWindow)Application.Current.MainWindow;
+            main.ShowOverlay(new PageThemNhapHang());
+        }
     }
 }

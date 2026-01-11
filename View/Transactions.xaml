@@ -72,7 +72,7 @@
             <Button Content="✏️ Chỉnh sửa"
                     Background="{StaticResource PrimaryColor}"
                     Style="{StaticResource ModernButton}"
-                    Margin="0,0,10,0"/>
+                    Margin="0,0,10,0" Click="Button_Click_1"/>
 
             <Button Content="🗑 Xoá"
                     Background="{StaticResource DangerColor}"

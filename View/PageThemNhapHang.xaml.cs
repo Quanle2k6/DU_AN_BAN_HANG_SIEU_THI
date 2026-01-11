@@ -25,9 +25,15 @@ namespace Page_Navigation_App.View
             InitializeComponent();
         }
 
-    private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            // Viết code xử lý khi nhấn nút ở đây
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var main = (MainWindow)Application.Current.MainWindow;
+            main.CloseOverlay();
         }
     }
 }
