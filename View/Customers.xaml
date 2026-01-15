@@ -19,7 +19,7 @@
             <Setter Property="BorderBrush" Value="#D1D5DB"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Padding" Value="10,5"/>
-            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontSize" Value="12"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
             <Setter Property="Template">
@@ -358,14 +358,14 @@
         <TextBox x:Name="txtDonGia" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,152,0,0" 
                  VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="Hãy nhập đơn giá sản phẩm" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt1_LostFocus"/>
 
-        <Button Content="Xem" HorizontalAlignment="Left" Height="40" Margin="5,206,0,0" 
+        <Button x:Name="btn_Xem" Content="Xem" HorizontalAlignment="Left" Height="40" Margin="5,215,0,0" 
                 VerticalAlignment="Top" Width="84" Style="{StaticResource ViewButton}" Click="Xem_Click"/>
         <Button Content="Thêm" HorizontalAlignment="Left" Height="40" Margin="94,257,0,0" 
-                VerticalAlignment="Top" Width="85" Style="{StaticResource AddButton}" Grid.Column="1" Background="#FFB03BF6"/>
+                VerticalAlignment="Top" Width="85" Style="{StaticResource AddButton}" Grid.Column="1" Background="#FFB03BF6" Click="btnThem_Click"/>
         <Button Content="Xóa" HorizontalAlignment="Left" Height="40" Margin="187,257,0,0" 
-                VerticalAlignment="Top" Width="85" Style="{StaticResource DeleteButton}" Grid.Column="1"/>
+                VerticalAlignment="Top" Width="85" Style="{StaticResource DeleteButton}" Grid.Column="1" Click="btnXoa_Click"/>
         <Button Content="Sửa" HorizontalAlignment="Left" Height="40" Margin="279,257,0,0" 
-                VerticalAlignment="Top" Width="85" Style="{StaticResource EditButton}" Grid.Column="1"/>
+                VerticalAlignment="Top" Width="85" Style="{StaticResource EditButton}" Grid.Column="1" Click="btnXoa_Click"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="10,311,0,0" TextWrapping="Wrap" 
                    Text="Thông tin sản phẩm" VerticalAlignment="Top" Width="162" FontSize="16" FontWeight="Bold"/>
@@ -485,12 +485,16 @@
           VerticalAlignment="Top" 
           Width="144" Height="38" 
           Style="{StaticResource RoundedComboBox}"
-          SelectedIndex="-1">
+          SelectedIndex="0">
 
             <ComboBoxItem Content="Tìm kiếm theo mã" Tag="MaSP"/>
             <ComboBoxItem Content="Tìm kiếm theo tên" Tag="TenSP"/>
+            <ComboBoxItem Content="Tìm kiếm theo loại" Tag="MaLSP"/>
+
         </ComboBox>
-        <TextBox x:Name="txtTenSP_Copy" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,260,0,0" 
+        <TextBox x:Name="txt_Search" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="158,260,0,0" 
             VerticalAlignment="Top" Width="122" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="" Foreground="Gray"/>
+        <Button x:Name="btn_XemTatCa" Content="Xem tất cả" HorizontalAlignment="Left" Height="40" Margin="94,215,0,0" 
+            VerticalAlignment="Top" Width="129" Style="{StaticResource ViewButton}" Click="XemTatCa_Click"/>
     </Grid>
 </UserControl>
