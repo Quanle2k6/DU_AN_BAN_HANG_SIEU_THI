@@ -7,12 +7,18 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.Data.SqlClient;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Page_Navigation_App.Database; // Chứa class DBConnection của bạn
+using Page_Navigation_App.Utilities; // Chứa RelayCommand
+using Page_Navigation_App.Model;
+using System.Data;
+
 
 namespace Page_Navigation_App.View
 {
@@ -39,9 +45,26 @@ namespace Page_Navigation_App.View
 
         private void Xem_Click(object sender, RoutedEventArgs e)
         {
-            
+            string searchTerm = txt_Search.Text.Trim();
+            // Tạo pattern để tìm kiếm bắt đầu bằng từ khóa
+            string searchPattern = searchTerm + "%";
 
+            // 1. Xác định câu lệnh SQL (Sửa lại đúng chính tả @searchPattern)
+            string sql = "";
+            switch (cbSearchType.SelectedIndex)
+            {
+                case 0: sql = "SELECT * FROM SANPHAM WHERE MaSP LIKE @searchPattern"; break;
+                case 1: sql = "SELECT * FROM SANPHAM WHERE TenSP LIKE @searchPattern"; break;
+                default: sql = "SELECT * FROM SANPHAM WHERE MaLSP LIKE @searchPattern"; break;
+            }
 
+            // Pass a SqlParameter[] as required by ExecuteQuery
+            var parameters = new SqlParameter[] { new SqlParameter("@searchPattern", searchPattern) };
+
+            DataTable dt = DBConnection.ExecuteQuery(sql, parameters);
+
+            // 3. Cập nhật giao diện
+            ProductsDataGrid.ItemsSource = dt?.DefaultView;
         }
 
         private void txt_GotFocus(object sender, RoutedEventArgs e)
@@ -105,6 +128,16 @@ namespace Page_Navigation_App.View
                 // ... (Bạn có thể thêm các điều kiện cho các TextBox khác ở đây)
                 textBox.Foreground = Brushes.Gray;
             }
+        }
+
+        private void XemTatCa_Click(object sender, RoutedEventArgs e)
+        {
+            string sql = "SELECT * FROM SANPHAM";
+                
+            DataTable dt = DBConnection.ExecuteQuery(sql);
+            ProductsDataGrid.ItemsSource = dt.DefaultView;
+            cbSearchType.SelectedIndex = 0;
+            txt_Search.Text = "";
         }
     }
 }
