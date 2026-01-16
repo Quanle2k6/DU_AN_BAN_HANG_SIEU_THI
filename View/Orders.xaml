@@ -1,129 +1,191 @@
 ﻿<UserControl x:Class="Page_Navigation_App.View.Orders"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
-             mc:Ignorable="d" 
-             d:DesignHeight="850" d:DesignWidth="1100"
-             Background="#E7F2EF">
-
-    <UserControl.Resources>
-        <Style x:Key="ModernButtonStyle" TargetType="Button">
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="8" Padding="10,5">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Opacity" Value="0.8"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </UserControl.Resources>
+             Background="#EEF6F4">
 
     <UserControl.DataContext>
-        <vm:OrderVM />
+        <vm:OrderVM/>
     </UserControl.DataContext>
 
-    <Grid Margin="20">
+    <Grid Margin="30">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Margin="0,0,0,20">
-            <TextBlock Text="Chi tiết hoá đơn" FontSize="36" Foreground="#647FBC" FontWeight="Bold"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                <Image Source="/Images/find.png" Width="25" Height="25" Margin="0,0,10,0"/>
-                <TextBox x:Name="txtSearch" Width="250" Height="30" VerticalContentAlignment="Center"
-                         Text="Tìm kiếm theo mã hoá đơn" GotFocus="txtBox_GotFocus" LostFocus="txtBox_LostFocus"/>
+        <Grid Grid.Row="0" Margin="0,0,0,25">
+            <TextBlock Text="Chi tiết hoá đơn"
+                       FontSize="34"
+                       FontWeight="Bold"
+                       Foreground="#5A7BD8"/>
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center">
+                <Image Source="/Images/find.png"
+                       Width="22"
+                       Height="22"
+                       Margin="0,0,8,0"/>
+                <TextBox Width="260"
+                         Height="32"
+                         VerticalContentAlignment="Center"
+                         Text="Tìm kiếm theo mã hoá đơn"/>
             </StackPanel>
         </Grid>
 
-        <Border Grid.Row="1" Background="White" CornerRadius="12" Padding="20" Margin="0,0,0,20" PreviewTextInput="Border_PreviewTextInput">
+        <Border Grid.Row="1"
+                Background="White"
+                CornerRadius="16"
+                Padding="25"
+                Margin="0,0,0,25">
+
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="250"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="40"/>
-                </Grid.RowDefinitions>
 
-                <TextBlock Text="Tạo hoá đơn mới:" Grid.ColumnSpan="2" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+                <StackPanel Grid.Column="0" Margin="0,0,30,0">
+                    <TextBlock Text="Tạo hoá đơn mới"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               Margin="0,0,0,15"/>
 
-                <TextBlock Text="Tên khách hàng" Grid.Row="1" VerticalAlignment="Center" FontSize="16" FontWeight="SemiBold"/>
-                <TextBox x:Name="textHoTen" Grid.Row="1" Height="28" Margin="113,6,0,0" 
-                         VerticalContentAlignment="Center" PreviewTextInput="TextBox_PreviewTextInput" TextChanged="TextBox_TextChanged_3" Grid.ColumnSpan="2" VerticalAlignment="Top"
-                          />
+                    <TextBlock Text="Tên khách hàng" FontWeight="SemiBold"/>
+                    <TextBox Height="32" Margin="0,5,0,12"/>
 
-                <TextBlock Text="Địa chỉ" Grid.Row="2" VerticalAlignment="Center" FontSize="16" FontWeight="SemiBold"/>
-                <TextBox Grid.Row="2" Grid.Column="1" Height="28" Margin="0,5" VerticalContentAlignment="Center"/>
+                    <TextBlock Text="Địa chỉ" FontWeight="SemiBold"/>
+                    <TextBox Height="32" Margin="0,5,0,12"/>
 
-                <TextBlock Text="Số điện thoại" Grid.Row="3" VerticalAlignment="Center" FontSize="16" FontWeight="SemiBold"/>
-                <TextBox x:Name="txtSDT" Grid.Row="3" Grid.Column="1" Height="28" Margin="0,5" VerticalContentAlignment="Center" PreviewTextInput="txtSDT_PreviewTextInput"/>
+                    <TextBlock Text="Số điện thoại" FontWeight="SemiBold"/>
+                    <TextBox Height="32"/>
+                </StackPanel>
 
-                <TextBlock Text="Danh sách mặt hàng" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" FontSize="16" FontWeight="SemiBold" Margin="40,0,10,0"/>
-                <ComboBox Grid.Row="1" Grid.Column="4" Height="30"/>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Danh sách mặt hàng"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               Margin="0,0,0,15"/>
 
-                <TextBlock Text="Số lượng" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" FontSize="16" FontWeight="SemiBold" Margin="40,0,10,0"/>
-                <TextBox x:Name="txtSL" Grid.Row="2" Grid.Column="4" Height="30" Width="100" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextChanged="txtSL_TextChanged"/>
+                    <DataGrid Height="180"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="True"
+                              CanUserDeleteRows="True"
+                              ItemsSource="{Binding OrderDetails}"
+                              RowHeight="32"
+                              HeadersVisibility="Column">
 
-                <StackPanel Grid.Row="3" Grid.Column="4" Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Button Content="Xác nhận" Style="{StaticResource ModernButtonStyle}" Background="#41A67E" Width="100" Margin="0,0,10,0" Click="Button_Click_2"/>
-                    <Button Content="Quay lại" Style="{StaticResource ModernButtonStyle}" 
-                            Background="#FCF6D9" Foreground="Black" Width="100"/>
+                        <DataGrid.Columns>
+                            <DataGridComboBoxColumn Header="Sản phẩm"
+                                                    Width="*"
+                                                    DisplayMemberPath="TenSP"
+                                                    SelectedValuePath="MaSP"
+                                                    SelectedValueBinding="{Binding MaSP}"
+                                                    ItemsSource="{Binding ProductList}"/>
+
+                            <DataGridTextColumn Header="Số lượng"
+                                                Width="120"
+                                                Binding="{Binding SoLuong}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Right"
+                                Margin="0,15,0,0">
+                        <Button Content="Quay lại"
+                                Width="110"
+                                Height="36"
+                                Background="#F1F1F1"
+                                Margin="0,0,10,0"/>
+                        <Button Content="Xác nhận"
+                                Width="130"
+                                Height="36"
+                                Background="#41A67E"
+                                Foreground="White"/>
+                    </StackPanel>
                 </StackPanel>
             </Grid>
         </Border>
 
-        <TextBlock Grid.Row="2" Text="Thông tin hoá đơn" FontSize="20" FontWeight="Bold" Margin="0,10"/>
+        <Border Grid.Row="2"
+                Background="White"
+                CornerRadius="16"
+                Padding="20">
 
-        <ListView Grid.Row="3" Background="White" BorderThickness="0">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="STT" Width="40"/>
-                    <GridViewColumn Header="Mã đơn" Width="80"/>
-                    <GridViewColumn Header="Tên khách hàng" Width="150"/>
-                    <GridViewColumn Header="Địa chỉ" Width="180"/>
-                    <GridViewColumn Header="SĐT" Width="80"/>
-                    <GridViewColumn Header="Mặt hàng" Width="180"/>
-                    <GridViewColumn Header="SL" Width="50"/>
-                    <GridViewColumn Header="Thành tiền" Width="120"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-        <Grid Grid.Row="4" Margin="0,20,0,0">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
-                <Image Source="/Images/bin-file.png" Width="30" Height="30" Margin="0,0,10,0"/>
-                <TextBox Width="200" Height="30" VerticalContentAlignment="Center" Text="Xoá theo mã hoá đơn"/>
-            </StackPanel>
+                <TextBlock Text="Thông tin hoá đơn"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Margin="0,0,0,10"/>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Content="Xoá dữ liệu theo ngày" Style="{StaticResource ModernButtonStyle}" Background="#F87B1B" Margin="0,0,15,0"/>
-                <Button Content="Xác nhận lập hoá đơn" Style="{StaticResource ModernButtonStyle}" Background="#41A67E" Padding="20,10" Click="Button_Click_4"/>
-            </StackPanel>
-        </Grid>
+                <DataGrid x:Name="db1"
+                          Grid.Row="1"
+                          ItemsSource="{Binding Orders}"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          CanUserAddRows="False"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="STT" Width="60" Binding="{Binding STT}"/>
+                        <DataGridTextColumn Header="Mã đơn" Width="100" Binding="{Binding MaHD}"/>
+                        <DataGridTextColumn Header="Tên khách hàng" Width="160" Binding="{Binding TenKH}"/>
+                        <DataGridTextColumn Header="Địa chỉ" Width="140" Binding="{Binding DiaChi}"/>
+                        <DataGridTextColumn Header="SDT" Width="130" Binding="{Binding SDT}"/>
+
+                        <DataGridTemplateColumn Header="Mặt hàng" Width="240">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ItemsControl ItemsSource="{Binding MatHang}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding TenSP}"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="SL" Width="80">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ItemsControl ItemsSource="{Binding MatHang}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding SoLuong}"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="Thành tiền" Width="140">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ItemsControl ItemsSource="{Binding MatHang}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding ThanhTien, StringFormat={}{0:N0}}"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
     </Grid>
 </UserControl>
