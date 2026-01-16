@@ -5,10 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
-             mc:Ignorable="d" 
-             d:DesignHeight="900" d:DesignWidth="1300"
-             HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-             Style="{StaticResource Page_Style}" >
+             mc:Ignorable="d"
+             d:DesignHeight="900"
+             d:DesignWidth="1300"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             Style="{StaticResource Page_Style}"
+             Background="White">
+
     <UserControl.DataContext>
         <vm:ShipmentVM/>
     </UserControl.DataContext>
@@ -20,90 +24,120 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Báo cáo doanh thu" FontSize="36" FontWeight="Bold"
-               FontFamily="Javanese Text" Foreground="#647FBC" Grid.Row="0"/>
+        <Label Grid.Row="0"
+               Content="Báo cáo doanh thu"
+               FontSize="36"
+               FontWeight="Bold"
+               FontFamily="Javanese Text"
+               Foreground="#647FBC"/>
 
-        <UniformGrid Columns="3" Grid.Row="1" Height="150" Margin="0,10">
+        <UniformGrid Grid.Row="1" Columns="3" Height="150" Margin="0,10">
             <Border Background="#FF3838" Margin="5" CornerRadius="8">
                 <StackPanel VerticalAlignment="Center">
-                    <TextBlock Text="0" FontSize="32" Foreground="White" HorizontalAlignment="Center" FontWeight="Bold"/>
-                    <Label Content="Số đơn hàng trong ngày" Foreground="White" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding TotalOrders}"
+                               FontSize="32"
+                               Foreground="White"
+                               HorizontalAlignment="Center"
+                               FontWeight="Bold"/>
+                    <Label Content="Số đơn hàng trong ngày"
+                           Foreground="White"
+                           HorizontalAlignment="Center"
+                           FontSize="16"
+                           FontWeight="Bold"/>
                 </StackPanel>
             </Border>
+
             <Border Background="#C47BE4" Margin="5" CornerRadius="8">
                 <StackPanel VerticalAlignment="Center">
-                    <TextBlock Text="0" FontSize="32" Foreground="White" HorizontalAlignment="Center" FontWeight="Bold"/>
-                    <Label Content="Doanh thu theo ngày" Foreground="White" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding RevenueByDate}"
+                               FontSize="32"
+                               Foreground="White"
+                               HorizontalAlignment="Center"
+                               FontWeight="Bold"/>
+                    <Label Content="Doanh thu theo ngày"
+                           Foreground="White"
+                           HorizontalAlignment="Center"
+                           FontSize="16"
+                           FontWeight="Bold"/>
                 </StackPanel>
             </Border>
+
             <Border Background="#9CC6DB" Margin="5" CornerRadius="8">
                 <StackPanel VerticalAlignment="Center">
-                    <TextBlock Text="0" FontSize="32" Foreground="White" HorizontalAlignment="Center" FontWeight="Bold"/>
-                    <Label Content="Doanh thu theo tháng" Foreground="White" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding RevenueByMonth}"
+                               FontSize="32"
+                               Foreground="White"
+                               HorizontalAlignment="Center"
+                               FontWeight="Bold"/>
+                    <Label Content="Doanh thu theo tháng"
+                           Foreground="White"
+                           HorizontalAlignment="Center"
+                           FontSize="16"
+                           FontWeight="Bold"/>
                 </StackPanel>
             </Border>
         </UniformGrid>
 
         <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-            <Grid Grid.Column="0" Margin="10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Margin="0,0,0,10">
+                <Label Content="Chọn ngày thống kê"
+                       FontSize="18"
+                       FontWeight="Bold"
+                       FontFamily="Javanese Text"/>
 
-                <StackPanel Grid.Row="0">
-                    <Label Content="Xem thống kê theo tuần" FontSize="18" FontWeight="Bold" FontFamily="Javanese Text"/>
-                    <StackPanel Orientation="Horizontal" Margin="0,5">
-                        <TextBox Width="180" Height="30" VerticalContentAlignment="Center"/>
-                        <Button Content="Xác nhận" Width="100" Margin="10,0,0,0" Command="{Binding LoadWeeklyCommand}" Background="#FCF6D9" FontWeight="Bold"/>
-                    </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <DatePicker Width="180"
+                                SelectedDate="{Binding SelectedDate}"
+                                Margin="0,0,10,0"/>
+
+                    <Button Content="Xác nhận"
+                            Width="120"
+                            Command="{Binding LoadAllStatisticCommand}"
+                            Background="#FCF6D9"
+                            FontWeight="Bold"/>
                 </StackPanel>
+            </StackPanel>
 
-                <lvc:CartesianChart Grid.Row="1" Series="{Binding RevenueByDaySeries}" 
-                                    LegendLocation="Bottom" Margin="0,10,0,20">
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <lvc:CartesianChart Grid.Column="0"
+                                    Series="{Binding RevenueByDaySeries}"
+                                    LegendLocation="Bottom"
+                                    Margin="10">
                     <lvc:CartesianChart.AxisX>
-                        <lvc:Axis Title="Thứ" Labels="{Binding Days}">
-                            <lvc:Axis.Separator>
-                                <lvc:Separator Step="1" IsEnabled="False"/>
-                            </lvc:Axis.Separator>
-                        </lvc:Axis>
+                        <lvc:Axis Title="Thứ"
+                                  Labels="{Binding Days}"/>
                     </lvc:CartesianChart.AxisX>
+
                     <lvc:CartesianChart.AxisY>
-                        <lvc:Axis Title="Doanh thu (Triệu VND)" LabelFormatter="{Binding YFormatter}" MinValue="0"/>
+                        <lvc:Axis Title="Doanh thu"
+                                  LabelFormatter="{Binding YFormatter}"
+                                  MinValue="0"/>
                     </lvc:CartesianChart.AxisY>
                 </lvc:CartesianChart>
-            </Grid>
 
-            <Grid Grid.Column="1" Margin="10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-
-                <StackPanel Grid.Row="0">
-                    <Label Content="Xem thống kê theo quý" FontSize="18" FontWeight="Bold" FontFamily="Javanese Text"/>
-                    <StackPanel Orientation="Horizontal" Margin="0,5">
-                        <TextBox Width="180" Height="30" VerticalContentAlignment="Center"/>
-                        <Button Content="Xác nhận" Width="100" Margin="10,0,0,0" Command="{Binding LoadQuarterlyCommand}" Background="#FCF6D9" FontWeight="Bold"/>
-                    </StackPanel>
-                </StackPanel>
-
-                <lvc:CartesianChart Grid.Row="1" Series="{Binding ThongKeTheoQuy}" 
-                                    LegendLocation="Bottom" Margin="0,10,0,20" Loaded="CartesianChart_Loaded_3">
+                <lvc:CartesianChart Grid.Column="1"
+                                    Series="{Binding ThongKeTheoQuy}"
+                                    LegendLocation="Bottom"
+                                    Margin="10">
                     <lvc:CartesianChart.AxisX>
-                        <lvc:Axis Title="Quý" Labels="{Binding Quarters}">
-                            <lvc:Axis.Separator>
-                                <lvc:Separator Step="1" IsEnabled="False"/>
-                            </lvc:Axis.Separator>
-                        </lvc:Axis>
+                        <lvc:Axis Title="Quý"
+                                  Labels="{Binding Quarters}"/>
                     </lvc:CartesianChart.AxisX>
+
                     <lvc:CartesianChart.AxisY>
-                        <lvc:Axis Title="Doanh thu (Triệu VND)" LabelFormatter="{Binding YFormatter}" MinValue="0"/>
+                        <lvc:Axis Title="Doanh thu"
+                                  LabelFormatter="{Binding YFormatter}"
+                                  MinValue="0"/>
                     </lvc:CartesianChart.AxisY>
                 </lvc:CartesianChart>
             </Grid>
