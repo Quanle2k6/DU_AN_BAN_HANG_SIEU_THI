@@ -46,5 +46,11 @@ namespace Page_Navigation_App
             Overlay.Visibility = Visibility.Collapsed;
             OverlayContent.Content = null;
         }
+
+        public void HideOverlay()
+        {
+            OverlayContent.Content = null;
+            Overlay.Visibility = Visibility.Collapsed;
+        }
     }
 }
