@@ -166,7 +166,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -186,18 +186,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Transactions.xaml",
-              "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Transactions.xaml",
-              "RelativeDocumentMoniker": "View\\Transactions.xaml",
-              "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Transactions.xaml",
-              "RelativeToolTip": "View\\Transactions.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T20:37:47.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Transactions.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Transactions.xaml.cs",
@@ -206,8 +194,7 @@
               "RelativeToolTip": "View\\Transactions.xaml.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T08:59:10.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T08:59:10.82Z"
             },
             {
               "$type": "Document",
@@ -219,8 +206,7 @@
               "RelativeToolTip": "View\\PageCTHD.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAswCEAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T08:50:46.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T08:50:46.489Z"
             },
             {
               "$type": "Document",
@@ -232,8 +218,7 @@
               "RelativeToolTip": "View\\PageThemNhapHang.xaml.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAHEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T20:41:14.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T20:41:14.088Z"
             },
             {
               "$type": "Document",
@@ -244,8 +229,7 @@
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Orders.xaml",
               "RelativeToolTip": "View\\Orders.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T20:37:45.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T20:37:45.404Z"
             },
             {
               "$type": "Document",
@@ -253,11 +237,22 @@
               "Title": "Shipments.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Shipments.xaml",
               "RelativeDocumentMoniker": "View\\Shipments.xaml",
-              "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Shipments.xaml*",
-              "RelativeToolTip": "View\\Shipments.xaml*",
+              "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Shipments.xaml",
+              "RelativeToolTip": "View\\Shipments.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-15T19:22:33.217Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Transactions.xaml",
+              "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeDocumentMoniker": "View\\Transactions.xaml",
+              "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Transactions.xaml",
+              "RelativeToolTip": "View\\Transactions.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-15T20:37:47.024Z"
             },
             {
               "$type": "Document",
@@ -269,8 +264,7 @@
               "RelativeToolTip": "View\\Orders.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T19:25:14.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T19:25:14.266Z"
             },
             {
               "$type": "Document",
@@ -281,8 +275,7 @@
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\PageCTHD.xaml",
               "RelativeToolTip": "View\\PageCTHD.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-15T20:36:56.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T20:36:56.168Z"
             },
             {
               "$type": "Document",
@@ -293,8 +286,7 @@
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Home.xaml",
               "RelativeToolTip": "View\\Home.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-16T21:32:30.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T21:32:30.566Z"
             },
             {
               "$type": "Document",
@@ -305,8 +297,7 @@
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Customers.xaml",
               "RelativeToolTip": "View\\Customers.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-16T21:32:31.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T21:32:31.585Z"
             },
             {
               "$type": "Document",
@@ -318,8 +309,7 @@
               "RelativeToolTip": "View\\Customers.xaml.cs",
               "ViewState": "AgIAANAAAAAAAAAAAAAAAOcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T21:55:56.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T21:55:56.855Z"
             },
             {
               "$type": "Document",
