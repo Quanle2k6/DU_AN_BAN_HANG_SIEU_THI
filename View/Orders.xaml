@@ -8,29 +8,30 @@
         <vm:OrderVM/>
     </UserControl.DataContext>
 
-    <Grid Margin="30">
+    <Grid Margin="24">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Margin="0,0,0,25">
+        <!-- Header -->
+        <Grid Grid.Row="0" Margin="0,0,0,18">
             <TextBlock Text="Chi tiết hoá đơn"
-                       FontSize="34"
+                       FontSize="30"
                        FontWeight="Bold"
                        Foreground="#5A7BD8"/>
 
             <Border HorizontalAlignment="Right"
-                    CornerRadius="20"
+                    CornerRadius="18"
                     Background="White"
-                    Padding="10,4">
+                    Padding="8,4">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Images/find.png"
-                           Width="20"
-                           Height="20"
-                           Margin="0,0,8,0"/>
-                    <TextBox Width="230"
+                           Width="18"
+                           Height="18"
+                           Margin="0,0,6,0"/>
+                    <TextBox Width="210"
                              BorderThickness="0"
                              VerticalContentAlignment="Center"
                              Text="Tìm kiếm theo mã hoá đơn"/>
@@ -38,11 +39,12 @@
             </Border>
         </Grid>
 
+        <!-- Create order -->
         <Border Grid.Row="1"
                 Background="White"
                 CornerRadius="20"
-                Padding="30"
-                Margin="0,0,0,25">
+                Padding="22"
+                Margin="0,0,0,16">
 
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -50,33 +52,45 @@
                     <ColumnDefinition Width="3*"/>
                 </Grid.ColumnDefinitions>
 
-                <StackPanel Grid.Column="0" Margin="0,0,30,0">
-                    <TextBlock Text="Tạo hoá đơn mới"
-                               FontSize="22"
-                               FontWeight="Bold"
-                               Margin="0,0,0,20"/>
+                <StackPanel Grid.Column="0" Margin="0,0,24,0">
+                    <Border Background="#5A7BD8"
+                            CornerRadius="12"
+                            Padding="10"
+                            Margin="0,0,0,14">
+                        <TextBlock Text="Tạo hoá đơn mới"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="White"/>
+                    </Border>
 
                     <TextBlock Text="Tên khách hàng"/>
-                    <TextBox Height="36" Margin="0,6,0,14"/>
+                    <TextBox Height="32" Margin="0,6,0,10"/>
 
                     <TextBlock Text="Địa chỉ"/>
-                    <TextBox Height="36" Margin="0,6,0,14"/>
+                    <TextBox Height="32" Margin="0,6,0,10"/>
 
                     <TextBlock Text="Số điện thoại"/>
-                    <TextBox Height="36"/>
+                    <TextBox Height="32"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
-                    <TextBlock Text="Danh sách mặt hàng"
-                               FontSize="22"
-                               FontWeight="Bold"
-                               Margin="0,0,0,15"/>
+                    <Border Background="#41A67E"
+                            CornerRadius="12"
+                            Padding="10"
+                            Margin="0,0,0,10">
+                        <TextBlock Text="Danh sách mặt hàng"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="White"/>
+                    </Border>
 
                     <Border CornerRadius="12"
                             BorderBrush="#D0D7E2"
-                            BorderThickness="1">
+                            BorderThickness="1"
+                            Background="#FAFAFA"
+                            Padding="4">
 
-                        <DataGrid Height="190"
+                        <DataGrid Height="150"
                                   AutoGenerateColumns="False"
                                   CanUserAddRows="True"
                                   CanUserDeleteRows="True"
@@ -84,46 +98,64 @@
                                   RowHeight="34"
                                   HeadersVisibility="Column"
                                   GridLinesVisibility="None"
-                                  IsReadOnly="False">
+                                  IsReadOnly="False"
+                                  Background="Transparent">
+
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader">
+                                    <Setter Property="Background" Value="#EEF2F7"/>
+                                    <Setter Property="Foreground" Value="#334155"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                    <Setter Property="Height" Value="36"/>
+                                </Style>
+
+                                <Style TargetType="DataGridRow">
+                                    <Setter Property="Background" Value="White"/>
+                                    <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                                    <Setter Property="BorderBrush" Value="#E5E7EB"/>
+                                </Style>
+                            </DataGrid.Resources>
 
                             <DataGrid.Columns>
                                 <DataGridComboBoxColumn Header="Sản phẩm"
                                                         Width="*"
                                                         DisplayMemberPath="TenSP"
                                                         SelectedValuePath="MaSP"
-                                                        SelectedValueBinding="{Binding MaSP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                        SelectedValueBinding="{Binding MaSP, Mode=TwoWay}"
                                                         ItemsSource="{Binding DataContext.ProductList,
                                                                               RelativeSource={RelativeSource AncestorType=UserControl}}"/>
 
                                 <DataGridTextColumn Header="Số lượng"
-                                                    Width="120"
-                                                    Binding="{Binding SoLuong, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                                    Width="110"
+                                                    Binding="{Binding SoLuong, Mode=TwoWay}"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </Border>
 
                     <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Right"
-                                Margin="0,18,0,0">
+                                Margin="0,14,0,0">
                         <Button Content="Quay lại"
-                                Width="120"
-                                Height="38"
-                                Background="#F1F1F1"
-                                Margin="0,0,12,0"/>
+                                Width="110"
+                                Height="34"
+                                Background="#E5E7EB"
+                                Margin="0,0,10,0"/>
                         <Button Content="Xác nhận"
-                                Width="140"
-                                Height="38"
+                                Width="130"
+                                Height="34"
                                 Background="#41A67E"
-                                Foreground="White"/>
+                                Foreground="White"
+                                Click="Button_Click"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>
         </Border>
 
+        <!-- Invoice info -->
         <Border Grid.Row="2"
                 Background="White"
-                CornerRadius="20"
-                Padding="25">
+                CornerRadius="18"
+                Padding="20">
 
             <Grid>
                 <Grid.RowDefinitions>
@@ -132,9 +164,9 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Text="Thông tin hoá đơn"
-                           FontSize="22"
+                           FontSize="20"
                            FontWeight="Bold"
-                           Margin="0,0,0,15"/>
+                           Margin="0,0,0,10"/>
 
                 <Border Grid.Row="1"
                         CornerRadius="12"
@@ -146,7 +178,7 @@
                               IsReadOnly="True"
                               CanUserAddRows="False"
                               GridLinesVisibility="None"
-                              RowHeight="34">
+                              RowHeight="32">
 
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="STT" Width="60" Binding="{Binding STT}"/>
@@ -169,7 +201,7 @@
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
 
-                            <DataGridTemplateColumn Header="SL" Width="80">
+                            <DataGridTemplateColumn Header="SL" Width="70">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <ItemsControl ItemsSource="{Binding MatHang}">
@@ -190,7 +222,7 @@
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
                                                     <TextBlock Text="{Binding ThanhTien, StringFormat={}{0:N0}}"
-                                                               Foreground="#2E86FF"
+                                                               Foreground="#2563EB"
                                                                FontWeight="SemiBold"/>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
