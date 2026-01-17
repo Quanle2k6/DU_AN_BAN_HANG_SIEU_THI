@@ -11,7 +11,7 @@
              HorizontalAlignment="Stretch"
              VerticalAlignment="Stretch"
              Style="{StaticResource Page_Style}"
-             Background="White">
+             >
 
     <UserControl.DataContext>
         <vm:ShipmentVM/>

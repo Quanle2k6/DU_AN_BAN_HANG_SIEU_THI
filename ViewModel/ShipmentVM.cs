@@ -27,6 +27,7 @@ namespace Page_Navigation_App.ViewModel
             {
                 _selectedDate = value;
                 OnPropertyChanged();
+                LoadAll();
             }
         }
 
@@ -52,7 +53,6 @@ namespace Page_Navigation_App.ViewModel
         }
 
         public Func<double, string> YFormatter { get; set; }
-
         public ICommand LoadAllStatisticCommand { get; set; }
 
         public ShipmentVM()
@@ -84,7 +84,6 @@ namespace Page_Navigation_App.ViewModel
             };
 
             LoadAllStatisticCommand = new RelayCommand(_ => LoadAll());
-
             LoadAll();
         }
 
@@ -167,12 +166,15 @@ namespace Page_Navigation_App.ViewModel
         {
             ThongKeTheoQuy[0].Values.Clear();
 
+            double[] revenueByQuarter = new double[4];
+
             string sql = @"
-                SELECT DATEPART(QUARTER, NgayLapHD) AS Quy, SUM(ThanhTien) AS TongTien
+                SELECT 
+                    DATEPART(QUARTER, NgayLapHD) AS Quy,
+                    SUM(ThanhTien) AS TongTien
                 FROM HOADON
                 WHERE YEAR(NgayLapHD) = @Year
-                GROUP BY DATEPART(QUARTER, NgayLapHD)
-                ORDER BY Quy";
+                GROUP BY DATEPART(QUARTER, NgayLapHD)";
 
             DataTable dt = DBConnection.ExecuteQuery(
                 sql,
@@ -181,7 +183,14 @@ namespace Page_Navigation_App.ViewModel
 
             foreach (DataRow row in dt.Rows)
             {
-                ThongKeTheoQuy[0].Values.Add(Convert.ToDouble(row["TongTien"]));
+                int quarter = Convert.ToInt32(row["Quy"]);
+                double total = row["TongTien"] == DBNull.Value ? 0 : Convert.ToDouble(row["TongTien"]);
+                revenueByQuarter[quarter - 1] = total;
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                ThongKeTheoQuy[0].Values.Add(revenueByQuarter[i]);
             }
         }
 

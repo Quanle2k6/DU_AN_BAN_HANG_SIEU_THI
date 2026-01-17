@@ -30,5 +30,11 @@ namespace Page_Navigation_App.View
             var main = (MainWindow)Application.Current.MainWindow;
             main.CloseOverlay();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var main = (MainWindow)Application.Current.MainWindow;
+            main.HideOverlay();
+        }
     }
 }
