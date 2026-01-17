@@ -67,7 +67,7 @@
             <Setter Property="Foreground" Value="#111827"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Padding" Value="10,4"/>
+            <Setter Property="Padding" Value="4,4"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
 
             <Setter Property="Template">
@@ -350,22 +350,24 @@
         <Label Content="Mã loại sản phẩm:" HorizontalAlignment="Left" Margin="5,109,0,0" VerticalAlignment="Top" Width="149" Height="31" FontWeight="Bold" FontSize="14"/>
         <Label Content="Đơn giá:" HorizontalAlignment="Left" Margin="5,152,0,0" VerticalAlignment="Top" Width="149" Height="30" FontWeight="Bold" FontSize="14"/>
 
-        <TextBox x:Name="txtMaSP" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,27,0,0" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="14" Text="Hãy nhập mã gồm 5 chữ số" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt_LostFocus"/>
+        <TextBox x:Name="txtMaSP" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,27,0,0" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="14" Text="{Binding MaSP, UpdateSourceTrigger=PropertyChanged}" Foreground="Gray"/>
         <TextBox x:Name="txtTenSP" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,68,0,0" 
-                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="Hãy nhập tên sản phẩm" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt2_LostFocus"/>
-        <TextBox x:Name="txtMaLSP" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,109,0,0" 
-                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14"  Text="Hãy nhập mã loại sản phẩm gồm 5 kí tự" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt3_LostFocus"/>
+                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="{Binding TenSP, UpdateSourceTrigger=PropertyChanged}" Foreground="Gray"/>
+        <ComboBox x:Name="cbMaLSP" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,109,0,0" 
+                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedComboBox}" VerticalContentAlignment="Center" FontSize="14"  SelectedValue="{Binding MaLSP, UpdateSourceTrigger=PropertyChanged}" Foreground="Gray" Loaded="cbMaLSP_Load"/>
         <TextBox x:Name="txtDonGia" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="172,152,0,0" 
-                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="Hãy nhập đơn giá sản phẩm" Foreground="Gray" GotFocus="txt_GotFocus" LostFocus="txt1_LostFocus"/>
+                 VerticalAlignment="Top" Width="425" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" PreviewTextInput="NumberValidationTextBox" 
+         PreviewKeyDown="txtDonGia_PreviewKeyDown"
+         Text="{Binding GiaBanString, UpdateSourceTrigger=PropertyChanged}" Foreground="Gray" TextChanged="txtDonGia_TextChanged"/>
 
-        <Button x:Name="btn_Xem" Content="Xem" HorizontalAlignment="Left" Height="40" Margin="5,215,0,0" 
-                VerticalAlignment="Top" Width="84" Style="{StaticResource ViewButton}" Click="Xem_Click"/>
+        <Button x:Name="btn_Xem" Content="Xem" HorizontalAlignment="Left" Height="40" Margin="5,212,0,0" 
+                VerticalAlignment="Top" Width="84" Style="{StaticResource ViewButton}" Command="{Binding SearchCommand}"/>
         <Button Content="Thêm" HorizontalAlignment="Left" Height="40" Margin="94,257,0,0" 
-                VerticalAlignment="Top" Width="85" Style="{StaticResource AddButton}" Grid.Column="1" Background="#FFB03BF6" Click="btnThem_Click"/>
+                VerticalAlignment="Top" Width="85" Style="{StaticResource AddButton}" Grid.Column="1" Background="#FFB03BF6" Command="{Binding AddCommand}"/>
         <Button Content="Xóa" HorizontalAlignment="Left" Height="40" Margin="187,257,0,0" 
-                VerticalAlignment="Top" Width="85" Style="{StaticResource DeleteButton}" Grid.Column="1" Click="btnXoa_Click"/>
+                VerticalAlignment="Top" Width="85" Style="{StaticResource DeleteButton}" Grid.Column="1" Command="{Binding DeleteCommand}"/>
         <Button Content="Sửa" HorizontalAlignment="Left" Height="40" Margin="279,257,0,0" 
-                VerticalAlignment="Top" Width="85" Style="{StaticResource EditButton}" Grid.Column="1" Click="btnXoa_Click"/>
+                VerticalAlignment="Top" Width="85" Style="{StaticResource EditButton}" Grid.Column="1" Command="{Binding EditCommand}"/>
 
         <TextBlock HorizontalAlignment="Left" Margin="10,311,0,0" TextWrapping="Wrap" 
                    Text="Thông tin sản phẩm" VerticalAlignment="Top" Width="162" FontSize="16" FontWeight="Bold"/>
@@ -378,6 +380,7 @@
                   Grid.ColumnSpan="2"
                   Style="{StaticResource RoundedDataGrid}"
                   ItemsSource="{Binding Products}"
+                  SelectedItem="{Binding SelectedProduct}"
                   AutoGenerateColumns="False"
                   CanUserAddRows="False"
                   IsReadOnly="True"
@@ -453,7 +456,7 @@
 
                 <DataGridTextColumn Header="Đơn giá (VNĐ)" 
                                     Width="120"
-                                    Binding="{Binding GiaBan, StringFormat='0 VNĐ'}">
+                                    Binding="{Binding GiaBan, StringFormat='{}{0:N0} VND'}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="HorizontalAlignment" Value="Right"/>
@@ -465,7 +468,7 @@
 
                 <DataGridTextColumn Header="Thành tiền (VNĐ)" 
                                     Width="150"
-                                    Binding="{Binding ThanhTien, StringFormat='0 VNĐ'}">
+                                    Binding="{Binding ThanhTien, StringFormat='{}{0:N0} VNĐ'}">
                     <DataGridTextColumn.ElementStyle>
                         <Style TargetType="TextBlock">
                             <Setter Property="HorizontalAlignment" Value="Right"/>
@@ -485,16 +488,18 @@
           VerticalAlignment="Top" 
           Width="144" Height="38" 
           Style="{StaticResource RoundedComboBox}"
-          SelectedIndex="0">
-
+          SelectedIndex="{Binding SearchTypeIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            
             <ComboBoxItem Content="Tìm kiếm theo mã" Tag="MaSP"/>
             <ComboBoxItem Content="Tìm kiếm theo tên" Tag="TenSP"/>
             <ComboBoxItem Content="Tìm kiếm theo loại" Tag="MaLSP"/>
 
         </ComboBox>
         <TextBox x:Name="txt_Search" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="38" Margin="158,260,0,0" 
-            VerticalAlignment="Top" Width="122" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Text="" Foreground="Gray"/>
-        <Button x:Name="btn_XemTatCa" Content="Xem tất cả" HorizontalAlignment="Left" Height="40" Margin="94,215,0,0" 
-            VerticalAlignment="Top" Width="129" Style="{StaticResource ViewButton}" Click="XemTatCa_Click"/>
+            VerticalAlignment="Top" Width="122" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" FontSize="14" Foreground="Gray" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button x:Name="btn_XemTatCa" Content="Xem tất cả" HorizontalAlignment="Left" Height="40" Margin="94,212,0,0 " 
+            VerticalAlignment="Top" Width="129" Style="{StaticResource ViewButton}" Command="{Binding ViewAllCommand}"/>
+        <Button x:Name="btn_XoaDuLieu" Content="Xoá dữ liệu nhập" HorizontalAlignment="Left" Height="40" Margin="210,212,0,0" 
+            VerticalAlignment="Top" Width="154" Style="{StaticResource ViewButton}" Command="{Binding ClearCommand}" Grid.Column="1"/>
     </Grid>
 </UserControl>

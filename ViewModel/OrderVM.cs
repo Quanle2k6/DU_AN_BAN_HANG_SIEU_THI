@@ -45,7 +45,7 @@ namespace Page_Navigation_App.ViewModel
         public ObservableCollection<HoaDonView> Orders { get; set; }
 
         private string connStr =
-            @"Server=(localdb)\MSSQLLocalDB;Database=QLST1;Integrated Security=True;";
+            @"Server=HP_DEVICE;Database=QLBH;Integrated Security=True;";
 
         public OrderVM()
         {

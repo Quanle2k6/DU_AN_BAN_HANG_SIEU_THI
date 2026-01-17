@@ -132,7 +132,7 @@
                     <StackPanel VerticalAlignment="Center">
                         <Image Source="/Images/sale.jpg"
                                Style="{StaticResource IconStyle}"/>
-                        <TextBlock Text="15.000.000" 
+                        <TextBlock  Loaded="txtDoanhSo_Load"
                                    Style="{StaticResource StatNumberStyle}"/>
                         <TextBlock Text="Doanh Số Hằng Ngày" 
                                    Style="{StaticResource StatTitleStyle}"/>
@@ -154,7 +154,7 @@
                     <StackPanel VerticalAlignment="Center">
                         <Image Source="/Images/hop.jpg" 
                                Style="{StaticResource IconStyle}"/>
-                        <TextBlock Text="50" 
+                        <TextBlock  Loaded="txtSanPham_Load"
                                    Style="{StaticResource StatNumberStyle}"/>
                         <TextBlock Text="Tổng Lượng Sản Phẩm" 
                                    Style="{StaticResource StatTitleStyle}"/>
@@ -177,7 +177,7 @@
                     <StackPanel VerticalAlignment="Center">
                         <Image Source="/Images/hopq.jpg" 
                                Style="{StaticResource IconStyle}"/>
-                        <TextBlock Text="285" 
+                        <TextBlock  Loaded="txtHangTon_Load"
                                    Style="{StaticResource StatNumberStyle}"/>
                         <TextBlock Text="Hàng Sẵn Trong Kho" 
                                    Style="{StaticResource StatTitleStyle}"/>
@@ -200,7 +200,7 @@
                     <StackPanel VerticalAlignment="Center">
                         <Image Source="/Images/hhh.jpg" 
                                Style="{StaticResource IconStyle}"/>
-                        <TextBlock Text="5" 
+                        <TextBlock Loaded="txtSanPhamThietYeu_Load"
                                    Style="{StaticResource StatNumberStyle}"/>
                         <TextBlock Text="Sản Phẩm Thiết Yếu" 
                                    Style="{StaticResource StatTitleStyle}"/>
