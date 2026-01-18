@@ -33,7 +33,9 @@
 
             <Grid Margin="0,0,72,0">
                 <Border Background="#213448"
-                        CornerRadius="20,0,0,20" HorizontalAlignment="Left" Width="578" />
+                        CornerRadius="20,0,0,20" HorizontalAlignment="Left" Width="578" >
+                    <Image Margin="46,34,402,597" Source="/Images/logo.png" Stretch="Fill"/>
+                </Border>
 
                 <StackPanel Height="400" Width="228">
 

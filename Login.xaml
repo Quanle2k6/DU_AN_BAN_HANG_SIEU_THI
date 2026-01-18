@@ -82,8 +82,9 @@
                 <Border.Effect>
                     <DropShadowEffect BlurRadius="20" ShadowDepth="0" Opacity="0.5"/>
                 </Border.Effect>
-
                 <StackPanel Margin="40,30,40,30">
+                    <Image Source="/Images/logo.png" Height="54" Width="156" 
+                           />
                     <TextBlock Text="ĐĂNG NHẬP" Foreground="White" FontSize="30" 
                                FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30"/>
 
