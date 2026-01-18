@@ -15,6 +15,7 @@
     <None Remove="Images\1486564407-plus-green_81521.png.crdownload" />
     <None Remove="Images\1486564411-checkmark_81522.png" />
     <None Remove="Images\bin-file.png" />
+    <None Remove="Images\Cart.png" />
     <None Remove="Images\check-mark.png" />
     <None Remove="Images\check.png" />
     <None Remove="Images\checklist.png" />
@@ -28,6 +29,7 @@
     <None Remove="Images\hhh.jpg" />
     <None Remove="Images\hhh.png" />
     <None Remove="Images\home.jpg" />
+    <None Remove="Images\Home.png" />
     <None Remove="Images\home_page.png" />
     <None Remove="Images\hop.jpg" />
     <None Remove="Images\hop.png" />
@@ -45,7 +47,10 @@
     <None Remove="Images\minuscirclehd_106108.png.crdownload" />
     <None Remove="Images\order_page.png" />
     <None Remove="Images\plus.png" />
+    <None Remove="Images\Product.png" />
     <None Remove="Images\product_page.png" />
+    <None Remove="Images\Receipt.png" />
+    <None Remove="Images\Report.png" />
     <None Remove="Images\sale.jpg" />
     <None Remove="Images\sale.png" />
     <None Remove="Images\search.png" />
@@ -55,14 +60,15 @@
     <None Remove="Images\shutdown_mo.png" />
     <None Remove="Images\supermarket.webp" />
     <None Remove="Images\transaction_page.png" />
+    <None Remove="Images\Transport.png" />
     <None Remove="Images\trash.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\1486564407-plus-green_81521.png.crdownload">
+    <Resource Include="Images\1486564411-checkmark_81522.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Images\1486564411-checkmark_81522.png">
+    <Resource Include="Images\Cart.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\check-mark.png">
@@ -90,6 +96,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\home.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Home.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\hop.jpg">
@@ -132,6 +141,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\plus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Product.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Receipt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Report.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\sale.jpg">
@@ -192,6 +210,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\transaction_page.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Transport.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\trash.png">

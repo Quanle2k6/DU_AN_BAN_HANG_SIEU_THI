@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|d:\\uit\\du_an_ban_hang\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|d:\\uit\\du_an_ban_hang\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -28,10 +32,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|d:\\uit\\du_an_ban_hang\\database\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:database\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|d:\\uit\\du_an_ban_hang\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|d:\\uit\\du_an_ban_hang\\view\\pagethemnhaphang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,7 +141,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 37,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -166,30 +166,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Microsoft.WinFX.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
-              "ViewState": "AgIAADcCAAAAAAAAAAAqwMQCAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-01-18T09:22:37.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PageThemNhapHang.xaml.cs",
-              "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\View\\PageThemNhapHang.xaml.cs",
-              "RelativeDocumentMoniker": "View\\PageThemNhapHang.xaml.cs",
-              "ToolTip": "D:\\UIT\\DU_AN_BAN_HANG\\View\\PageThemNhapHang.xaml.cs",
-              "RelativeToolTip": "View\\PageThemNhapHang.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T08:43:01.595Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -243,6 +219,42 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\UIT\\DU_AN_BAN_HANG\\MainWindow.xaml*",
+              "RelativeToolTip": "MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-10T17:01:17.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PageThemNhapHang.xaml.cs",
+              "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\View\\PageThemNhapHang.xaml.cs",
+              "RelativeDocumentMoniker": "View\\PageThemNhapHang.xaml.cs",
+              "ToolTip": "D:\\UIT\\DU_AN_BAN_HANG\\View\\PageThemNhapHang.xaml.cs",
+              "RelativeToolTip": "View\\PageThemNhapHang.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-18T08:43:01.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.WinFX.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\Sdks\\Microsoft.NET.Sdk.WindowsDesktop\\targets\\Microsoft.WinFX.targets",
+              "ViewState": "AgIAADcCAAAAAAAAAAAqwMQCAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-01-18T09:22:37.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
               "Title": "OrderVM.cs",
               "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\ViewModel\\OrderVM.cs",
@@ -268,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Login.xaml",
               "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\Login.xaml",
               "RelativeDocumentMoniker": "Login.xaml",
@@ -420,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "App.config",
               "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\Database\\App.config",
               "RelativeDocumentMoniker": "Database\\App.config",
@@ -445,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PageModel.cs",
               "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\Model\\PageModel.cs",
               "RelativeDocumentMoniker": "Model\\PageModel.cs",
@@ -470,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\Utilities\\RelayCommand.cs",
               "RelativeDocumentMoniker": "Utilities\\RelayCommand.cs",
@@ -507,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Home.xaml",
               "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\View\\Home.xaml",
               "RelativeDocumentMoniker": "View\\Home.xaml",
@@ -543,19 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\UIT\\DU_AN_BAN_HANG\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-01-10T17:01:17.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\UIT\\DU_AN_BAN_HANG\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",

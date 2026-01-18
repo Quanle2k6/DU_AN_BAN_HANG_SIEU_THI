@@ -164,7 +164,7 @@
                 <Border Grid.Column="2" 
                        Style="{StaticResource StatCardStyle}"
                        Background="{StaticResource BlueGradient}"
-                        MouseLeftButtonDown="ChangeIntoHangTonPage" 
+                        MouseLeftButtonDown="ChangeIntoProductPage" 
                         Cursor="Hand">
                     
                     <Border.Effect>
