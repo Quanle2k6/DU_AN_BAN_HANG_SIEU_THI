@@ -11,7 +11,7 @@ namespace Page_Navigation_App.View
     public partial class PageThemNhapHang : UserControl
     {
         ObservableCollection<ChiTietNhapHangModel> danhSachCT;
-        string connStr = @"Server=(localdb)\MSSQLLocalDB;Database=DOAN;Integrated Security=True;";
+        string connStr = @"Server=(localdb)\MSSQLLocalDB;Database=QLBH;Integrated Security=True;";
 
         public PageThemNhapHang()
         {

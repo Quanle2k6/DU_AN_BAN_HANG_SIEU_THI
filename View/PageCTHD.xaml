@@ -4,84 +4,63 @@
              Background="#F5F7FB">
 
     <Grid Margin="20">
-
         <Border Background="White"
                 CornerRadius="18"
                 Padding="20">
 
             <Grid>
-
                 <Grid.RowDefinitions>
                     <RowDefinition Height="80"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <!-- Header -->
+                <!-- HEADER -->
                 <Border Grid.Row="0"
                         Background="#213448"
                         CornerRadius="14"
                         Padding="15">
-
                     <TextBlock Text="Tạo hoá đơn thành công"
                                FontSize="32"
                                FontWeight="Bold"
-                               Foreground="White"
-                               VerticalAlignment="Center"/>
+                               Foreground="White"/>
                 </Border>
 
-                <!-- Content -->
+                <!-- CONTENT -->
                 <Grid Grid.Row="1" Margin="0,20,0,0">
-
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="2*"/>
                         <ColumnDefinition Width="3*"/>
                     </Grid.ColumnDefinitions>
 
-                    <!-- Left -->
+                    <!-- KHÁCH HÀNG -->
                     <Border Grid.Column="0"
                             Background="#F1F5F9"
                             CornerRadius="14"
                             Padding="16"
                             Margin="0,0,15,0">
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-
+                        <StackPanel>
                             <TextBlock Text="Thông tin khách hàng"
                                        FontSize="18"
                                        FontWeight="Bold"
                                        Margin="0,0,0,12"/>
 
-                            <StackPanel Grid.Row="1" Margin="0,6,0,0">
-                                <TextBlock Text="Mã khách hàng" FontWeight="Bold"/>
-                                <TextBox Height="32"/>
-                            </StackPanel>
+                            <TextBlock Text="Mã hóa đơn"/>
+                            <TextBox Text="{Binding MaHD}" IsReadOnly="True"/>
 
-                            <StackPanel Grid.Row="2" Margin="0,10,0,0">
-                                <TextBlock Text="Tên khách hàng" FontWeight="Bold"/>
-                                <TextBox Height="32"/>
-                            </StackPanel>
+                            <TextBlock Text="Tên khách hàng" Margin="0,10,0,0"/>
+                            <TextBox Text="{Binding TenKH}" IsReadOnly="True"/>
 
-                            <StackPanel Grid.Row="3" Margin="0,10,0,0">
-                                <TextBlock Text="Số điện thoại" FontWeight="Bold"/>
-                                <TextBox Height="32"/>
-                            </StackPanel>
-
-                        </Grid>
+                            <TextBlock Text="Số điện thoại" Margin="0,10,0,0"/>
+                            <TextBox Text="{Binding SDT}" IsReadOnly="True"/>
+                        </StackPanel>
                     </Border>
 
-                    <!-- Right -->
+                    <!-- CHI TIẾT -->
                     <Border Grid.Column="1"
                             Background="#F1F5F9"
                             CornerRadius="14"
                             Padding="16">
-
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -91,78 +70,48 @@
 
                             <TextBlock Text="Danh sách mặt hàng"
                                        FontSize="18"
-                                       FontWeight="Bold"
-                                       Margin="0,0,0,12"/>
+                                       FontWeight="Bold"/>
 
-                            <!-- LISTVIEW GIỮ NGUYÊN -->
-                            <Border Grid.Row="1"
-                                    Background="White"
-                                    CornerRadius="12"
-                                    Padding="8">
+                            <ListView Grid.Row="1"
+                                      ItemsSource="{Binding ChiTietHoaDon}">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Header="Tên SP" Width="200"
+                                                        DisplayMemberBinding="{Binding TenSP}"/>
+                                        <GridViewColumn Header="SL" Width="60"
+                                                        DisplayMemberBinding="{Binding SoLuong}"/>
+                                        <GridViewColumn Header="Đơn giá" Width="100"
+                                                        DisplayMemberBinding="{Binding DonGia}"/>
+                                        <GridViewColumn Header="Thành tiền" Width="120"
+                                                        DisplayMemberBinding="{Binding ThanhTien}"/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
 
-                                <ListView Height="200">
-                                    <ListView.View>
-                                        <GridView>
-                                            <GridViewColumn Header="Danh sách mặt hàng" Width="220"/>
-                                            <GridViewColumn Header="Số lượng" Width="80"/>
-                                        </GridView>
-                                    </ListView.View>
-                                </ListView>
-
-                            </Border>
-
-                            <!-- Total -->
-                            <StackPanel Grid.Row="2" Margin="0,14,0,0">
-                                <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
-                                    <TextBlock Text="Tổng tiền:" Width="120" FontWeight="Bold"/>
-                                    <TextBox Width="150" Height="30"/>
-                                </StackPanel>
-
-                                <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
-                                    <TextBlock Text="Giảm giá:" Width="120" FontWeight="Bold"/>
-                                    <TextBox Width="150" Height="30"/>
-                                </StackPanel>
-
-                                <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
-                                    <TextBlock Text="Thành tiền:" Width="120" FontWeight="Bold"/>
-                                    <TextBox Width="150" Height="30"/>
-                                </StackPanel>
+                            <StackPanel Grid.Row="2"
+                                        Orientation="Horizontal"
+                                        HorizontalAlignment="Right">
+                                <TextBlock Text="Tổng tiền:" FontWeight="Bold"/>
+                                <TextBox Width="160"
+                                         Margin="10,0,0,0"
+                                         Text="{Binding TongTien}"
+                                         IsReadOnly="True"/>
                             </StackPanel>
-
                         </Grid>
                     </Border>
-
                 </Grid>
 
-                <!-- Footer -->
-                <Grid Grid.Row="2" Margin="0,15,0,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
+                <!-- FOOTER -->
+                <Grid Grid.Row="2">
+                    <TextBlock Text="{Binding NgayLap,
+                        StringFormat=Hóa đơn tạo lúc {0:dd/MM/yyyy HH:mm}}"/>
 
-                    <StatusBar Grid.Column="0" Background="Transparent">
-                        <StatusBarItem>
-                            <TextBlock x:Name="txtInvoiceTime"
-                                       FontSize="15"
-                                       FontWeight="Bold"
-                                       Text="Hóa đơn được tạo vào:"/>
-                        </StatusBarItem>
-                    </StatusBar>
-
-                    <Button Grid.Column="1"
-                            Content="OK"
-                            Width="100"
-                            Height="36"
-                            Background="#22C55E"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            BorderThickness="0"
-                            Cursor="Hand" Click="Button_Click_1"/>
+                    <Button Content="OK"
+                            HorizontalAlignment="Right"
+                            Width="110"
+                            Click="Button_Click"/>
                 </Grid>
-
             </Grid>
         </Border>
-
     </Grid>
 </UserControl>

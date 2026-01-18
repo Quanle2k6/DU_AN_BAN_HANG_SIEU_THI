@@ -13,7 +13,6 @@
                 <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
 
-          
             <Border Grid.Row="0" Background="#203A52">
                 <TextBlock Text="THÊM NHẬP HÀNG"
                            Foreground="White"
@@ -26,7 +25,7 @@
             <ScrollViewer Grid.Row="1">
                 <StackPanel Margin="30">
 
-                    <TextBlock Text="Thông tin lô nhập"
+                    <TextBlock Text="Thông tin nhập hàng"
                                FontSize="20"
                                FontWeight="Bold"
                                Margin="0,0,0,10"/>
@@ -43,28 +42,32 @@
                         </Grid.RowDefinitions>
 
                         <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,20,10">
-                            <TextBlock Text="Mã lô"/>
+                            <TextBlock Text="Mã nhập hàng"/>
                             <TextBox x:Name="txtMaNH" Height="32"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,0,0,10">
-                            <TextBlock Text="Ngày nhập"/>
+                            <TextBlock Text="Ngày nhập hàng"/>
                             <DatePicker x:Name="dpNgayNhap" Height="32"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="1" Grid.Column="0" Margin="0,0,20,10">
-                            <TextBlock Text="Mã NCC"/>
-                            <TextBox x:Name="txtMaNCC" Height="32"/>
+                            <TextBlock Text="Nhà cung cấp"/>
+                            <ComboBox x:Name="txtMaNCC"
+                                      Height="32"
+                                      ItemsSource="{Binding DanhSachNhaCungCap}"
+                                      DisplayMemberPath="TenNCC"
+                                      SelectedValuePath="MaNCC"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="1" Grid.Column="1" Margin="0,0,0,10">
-                            <TextBlock Text="Tên NCC"/>
+                            <TextBlock Text="Tên nhà cung cấp"/>
                             <TextBox x:Name="txtTenNCC" Height="32"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="2" Grid.Column="0" Margin="0,0,20,0">
-                            <TextBlock Text="SĐT"/>
-                            <TextBox x:Name="txtSDT" Height="32"/>
+                            <TextBlock Text="Số tài khoản"/>
+                            <TextBox x:Name="txtSTK" Height="32"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="2" Grid.Column="1">
@@ -107,7 +110,6 @@
                 </StackPanel>
             </ScrollViewer>
 
-            <!-- FOOTER -->
             <StackPanel Grid.Row="2"
                         Orientation="Horizontal"
                         HorizontalAlignment="Right"
@@ -133,4 +135,3 @@
         </Grid>
     </Border>
 </UserControl>
-
