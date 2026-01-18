@@ -101,7 +101,7 @@
                               Command="{Binding SettingsCommand}"
                               IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=SettingVM, Mode=OneWay}">
                         <Grid>
-                            <Image Source="/Images/img_setting.png" Style="{StaticResource Image_Style}" />
+                            <Image Source="/Images/Setting.png" Style="{StaticResource Image_Style}" />
                             <TextBlock Text="Cài đặt" Style="{StaticResource Text_Style}" />
                         </Grid>
                     </Menu:Btn>
