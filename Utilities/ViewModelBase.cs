@@ -7,10 +7,9 @@ namespace Page_Navigation_App.Utilities
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public void OnPropertyChanged([CallerMemberName] string propName = null)
+        protected void OnPropertyChanged([CallerMemberName] string propName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
         }
     }
 }
-

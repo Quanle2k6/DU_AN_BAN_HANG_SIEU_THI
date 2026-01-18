@@ -79,7 +79,7 @@
 
             <Button x:Name="btnXoa" Content="🗑 Xoá"
                     Background="{StaticResource DangerColor}"
-                    Style="{StaticResource ModernButton}"/>
+                    Style="{StaticResource ModernButton}" Click="btnXoa_Click"/>
         </StackPanel>
 
       

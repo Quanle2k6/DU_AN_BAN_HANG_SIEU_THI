@@ -1,5 +1,6 @@
 ﻿using Page_Navigation_App.ViewModel;
 using System;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,7 +10,8 @@ namespace Page_Navigation_App.View
     public partial class Orders : UserControl
     {
         private readonly string connectionString =
-            "Server=HP_DEVICE;Database=QLBH;Trusted_Connection=True;";
+    ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
 
         public Orders()
         {
@@ -44,7 +46,8 @@ namespace Page_Navigation_App.View
 
             try
             {
-                // ================== TẠO KHÁCH HÀNG ==================
+               
+
                 string sqlMaKH = @"
                     SELECT ISNULL(MAX(CAST(SUBSTRING(MaKH, 3, LEN(MaKH)) AS INT)), 0) + 1
                     FROM KHACHHANG";
@@ -68,7 +71,8 @@ namespace Page_Navigation_App.View
                     cmd.ExecuteNonQuery();
                 }
 
-                // ================== TẠO HÓA ĐƠN ==================
+               
+
                 string sqlMaHD = @"
                     SELECT ISNULL(MAX(CAST(SUBSTRING(MaHD, 3, LEN(MaHD)) AS INT)), 0) + 1
                     FROM HOADON";
@@ -92,12 +96,14 @@ namespace Page_Navigation_App.View
                     cmd.ExecuteNonQuery();
                 }
 
-                // ================== CHI TIẾT HÓA ĐƠN ==================
+               
+
                 decimal tongTien = 0;
 
                 foreach (var item in vm.OrderDetails)
                 {
-                    // 🔥 QUAN TRỌNG: dùng đúng property đang bind trên DataGrid
+                   
+
                     if (string.IsNullOrWhiteSpace(item.TenSP) || item.SoLuong <= 0)
                         continue;
 
@@ -137,7 +143,8 @@ namespace Page_Navigation_App.View
                     tongTien += donGia * item.SoLuong;
                 }
 
-                // ================== UPDATE TỔNG TIỀN ==================
+             
+
                 string sqlUpdate = @"
                     UPDATE HOADON
                     SET ThanhTien = @ThanhTien
@@ -159,9 +166,22 @@ namespace Page_Navigation_App.View
                 return;
             }
 
-            // ================== MỞ CHI TIẾT HÓA ĐƠN ==================
+           
             var main = (MainWindow)Application.Current.MainWindow;
             main.ShowOverlay(new PageCTHD(maHD));
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            if (DataContext is OrderVM vm)
+            {
+                if (vm.DeleteOrderCommand.CanExecute(null))
+                {
+                    vm.DeleteOrderCommand.Execute(null);
+                }
+            }
+        }
+
     }
 }
