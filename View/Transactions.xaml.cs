@@ -30,7 +30,14 @@ namespace Page_Navigation_App.View
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+     
+        private void btnThem_Click(object sender, RoutedEventArgs e)
+        {
+            var main = (MainWindow)Application.Current.MainWindow;
+            main.ShowOverlay(new PageThemNhapHang());
+        }
+
+        private void btnChinhSua_Click(object sender, RoutedEventArgs e)
         {
             var main = (MainWindow)Application.Current.MainWindow;
             main.ShowOverlay(new PageThemNhapHang());

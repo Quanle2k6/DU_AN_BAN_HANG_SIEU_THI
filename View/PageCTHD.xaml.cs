@@ -1,37 +1,124 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Page_Navigation_App.Model;
+using System;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Page_Navigation_App.View
 {
-    /// <summary>
-    /// Interaction logic for PageCTHD.xaml
-    /// </summary>
-    public partial class PageCTHD : UserControl
+    public partial class PageCTHD : UserControl, INotifyPropertyChanged
     {
-        public PageCTHD()
+        private string connectionString =
+            @"Server=(localdb)\MSSQLLocalDB;Database=QLBH;Trusted_Connection=True;";
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(string prop)
+            => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+
+        // ===== PROPERTY BINDING =====
+        private string _maHD;
+        public string MaHD
+        {
+            get => _maHD;
+            set { _maHD = value; OnPropertyChanged(nameof(MaHD)); }
+        }
+
+        private string _tenKH;
+        public string TenKH
+        {
+            get => _tenKH;
+            set { _tenKH = value; OnPropertyChanged(nameof(TenKH)); }
+        }
+
+        private string _sdt;
+        public string SDT
+        {
+            get => _sdt;
+            set { _sdt = value; OnPropertyChanged(nameof(SDT)); }
+        }
+
+        private DateTime _ngayLap;
+        public DateTime NgayLap
+        {
+            get => _ngayLap;
+            set { _ngayLap = value; OnPropertyChanged(nameof(NgayLap)); }
+        }
+
+        private decimal _tongTien;
+        public decimal TongTien
+        {
+            get => _tongTien;
+            set { _tongTien = value; OnPropertyChanged(nameof(TongTien)); }
+        }
+
+        // 🔥 COLLECTION BINDING
+        public ObservableCollection<CTHD> ChiTietHoaDon { get; set; }
+
+        // ===== CONSTRUCTOR =====
+        public PageCTHD(string maHD)
         {
             InitializeComponent();
+            ChiTietHoaDon = new ObservableCollection<CTHD>();
+            DataContext = this;
+            MaHD = maHD;
+            LoadHoaDon();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        // ===== LOAD DATA =====
+        private void LoadHoaDon()
         {
-            var main = (MainWindow)Application.Current.MainWindow;
-            main.CloseOverlay();
+            using SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+
+            // ===== THÔNG TIN HÓA ĐƠN =====
+            string sqlHD = @"
+                SELECT kh.TenKH, kh.SDT, hd.NgayLapHD, hd.ThanhTien
+                FROM HOADON hd
+                JOIN KHACHHANG kh ON hd.MaKH = kh.MaKH
+                WHERE hd.MaHD = @MaHD";
+
+            using SqlCommand cmdHD = new SqlCommand(sqlHD, conn);
+            cmdHD.Parameters.AddWithValue("@MaHD", MaHD);
+
+            using SqlDataReader rd = cmdHD.ExecuteReader();
+            if (rd.Read())
+            {
+                TenKH = rd["TenKH"].ToString();
+                SDT = rd["SDT"].ToString();
+                NgayLap = Convert.ToDateTime(rd["NgayLapHD"]);
+                TongTien = Convert.ToDecimal(rd["ThanhTien"]);
+            }
+            rd.Close();
+
+            // ===== CHI TIẾT HÓA ĐƠN =====
+            ChiTietHoaDon.Clear(); // 🔥 TRÁNH LOAD TRÙNG
+
+            string sqlCT = @"
+                SELECT sp.TenSP, ct.SoLuongMua, ct.DonGiaSP
+                FROM CTHD ct
+                JOIN SANPHAM sp ON ct.MaSP = sp.MaSP
+                WHERE ct.MaHD = @MaHD";
+
+            using SqlCommand cmdCT = new SqlCommand(sqlCT, conn);
+            cmdCT.Parameters.AddWithValue("@MaHD", MaHD);
+
+            using SqlDataReader rdCT = cmdCT.ExecuteReader();
+            while (rdCT.Read())
+            {
+                ChiTietHoaDon.Add(new CTHD
+                {
+                    TenSP = rdCT["TenSP"].ToString(),
+                    SoLuong = Convert.ToInt32(rdCT["SoLuongMua"]),
+                    DonGia = Convert.ToDecimal(rdCT["DonGiaSP"])
+                });
+            }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        // ===== CLOSE OVERLAY =====
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             var main = (MainWindow)Application.Current.MainWindow;
             main.HideOverlay();

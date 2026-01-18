@@ -64,13 +64,13 @@
                     </Border>
 
                     <TextBlock Text="Tên khách hàng"/>
-                    <TextBox Height="32" Margin="0,6,0,10"/>
+                    <TextBox x:Name="txtKH" Height="32" Margin="0,6,0,10"/>
 
                     <TextBlock Text="Địa chỉ"/>
-                    <TextBox Height="32" Margin="0,6,0,10"/>
+                    <TextBox x:Name="txtDiaChi" Height="32" Margin="0,6,0,10"/>
 
                     <TextBlock Text="Số điện thoại"/>
-                    <TextBox Height="32"/>
+                    <TextBox x:Name="txtSDT" Height="32"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
@@ -89,57 +89,78 @@
                             BorderThickness="1"
                             Background="#FAFAFA"
                             Padding="4">
-
-                        <DataGrid Height="150"
-                                  AutoGenerateColumns="False"
-                                  CanUserAddRows="True"
-                                  CanUserDeleteRows="True"
-                                  ItemsSource="{Binding OrderDetails}"
-                                  RowHeight="34"
-                                  HeadersVisibility="Column"
-                                  GridLinesVisibility="None"
-                                  IsReadOnly="False"
-                                  Background="Transparent">
-
-                            <DataGrid.Resources>
-                                <Style TargetType="DataGridColumnHeader">
-                                    <Setter Property="Background" Value="#EEF2F7"/>
-                                    <Setter Property="Foreground" Value="#334155"/>
-                                    <Setter Property="FontWeight" Value="Bold"/>
-                                    <Setter Property="Height" Value="36"/>
-                                </Style>
-
-                                <Style TargetType="DataGridRow">
-                                    <Setter Property="Background" Value="White"/>
-                                    <Setter Property="BorderThickness" Value="0,0,0,1"/>
-                                    <Setter Property="BorderBrush" Value="#E5E7EB"/>
-                                </Style>
-                            </DataGrid.Resources>
+                        <DataGrid ItemsSource="{Binding OrderDetails}"
+          AutoGenerateColumns="False"
+          CanUserAddRows="True"
+          IsReadOnly="False">
 
                             <DataGrid.Columns>
-                                <DataGridComboBoxColumn Header="Sản phẩm"
-                                                        Width="*"
-                                                        DisplayMemberPath="TenSP"
-                                                        SelectedValuePath="MaSP"
-                                                        SelectedValueBinding="{Binding MaSP, Mode=TwoWay}"
-                                                        ItemsSource="{Binding DataContext.ProductList,
-                                                                              RelativeSource={RelativeSource AncestorType=UserControl}}"/>
 
-                                <DataGridTextColumn Header="Số lượng"
-                                                    Width="110"
-                                                    Binding="{Binding SoLuong, Mode=TwoWay}"/>
+                                <DataGridComboBoxColumn
+    Header="Sản phẩm"
+    Width="*"
+    SelectedItemBinding="{Binding TenSP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                    <DataGridComboBoxColumn.ItemsSource>
+                                        <x:Array Type="sys:String"
+                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                                            <sys:String>Thịt bò Mỹ</sys:String>
+                                            <sys:String>Cá hồi Nauy</sys:String>
+                                            <sys:String>Nước giặt Ariel</sys:String>
+                                            <sys:String>Dầu gội Pantene</sys:String>
+                                            <sys:String>Chảo Sunhouse</sys:String>
+                                            <sys:String>Nồi cơm Sharp</sys:String>
+                                            <sys:String>Mì Hảo Hảo</sys:String>
+                                            <sys:String>Dầu ăn Simply</sys:String>
+                                            <sys:String>Sữa Vinamilk</sys:String>
+                                            <sys:String>Sữa chua TH</sys:String>
+                                            <sys:String>Choco Pie</sys:String>
+                                            <sys:String>Kẹo Haribo</sys:String>
+                                            <sys:String>Coca Cola</sys:String>
+                                            <sys:String>Bia Heineken</sys:String>
+                                            <sys:String>Rau muống</sys:String>
+                                            <sys:String>Kem đánh răng PS</sys:String>
+                                            <sys:String>Nước rửa chén</sys:String>
+                                            <sys:String>Gạo ST25</sys:String>
+                                            <sys:String>Bột giặt Omo</sys:String>
+                                            <sys:String>Bình Lock&amp;Lock</sys:String>
+                                        </x:Array>
+                                    </DataGridComboBoxColumn.ItemsSource>
+                                </DataGridComboBoxColumn>
+
+
+                                <DataGridTemplateColumn Header="Số lượng" Width="100">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding SoLuong}" 
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+
+                                    <DataGridTemplateColumn.CellEditingTemplate>
+                                        <DataTemplate>
+                                            <TextBox Text="{Binding SoLuong, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     VerticalContentAlignment="Center"
+                     HorizontalContentAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellEditingTemplate>
+                                </DataGridTemplateColumn>
+
+
+
+
                             </DataGrid.Columns>
+
+
                         </DataGrid>
+
+
+
                     </Border>
 
                     <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Right"
                                 Margin="0,14,0,0">
-                        <Button Content="Quay lại"
-                                Width="110"
-                                Height="34"
-                                Background="#E5E7EB"
-                                Margin="0,0,10,0"/>
                         <Button Content="Xác nhận"
                                 Width="130"
                                 Height="34"
