@@ -11,7 +11,7 @@ namespace Page_Navigation_App.View
     public partial class PageCTHD : UserControl, INotifyPropertyChanged
     {
         private string connectionString =
-            @"Server=(localdb)\MSSQLLocalDB;Database=QLBH;Trusted_Connection=True;";
+            "Server=HP_DEVICE;Database=QLBH;Trusted_Connection=True;";
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string prop)

@@ -130,7 +130,7 @@
                     </Border.Effect>
                     
                     <StackPanel VerticalAlignment="Center">
-                        <Image Source="/Images/sale.jpg"
+                        <Image Source="/Images/sale.png"
                                Style="{StaticResource IconStyle}"/>
                         <TextBlock  Loaded="txtDoanhSo_Load"
                                    Style="{StaticResource StatNumberStyle}"/>
@@ -152,7 +152,7 @@
                     </Border.Effect>
                 
                     <StackPanel VerticalAlignment="Center">
-                        <Image Source="/Images/hop.jpg" 
+                        <Image Source="/Images/hop.png" 
                                Style="{StaticResource IconStyle}"/>
                         <TextBlock  Loaded="txtSanPham_Load"
                                    Style="{StaticResource StatNumberStyle}"/>
@@ -175,7 +175,7 @@
                     </Border.Effect>
 
                     <StackPanel VerticalAlignment="Center">
-                        <Image Source="/Images/hopq.jpg" 
+                        <Image Source="/Images/hopq.png" 
                                Style="{StaticResource IconStyle}"/>
                         <TextBlock  Loaded="txtHangTon_Load"
                                    Style="{StaticResource StatNumberStyle}"/>
@@ -198,7 +198,7 @@
                     </Border.Effect>
 
                     <StackPanel VerticalAlignment="Center">
-                        <Image Source="/Images/hhh.jpg" 
+                        <Image Source="/Images/critical_item.png" 
                                Style="{StaticResource IconStyle}"/>
                         <TextBlock Loaded="txtSanPhamThietYeu_Load"
                                    Style="{StaticResource StatNumberStyle}"/>

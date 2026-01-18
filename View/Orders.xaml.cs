@@ -9,7 +9,7 @@ namespace Page_Navigation_App.View
     public partial class Orders : UserControl
     {
         private readonly string connectionString =
-            @"Server=(localdb)\MSSQLLocalDB;Database=QLBH;Trusted_Connection=True;";
+            "Server=HP_DEVICE;Database=QLBH;Trusted_Connection=True;";
 
         public Orders()
         {

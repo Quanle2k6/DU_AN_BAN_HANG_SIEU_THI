@@ -8,7 +8,7 @@ namespace Page_Navigation_App.ViewModel
     public class TransactionVM : Utilities.ViewModelBase
     {
         private readonly string _connectionString =
-            @"Server=(localdb)\MSSQLLocalDB;Database=QLBH;Integrated Security=True;";
+            "Server=HP_DEVICE;Database=QLBH;Integrated Security=True;";
         
         public ObservableCollection<NhapHangModel> DanhSachNhapHang { get; set; }
         public ObservableCollection<ChiTietNhapHangModel> ChiTietNhapHangs { get; set; }
