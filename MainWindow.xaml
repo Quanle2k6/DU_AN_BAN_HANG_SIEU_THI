@@ -102,7 +102,7 @@
                               IsChecked="{Binding CurrentView, Converter={StaticResource ViewToCheckedConverter}, ConverterParameter=SettingVM, Mode=OneWay}">
                         <Grid>
                             <Image Source="/Images/Setting.png" Style="{StaticResource Image_Style}" />
-                            <TextBlock Text="Cài đặt" Style="{StaticResource Text_Style}" />
+                            <TextBlock Text="Cài đặt tài khoản" Style="{StaticResource Text_Style}" />
                         </Grid>
                     </Menu:Btn>
 
