@@ -1,15 +1,17 @@
-﻿using System;
+﻿using Page_Navigation_App.Model;
+using System;
 using System.Collections.ObjectModel;
+using System.Configuration;
 using System.Data.SqlClient;
-using Page_Navigation_App.Model;
 
 namespace Page_Navigation_App.ViewModel
 {
     public class TransactionVM : Utilities.ViewModelBase
     {
         private readonly string _connectionString =
-            "Server=HP_DEVICE;Database=QLBH;Integrated Security=True;";
-        
+    ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
+
         public ObservableCollection<NhapHangModel> DanhSachNhapHang { get; set; }
         public ObservableCollection<ChiTietNhapHangModel> ChiTietNhapHangs { get; set; }
        
@@ -71,8 +73,61 @@ namespace Page_Navigation_App.ViewModel
                 });
             }
         }
+        public void XoaNhapHang()
+        {
+            if (NhapHangDangChon == null)
+            {
+                System.Windows.MessageBox.Show("Vui lòng chọn phiếu nhập cần xóa");
+                return;
+            }
 
-       
+            if (System.Windows.MessageBox.Show(
+                "Bạn có chắc muốn xóa phiếu nhập này?",
+                "Xác nhận",
+                System.Windows.MessageBoxButton.YesNo,
+                System.Windows.MessageBoxImage.Warning)
+                != System.Windows.MessageBoxResult.Yes)
+                return;
+
+            using var conn = new SqlConnection(_connectionString);
+            conn.Open();
+            using var tran = conn.BeginTransaction();
+
+            try
+            {
+               
+
+                var cmdCT = new SqlCommand(
+                    "DELETE FROM CHITIETNHAPHANG WHERE MaNH = @MaNH",
+                    conn, tran);
+                cmdCT.Parameters.AddWithValue("@MaNH", NhapHangDangChon.MaNH);
+                cmdCT.ExecuteNonQuery();
+
+                
+
+                var cmdNH = new SqlCommand(
+                    "DELETE FROM NHAPHANG WHERE MaNH = @MaNH",
+                    conn, tran);
+                cmdNH.Parameters.AddWithValue("@MaNH", NhapHangDangChon.MaNH);
+                cmdNH.ExecuteNonQuery();
+
+                tran.Commit();
+
+               
+
+                LoadDanhSachNhapHang();
+                ChiTietNhapHangs.Clear();
+
+                System.Windows.MessageBox.Show("Xóa thành công");
+            }
+            catch (Exception ex)
+            {
+                tran.Rollback();
+                System.Windows.MessageBox.Show(ex.Message);
+            }
+        }
+
+
         private void LoadChiTietNhapHang(string maNH)
         {
             ChiTietNhapHangs.Clear();

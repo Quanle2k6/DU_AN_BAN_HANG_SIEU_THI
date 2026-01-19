@@ -5,13 +5,16 @@ using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
+using System.Configuration;
+
 
 namespace Page_Navigation_App.View
 {
     public partial class PageCTHD : UserControl, INotifyPropertyChanged
     {
-        private string connectionString =
-            "Server=HP_DEVICE;Database=QLBH;Trusted_Connection=True;";
+        private readonly string connectionString =
+      ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string prop)

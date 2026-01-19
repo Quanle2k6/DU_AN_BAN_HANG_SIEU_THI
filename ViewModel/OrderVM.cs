@@ -1,6 +1,7 @@
 ﻿using Page_Navigation_App.Model;
 using System;
 using System.Collections.ObjectModel;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Input;
@@ -31,7 +32,8 @@ namespace Page_Navigation_App.ViewModel
     public class OrderVM : Utilities.ViewModelBase
     {
         private string connStr =
-            "Server=HP_DEVICE;Database=QLBH;Integrated Security=True;";
+    ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
 
         public ObservableCollection<HoaDonView> Orders { get; set; }
 
@@ -54,6 +56,8 @@ namespace Page_Navigation_App.ViewModel
             };
 
             CreateOrderCommand = new Utilities.RelayCommand(CreateOrder);
+            DeleteOrderCommand = new Utilities.RelayCommand(DeleteOrder);
+
         }
 
         // ===== LOAD HÓA ĐƠN PHÍA DƯỚI =====
@@ -164,5 +168,82 @@ namespace Page_Navigation_App.ViewModel
             OrderDetails.Clear();
             OrderDetails.Add(new SanPhamThem());
         }
+
+        private HoaDonView _selectedOrder;
+        public HoaDonView SelectedOrder
+        {
+            get => _selectedOrder;
+            set
+            {
+                _selectedOrder = value;
+                OnPropertyChanged();
+            }
+        }
+        public ICommand DeleteOrderCommand { get; }
+
+        private void DeleteOrder(object obj)
+        {
+            if (SelectedOrder == null)
+            {
+                System.Windows.MessageBox.Show(
+                    "Vui lòng chọn hóa đơn cần xóa",
+                    "Thông báo",
+                    System.Windows.MessageBoxButton.OK,
+                    System.Windows.MessageBoxImage.Warning);
+                return;
+            }
+
+            var result = System.Windows.MessageBox.Show(
+                $"Bạn có chắc muốn xóa hóa đơn {SelectedOrder.MaHD} ?",
+                "Xác nhận",
+                System.Windows.MessageBoxButton.YesNo,
+                System.Windows.MessageBoxImage.Question);
+
+            if (result != System.Windows.MessageBoxResult.Yes)
+                return;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                conn.Open();
+                SqlTransaction tran = conn.BeginTransaction();
+
+                try
+                {
+                   
+
+                    SqlCommand cmdCT = new SqlCommand(
+                        "DELETE FROM CTHD WHERE MaHD = @MaHD",
+                        conn, tran);
+                    cmdCT.Parameters.AddWithValue("@MaHD", SelectedOrder.MaHD);
+                    cmdCT.ExecuteNonQuery();
+
+                   
+
+                    SqlCommand cmdHD = new SqlCommand(
+                        "DELETE FROM HOADON WHERE MaHD = @MaHD",
+                        conn, tran);
+                    cmdHD.Parameters.AddWithValue("@MaHD", SelectedOrder.MaHD);
+                    cmdHD.ExecuteNonQuery();
+
+                    tran.Commit();
+                }
+                catch
+                {
+                    tran.Rollback();
+                    throw;
+                }
+            }
+
+           
+
+            LoadHoaDon();
+
+            System.Windows.MessageBox.Show(
+                "Xóa hóa đơn thành công",
+                "Thành công",
+                System.Windows.MessageBoxButton.OK,
+                System.Windows.MessageBoxImage.Information);
+        }
+
     }
 }

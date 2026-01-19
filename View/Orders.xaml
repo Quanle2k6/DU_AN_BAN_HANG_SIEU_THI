@@ -15,13 +15,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Header -->
         <Grid Grid.Row="0" Margin="0,0,0,18">
             <TextBlock Text="Chi tiết hoá đơn"
                        FontSize="30"
                        FontWeight="Bold"
                        Foreground="#5A7BD8"/>
-
             <Border HorizontalAlignment="Right"
                     CornerRadius="18"
                     Background="White"
@@ -39,13 +37,11 @@
             </Border>
         </Grid>
 
-        <!-- Create order -->
         <Border Grid.Row="1"
                 Background="White"
                 CornerRadius="20"
                 Padding="22"
                 Margin="0,0,0,16">
-
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
@@ -64,13 +60,18 @@
                     </Border>
 
                     <TextBlock Text="Tên khách hàng"/>
-                    <TextBox x:Name="txtKH" Height="32" Margin="0,6,0,10"/>
+                    <TextBox x:Name="txtKH"
+                             Height="32"
+                             Margin="0,6,0,10"/>
 
                     <TextBlock Text="Địa chỉ"/>
-                    <TextBox x:Name="txtDiaChi" Height="32" Margin="0,6,0,10"/>
+                    <TextBox x:Name="txtDiaChi"
+                             Height="32"
+                             Margin="0,6,0,10"/>
 
                     <TextBlock Text="Số điện thoại"/>
-                    <TextBox x:Name="txtSDT" Height="32"/>
+                    <TextBox x:Name="txtSDT"
+                             Height="32"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
@@ -90,19 +91,18 @@
                             Background="#FAFAFA"
                             Padding="4">
                         <DataGrid ItemsSource="{Binding OrderDetails}"
-          AutoGenerateColumns="False"
-          CanUserAddRows="True"
-          IsReadOnly="False">
-
+                                  
+                                  
+                                  AutoGenerateColumns="False"
+                                  CanUserAddRows="True"
+                                  IsReadOnly="False">
                             <DataGrid.Columns>
-
-                                <DataGridComboBoxColumn
-    Header="Sản phẩm"
-    Width="*"
-    SelectedItemBinding="{Binding TenSP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                <DataGridComboBoxColumn Header="Sản phẩm"
+                                                        Width="*"
+                                                        SelectedItemBinding="{Binding TenSP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                                     <DataGridComboBoxColumn.ItemsSource>
                                         <x:Array Type="sys:String"
-                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                                                 xmlns:sys="clr-namespace:System;assembly=mscorlib">
                                             <sys:String>Thịt bò Mỹ</sys:String>
                                             <sys:String>Cá hồi Nauy</sys:String>
                                             <sys:String>Nước giặt Ariel</sys:String>
@@ -127,38 +127,27 @@
                                     </DataGridComboBoxColumn.ItemsSource>
                                 </DataGridComboBoxColumn>
 
-
                                 <DataGridTemplateColumn Header="Số lượng" Width="100">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBlock Text="{Binding SoLuong}" 
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"/>
+                                            <TextBlock Text="{Binding SoLuong}"
+                                                       VerticalAlignment="Center"
+                                                       HorizontalAlignment="Center"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
-
                                     <DataGridTemplateColumn.CellEditingTemplate>
                                         <DataTemplate>
                                             <TextBox Text="{Binding SoLuong, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     VerticalContentAlignment="Center"
-                     HorizontalContentAlignment="Center"/>
+                                                     VerticalContentAlignment="Center"
+                                                     HorizontalContentAlignment="Center"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellEditingTemplate>
                                 </DataGridTemplateColumn>
-
-
-
-
                             </DataGrid.Columns>
-
-
                         </DataGrid>
-
-
-
                     </Border>
 
-                    <StackPanel Orientation="Horizontal"
+                    <StackPanel Orientation="Vertical"
                                 HorizontalAlignment="Right"
                                 Margin="0,14,0,0">
                         <Button Content="Xác nhận"
@@ -167,17 +156,24 @@
                                 Background="#41A67E"
                                 Foreground="White"
                                 Click="Button_Click"/>
+
+                        <Button Content="Xóa hóa đơn"
+                                Width="130"
+                                Height="34"
+                                Margin="0,8,0,0"
+                                Background="#DC2626"
+                                Foreground="White"
+                                BorderThickness="0"
+                                Click="Button_Click_1"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>
         </Border>
 
-        <!-- Invoice info -->
         <Border Grid.Row="2"
                 Background="White"
                 CornerRadius="18"
                 Padding="20">
-
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -193,20 +189,29 @@
                         CornerRadius="12"
                         BorderBrush="#D0D7E2"
                         BorderThickness="1">
-
                     <DataGrid ItemsSource="{Binding Orders}"
+                              SelectedItem="{Binding SelectedOrder, Mode=TwoWay}"
                               AutoGenerateColumns="False"
                               IsReadOnly="True"
                               CanUserAddRows="False"
                               GridLinesVisibility="None"
                               RowHeight="32">
-
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="STT" Width="60" Binding="{Binding STT}"/>
-                            <DataGridTextColumn Header="Mã đơn" Width="100" Binding="{Binding MaHD}"/>
-                            <DataGridTextColumn Header="Tên khách hàng" Width="160" Binding="{Binding TenKH}"/>
-                            <DataGridTextColumn Header="Địa chỉ" Width="150" Binding="{Binding DiaChi}"/>
-                            <DataGridTextColumn Header="SDT" Width="130" Binding="{Binding SDT}"/>
+                            <DataGridTextColumn Header="STT"
+                                                Width="60"
+                                                Binding="{Binding STT}"/>
+                            <DataGridTextColumn Header="Mã đơn"
+                                                Width="100"
+                                                Binding="{Binding MaHD}"/>
+                            <DataGridTextColumn Header="Tên khách hàng"
+                                                Width="160"
+                                                Binding="{Binding TenKH}"/>
+                            <DataGridTextColumn Header="Địa chỉ"
+                                                Width="150"
+                                                Binding="{Binding DiaChi}"/>
+                            <DataGridTextColumn Header="SDT"
+                                                Width="130"
+                                                Binding="{Binding SDT}"/>
 
                             <DataGridTemplateColumn Header="Mặt hàng" Width="220">
                                 <DataGridTemplateColumn.CellTemplate>

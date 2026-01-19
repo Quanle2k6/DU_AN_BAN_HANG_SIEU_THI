@@ -1,23 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Page_Navigation_App.ViewModel;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Page_Navigation_App.View
 {
-    /// <summary>
-    /// Interaction logic for Transactions.xaml
-    /// </summary>
     public partial class Transactions : UserControl
     {
         public Transactions()
@@ -25,22 +12,44 @@ namespace Page_Navigation_App.View
             InitializeComponent();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-     
         private void btnThem_Click(object sender, RoutedEventArgs e)
         {
             var main = (MainWindow)Application.Current.MainWindow;
-            main.ShowOverlay(new PageThemNhapHang());
+
+            var page = new PageThemNhapHang();
+            page.ReloadNhapHang += ReloadDanhSachNhapHang;
+
+            main.ShowOverlay(page);
         }
 
         private void btnChinhSua_Click(object sender, RoutedEventArgs e)
         {
             var main = (MainWindow)Application.Current.MainWindow;
-            main.ShowOverlay(new PageThemNhapHang());
+
+            var page = new PageThemNhapHang();
+            page.ReloadNhapHang += ReloadDanhSachNhapHang;
+
+            main.ShowOverlay(page);
+        }
+
+        private void ReloadDanhSachNhapHang()
+        {
+            if (DataContext is TransactionVM vm)
+            {
+                vm.GetType()
+                  .GetMethod("LoadDanhSachNhapHang",
+                      System.Reflection.BindingFlags.NonPublic |
+                      System.Reflection.BindingFlags.Instance)
+                  ?.Invoke(vm, null);
+            }
+        }
+
+        private void btnXoa_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is TransactionVM vm)
+            {
+                vm.XoaNhapHang();
+            }
         }
     }
 }

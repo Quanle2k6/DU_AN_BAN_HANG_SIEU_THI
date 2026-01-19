@@ -185,27 +185,43 @@ namespace Page_Navigation_App.ViewModel
 
         private void ExecuteDelete()
         {
-            if (string.IsNullOrEmpty(MaSP))
+            if (string.IsNullOrWhiteSpace(MaSP))
             {
-                MessageBox.Show("Vui lòng chọn sản phẩm cần xóa!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Vui lòng chọn sản phẩm cần xóa!", "Thông báo",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            var res = MessageBox.Show($"Bạn có chắc muốn xóa {MaSP}?", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-            if (res == MessageBoxResult.Yes)
-            {
-                SqlParameter[] param = { new SqlParameter("@ma", MaSP) };
-                DBConnection.ExecuteNonQuery("DELETE FROM CHITIETNHAPHANG WHERE MaSP = @ma", param);
-                DBConnection.ExecuteNonQuery("DELETE FROM CTHD WHERE MaSP = @ma", param);
+            var result = MessageBox.Show(
+                $"Bạn có chắc muốn xóa sản phẩm {MaSP}?",
+                "Xác nhận",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Warning);
 
-                if (DBConnection.ExecuteNonQuery("DELETE FROM SANPHAM WHERE MaSP = @ma", param) > 0)
-                {
-                    MessageBox.Show("Xóa sản phẩm thành công!");
-                    LoadData();
-                    ClearInputs();
-                }
+            if (result != MessageBoxResult.Yes) return;
+
+            // ❗ MỖI LỆNH → MỖI SqlParameter MỚI
+            DBConnection.ExecuteNonQuery(
+                "DELETE FROM CHITIETNHAPHANG WHERE MaSP = @ma",
+                new SqlParameter[] { new SqlParameter("@ma", MaSP) });
+
+            DBConnection.ExecuteNonQuery(
+                "DELETE FROM CTHD WHERE MaSP = @ma",
+                new SqlParameter[] { new SqlParameter("@ma", MaSP) });
+
+            int rows = DBConnection.ExecuteNonQuery(
+                "DELETE FROM SANPHAM WHERE MaSP = @ma",
+                new SqlParameter[] { new SqlParameter("@ma", MaSP) });
+
+            if (rows > 0)
+            {
+                MessageBox.Show("Xóa sản phẩm thành công!", "Thông báo",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
+                LoadData();
+                ClearInputs();
             }
         }
+
 
         private void FetchDataFromSql(string sql, SqlParameter[] parameters = null)
         {

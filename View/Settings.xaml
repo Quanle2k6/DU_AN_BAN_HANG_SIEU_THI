@@ -1,20 +1,220 @@
 ﻿<UserControl x:Class="Page_Navigation_App.View.Settings"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
-             mc:Ignorable="d"
-             d:DesignHeight="600"
-             d:DesignWidth="622"
-             Style="{StaticResource Page_Style}">
+             Background="#EEF6F4">
 
-    <UserControl.DataContext>
-        <vm:SettingVM />
-    </UserControl.DataContext>
+
     
-    <Grid Margin="15">
+    <UserControl.Resources>
 
+       
+        
+        <Style x:Key="WatermarkTextBox" TargetType="TextBox">
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                            <TextBlock Text="{TemplateBinding Tag}"
+                                       Foreground="Gray"
+                                       Margin="8,0,0,0"
+                                       VerticalAlignment="Center"
+                                       IsHitTestVisible="False"
+                                       Visibility="Collapsed"
+                                       x:Name="watermark"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter TargetName="watermark"
+                                        Property="Visibility"
+                                        Value="Visible"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter TargetName="watermark"
+                                        Property="Visibility"
+                                        Value="Collapsed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        
+        
+        <Style x:Key="WatermarkPasswordBox" TargetType="PasswordBox">
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Grid>
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                            <TextBlock x:Name="watermark"
+                                       Text="{TemplateBinding Tag}"
+                                       Foreground="Gray"
+                                       Margin="8,0,0,0"
+                                       VerticalAlignment="Center"
+                                       IsHitTestVisible="False"
+                                       Visibility="Visible"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter TargetName="watermark"
+                                        Property="Visibility"
+                                        Value="Collapsed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </UserControl.Resources>
+
+    
+    <UserControl.DataContext>
+        <vm:SettingVM/>
+    </UserControl.DataContext>
+
+   
+    
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+      
+        
+        <Border Grid.Column="0"
+                Padding="15"
+                Background="White"
+                CornerRadius="12">
+            <ScrollViewer>
+                <StackPanel>
+
+                    <TextBlock Text="Thông tin nhân viên"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               Margin="0,0,0,15"/>
+
+                    <TextBlock Text="Mã nhân viên"/>
+                    <TextBox Style="{StaticResource WatermarkTextBox}"
+                             Tag="Nhập mã nhân viên"
+                             Text="{Binding SelectedNhanVien.MaNV}"
+                             IsReadOnly="True"
+                             Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Tên nhân viên"/>
+                    <TextBox Style="{StaticResource WatermarkTextBox}"
+                             Tag="Nhập tên nhân viên"
+                             Text="{Binding SelectedNhanVien.TenNV}"
+                             Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Giới tính"/>
+                    <ComboBox Height="35"
+                              SelectedItem="{Binding SelectedNhanVien.GioiTinh}"
+                              Margin="0,5,0,10">
+                        <ComboBoxItem Content="Nam"/>
+                        <ComboBoxItem Content="Nữ"/>
+                    </ComboBox>
+
+                    <TextBlock Text="Ngày sinh"/>
+                    <DatePicker SelectedDate="{Binding SelectedNhanVien.NgSinh}"
+                                Height="35"
+                                Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Ngày bắt đầu làm việc"/>
+                    <DatePicker SelectedDate="{Binding SelectedNhanVien.NgBDLamViec}"
+                                Height="35"
+                                Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Lương"/>
+                    <TextBox Style="{StaticResource WatermarkTextBox}"
+                             Tag="Nhập lương"
+                             Text="{Binding SelectedNhanVien.Luong}"
+                             Margin="0,5,0,15"/>
+
+                    <Button Content="Lưu thay đổi"
+                            Height="40"
+                            Background="#2E8B57"
+                            Foreground="White"
+                            Command="{Binding SaveNhanVienCommand}" Click="Button_Click"/>
+
+                    <Separator Margin="20,25"/>
+
+                    <!-- ====== ĐỔI MẬT KHẨU ====== -->
+                    <TextBlock Text="Đổi mật khẩu"
+                               FontSize="16"
+                               FontWeight="Bold"
+                               Margin="0,0,0,10"/>
+
+                    <PasswordBox Style="{StaticResource WatermarkPasswordBox}"
+                                 Tag="Nhập username"
+                                 Margin="0,0,0,10"/>
+
+                    <PasswordBox Style="{StaticResource WatermarkPasswordBox}"
+                                 Tag="Nhập mật khẩu mới"
+                                 Margin="0,0,0,15"/>
+
+                    <Button Content="Đổi mật khẩu"
+                            Height="40"
+                            Background="#1E90FF"
+                            Foreground="White"
+                            Command="{Binding ChangePasswordCommand}" Click="Button_Click_1"/>
+
+                    <Button Content="Đăng xuất"
+                            Height="40"
+                            Margin="0,15,0,0"
+                            Background="#DC3545"
+                            Foreground="White"
+                            Command="{Binding LogoutCommand}" Click="Button_Click_2"/>
+
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+       
+        
+        <Border Grid.Column="2"
+                Padding="15"
+                Background="White"
+                CornerRadius="12">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Danh sách nhân viên"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Margin="0,0,0,15"/>
+
+                <DataGrid Grid.Row="1"
+                          ItemsSource="{Binding DanhSachNhanVien}"
+                          SelectedItem="{Binding SelectedNhanVien}"
+                          AutoGenerateColumns="False"
+                          CanUserAddRows="False">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã NV" Binding="{Binding MaNV}"/>
+                        <DataGridTextColumn Header="Tên NV" Binding="{Binding TenNV}" Width="2*"/>
+                        <DataGridTextColumn Header="Giới tính" Binding="{Binding GioiTinh}"/>
+                        <DataGridTextColumn Header="Ngày sinh"
+                                            Binding="{Binding NgSinh, StringFormat=dd/MM/yyyy}"/>
+                        <DataGridTextColumn Header="Ngày vào làm"
+                                            Binding="{Binding NgBDLamViec, StringFormat=dd/MM/yyyy}"/>
+                        <DataGridTextColumn Header="Lương"
+                                            Binding="{Binding Luong, StringFormat=N0}"/>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+            </Grid>
+        </Border>
 
     </Grid>
 </UserControl>

@@ -35,6 +35,7 @@
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
+
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
@@ -53,21 +54,16 @@
 
                         <StackPanel Grid.Row="1" Grid.Column="0" Margin="0,0,20,10">
                             <TextBlock Text="Nhà cung cấp"/>
-                            <ComboBox x:Name="txtMaNCC"
+                            <ComboBox x:Name="cbNhaCungCap"
                                       Height="32"
-                                      ItemsSource="{Binding DanhSachNhaCungCap}"
-                                      DisplayMemberPath="TenNCC"
-                                      SelectedValuePath="MaNCC"/>
+                                      SelectionChanged="cbNhaCungCap_SelectionChanged"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="1" Grid.Column="1" Margin="0,0,0,10">
-                            <TextBlock Text="Tên nhà cung cấp"/>
-                            <TextBox x:Name="txtTenNCC" Height="32"/>
-                        </StackPanel>
-
-                        <StackPanel Grid.Row="2" Grid.Column="0" Margin="0,0,20,0">
                             <TextBlock Text="Số tài khoản"/>
-                            <TextBox x:Name="txtSTK" Height="32"/>
+                            <TextBox x:Name="txtSoTaiKhoan"
+                                     Height="32"
+                                     IsReadOnly="True"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="2" Grid.Column="1">
@@ -89,15 +85,15 @@
 
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Mã sản phẩm"
-                                                Binding="{Binding MaSP, UpdateSourceTrigger=PropertyChanged}"
+                                                Binding="{Binding MaSP}"
                                                 Width="*"/>
 
                             <DataGridTextColumn Header="Số lượng"
-                                                Binding="{Binding SoLuongNhapHang, UpdateSourceTrigger=PropertyChanged}"
+                                                Binding="{Binding SoLuongNhapHang}"
                                                 Width="*"/>
 
                             <DataGridTextColumn Header="Đơn giá"
-                                                Binding="{Binding GiaNhap, UpdateSourceTrigger=PropertyChanged}"
+                                                Binding="{Binding GiaNhap}"
                                                 Width="*"/>
 
                             <DataGridTextColumn Header="Thành tiền"
@@ -132,6 +128,7 @@
                         FontWeight="Bold"
                         Click="Button_Click_1"/>
             </StackPanel>
+
         </Grid>
     </Border>
 </UserControl>
