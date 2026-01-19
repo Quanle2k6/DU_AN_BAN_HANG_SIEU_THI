@@ -3,23 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Page_Navigation_App"
              StartupUri="Login.xaml">
-    
+
     <Application.Resources>
-
         <ResourceDictionary>
-
             <ResourceDictionary.MergedDictionaries>
-
                 <ResourceDictionary Source="Styles/Page.xaml" />
                 <ResourceDictionary Source="Styles/Image.xaml" />
                 <ResourceDictionary Source="Styles/Text.xaml" />
                 <ResourceDictionary Source="Styles/Button.xaml" />
                 <ResourceDictionary Source="Utilities/DataTemplate.xaml" />
-
             </ResourceDictionary.MergedDictionaries>
-            
-        </ResourceDictionary>
 
+            <FontFamily x:Key="Open Sans">
+                pack://application:,,,/Fonts/#Open Sans
+            </FontFamily>
+
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontFamily" Value="{StaticResource Open Sans}" />
+            </Style>
+
+            <Style TargetType="{x:Type Control}">
+                <Setter Property="FontFamily" Value="{StaticResource Open Sans}" />
+            </Style>
+
+        </ResourceDictionary>
     </Application.Resources>
-    
 </Application>

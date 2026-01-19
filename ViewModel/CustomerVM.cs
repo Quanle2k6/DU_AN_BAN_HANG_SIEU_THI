@@ -31,6 +31,11 @@ namespace Page_Navigation_App.ViewModel
         private string _maLSP;
         public string MaLSP { get => _maLSP; set { _maLSP = value; OnPropertyChanged(); } }
 
+        private int _soLuongCon;
+        public int SoLuongCon { get => _soLuongCon; set { _soLuongCon = value; OnPropertyChanged(); } }
+        private string _donViTinh;
+        public string DonViTinh { get => _donViTinh; set { _donViTinh = value; OnPropertyChanged(); } }
+
         private decimal _giaBan;
         public decimal GiaBan
         {
@@ -80,6 +85,9 @@ namespace Page_Navigation_App.ViewModel
                     MaSP = _selectedProduct.MaSP;
                     TenSP = _selectedProduct.TenSP;
                     MaLSP = _selectedProduct.MaLSP;
+                    SoLuongCon = _selectedProduct.SoLuongCon;
+                    DonViTinh = _selectedProduct.DonViTinh;
+                    
                     GiaBan = _selectedProduct.GiaBan;
                     OnPropertyChanged(nameof(GiaBanString));
                 }
@@ -115,7 +123,7 @@ namespace Page_Navigation_App.ViewModel
         {
             SearchText = "";
             // Query lấy đầy đủ thông tin để tính toán
-            FetchDataFromSql("SELECT MaSP, TenSP, MaLSP, SoLuongCon, GiaBan FROM SANPHAM");
+            FetchDataFromSql("SELECT MaSP, TenSP, MaLSP, SoLuongCon, DonViTinh, GiaBan FROM SANPHAM");
         }
 
         private void ExecuteSearch()
@@ -126,7 +134,7 @@ namespace Page_Navigation_App.ViewModel
             if (SearchTypeIndex == 1) filterCol = "TenSP";
             else if (SearchTypeIndex == 2) filterCol = "MaLSP";
 
-            string sql = $"SELECT MaSP, TenSP, MaLSP, SoLuongCon, GiaBan FROM SANPHAM WHERE {filterCol} LIKE @search";
+            string sql = $"SELECT MaSP, TenSP, MaLSP, SoLuongCon, DonViTinh, GiaBan FROM SANPHAM WHERE {filterCol} LIKE @search";
             SqlParameter[] parameters = { new SqlParameter("@search", SearchText + "%") };
 
             FetchDataFromSql(sql, parameters);
@@ -142,11 +150,12 @@ namespace Page_Navigation_App.ViewModel
                 return;
             }
 
-            string sql = "INSERT INTO SANPHAM (MaSP, TenSP, MaLSP, SoLuongCon, GiaBan) VALUES (@ma, @ten, @malsp, 0, @gia)";
+            string sql = "INSERT INTO SANPHAM (MaSP, TenSP, MaLSP, SoLuongCon, DonViTinh, GiaBan) VALUES (@ma, @ten, @malsp, 0, @dvt, @gia)";
             SqlParameter[] parameters = {
                 new SqlParameter("@ma", MaSP),
                 new SqlParameter("@ten", TenSP),
                 new SqlParameter("@malsp", MaLSP ?? (object)DBNull.Value),
+                new SqlParameter("@dvt", DonViTinh ?? (object)DBNull.Value),
                 new SqlParameter("@gia", GiaBan)
             };
 
@@ -168,11 +177,12 @@ namespace Page_Navigation_App.ViewModel
 
             if (IsInputInvalid()) return;
 
-            string sql = "UPDATE SANPHAM SET TenSP = @ten, MaLSP = @malsp, GiaBan = @gia WHERE MaSP = @ma";
+            string sql = "UPDATE SANPHAM SET TenSP = @ten, MaLSP = @malsp, DonViTinh = @dvt, GiaBan = @gia WHERE MaSP = @ma";
             SqlParameter[] parameters = {
                 new SqlParameter("@ten", TenSP),
                 new SqlParameter("@malsp", MaLSP ?? (object)DBNull.Value),
                 new SqlParameter("@gia", GiaBan),
+                new SqlParameter("@dvt", DonViTinh ?? (object)DBNull.Value),
                 new SqlParameter("@ma", MaSP)
             };
 
@@ -246,6 +256,7 @@ namespace Page_Navigation_App.ViewModel
                         MaLSP = row["MaLSP"]?.ToString(),
                         // Ép kiểu an toàn hơn
                         SoLuongCon = row["SoLuongCon"] != DBNull.Value ? Convert.ToInt32(row["SoLuongCon"]) : 0,
+                        DonViTinh = row["DonViTinh"]?.ToString(),
                         GiaBan = row["GiaBan"] != DBNull.Value ? Convert.ToDecimal(row["GiaBan"]) : 0
                     });
                 }
@@ -276,8 +287,10 @@ namespace Page_Navigation_App.ViewModel
             MaSP = string.Empty;
             TenSP = string.Empty;
             MaLSP = null;
+            SoLuongCon = 0;
             GiaBan = 0;
             SelectedProduct = null;
+            DonViTinh = null;
             GiaBanString = "0";
         }
     }

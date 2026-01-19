@@ -26,10 +26,10 @@
 
         <Label Grid.Row="0"
                Content="Báo cáo doanh thu"
-               FontSize="36"
-               FontWeight="Bold"
+               FontSize="30"
+               FontWeight="Black"
                FontFamily="Javanese Text"
-               Foreground="#647FBC"/>
+               Foreground="#5A7BD8"/>
 
         <UniformGrid Grid.Row="1" Columns="3" Height="150" Margin="0,10">
             <Border Background="#FF3838" Margin="5" CornerRadius="8">
@@ -87,7 +87,7 @@
             <StackPanel Grid.Row="0" Margin="0,0,0,10">
                 <Label Content="Chọn ngày thống kê"
                        FontSize="18"
-                       FontWeight="Bold"
+                       FontWeight="Black"
                        FontFamily="Javanese Text"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0,5">
@@ -96,10 +96,10 @@
                                 Margin="0,0,10,0"/>
 
                     <Button Content="Xác nhận"
-                            Width="120"
+                            Width="124"
                             Command="{Binding LoadAllStatisticCommand}"
                             Background="#FCF6D9"
-                            FontWeight="Bold"/>
+                            FontWeight="Bold" Height="30"/>
                 </StackPanel>
             </StackPanel>
 

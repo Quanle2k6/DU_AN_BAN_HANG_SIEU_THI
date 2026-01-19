@@ -10,6 +10,42 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\OpenSans-Bold.ttf" />
+    <None Remove="Fonts\OpenSans-BoldItalic.ttf" />
+    <None Remove="Fonts\OpenSans-ExtraBold.ttf" />
+    <None Remove="Fonts\OpenSans-ExtraBoldItalic.ttf" />
+    <None Remove="Fonts\OpenSans-Italic.ttf" />
+    <None Remove="Fonts\OpenSans-Light.ttf" />
+    <None Remove="Fonts\OpenSans-LightItalic.ttf" />
+    <None Remove="Fonts\OpenSans-Medium.ttf" />
+    <None Remove="Fonts\OpenSans-MediumItalic.ttf" />
+    <None Remove="Fonts\OpenSans-Regular.ttf" />
+    <None Remove="Fonts\OpenSans-SemiBold.ttf" />
+    <None Remove="Fonts\OpenSans-SemiBoldItalic.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-Bold.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-BoldItalic.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-ExtraBold.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-ExtraBoldItalic.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-Italic.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-Light.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-LightItalic.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-Medium.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-MediumItalic.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-Regular.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-SemiBold.ttf" />
+    <None Remove="Fonts\OpenSans_Condensed-SemiBoldItalic.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-Bold.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-BoldItalic.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-ExtraBold.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-ExtraBoldItalic.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-Italic.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-Light.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-LightItalic.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-Medium.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-MediumItalic.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-Regular.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-SemiBold.ttf" />
+    <None Remove="Fonts\OpenSans_SemiCondensed-SemiBoldItalic.ttf" />
     <None Remove="Fonts\Rubik-Medium.ttf" />
     <None Remove="Fonts\Rubik-Regular.ttf" />
     <None Remove="Images\1486564407-plus-green_81521.png.crdownload" />
@@ -54,6 +90,7 @@
     <None Remove="Images\sale.jpg" />
     <None Remove="Images\sale.png" />
     <None Remove="Images\search.png" />
+    <None Remove="Images\Setting.png" />
     <None Remove="Images\setting_page.png" />
     <None Remove="Images\shipment_page.png" />
     <None Remove="Images\shutdown_def.png" />
@@ -65,6 +102,114 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Fonts\OpenSans-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-ExtraBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-ExtraBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-ExtraBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-ExtraBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_Condensed-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-ExtraBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-ExtraBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\OpenSans_SemiCondensed-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\1486564411-checkmark_81522.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -159,6 +304,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\search.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Setting.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\supermarket.webp">

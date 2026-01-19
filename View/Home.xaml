@@ -51,6 +51,7 @@
         </Style>
 
         <Style x:Key="StatNumberStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="/Fonts/OpenSans.tff"/>
             <Setter Property="FontSize" Value="28"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="White"/>
@@ -60,8 +61,9 @@
         </Style>
 
         <Style x:Key="StatTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="{StaticResource Open Sans}"/>
             <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="TextAlignment" Value="Center"/>
@@ -91,9 +93,9 @@
             <Label Content="TRANG CHỦ"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontFamily="Segoe UI"
+                   FontFamily="{StaticResource Open Sans}"
                    FontSize="42"
-                   FontWeight="Bold"
+                   FontWeight="ExtraBlack"
                    Foreground="White">
                 <Label.Effect>
                     <DropShadowEffect BlurRadius="10" 
@@ -231,13 +233,15 @@
                         <StackPanel VerticalAlignment="Center" 
                                    HorizontalAlignment="Center">
                             <TextBlock Text="HỆ THỐNG QUẢN LÝ KHO HÀNG" 
+                                       FontFamily="{StaticResource Open Sans}"
                                        FontSize="24"
                                        FontWeight="Bold"
                                        Foreground="White"
                                        HorizontalAlignment="Center"/>
-                            <TextBlock Text="Quản lý thông minh - Vận hành hiệu quả" 
+                            <TextBlock Text="Quản lý thông minh - Vận hành hiệu quả"
+                                       FontFamily="{StaticResource Open Sans}"
                                        FontSize="16"
-                                       FontWeight="Normal"
+                                       FontWeight="Light"
                                        Foreground="#FFEEEEEE"
                                        HorizontalAlignment="Center"
                                        Margin="0,5,0,0"/>

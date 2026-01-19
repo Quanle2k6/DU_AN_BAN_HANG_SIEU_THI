@@ -21,8 +21,9 @@
                         CornerRadius="14"
                         Padding="15">
                     <TextBlock Text="Tạo hoá đơn thành công"
+                               FontFamily="{StaticResource Open Sans}"
                                FontSize="32"
-                               FontWeight="Bold"
+                               FontWeight="ExtraBold"
                                Foreground="White"/>
                 </Border>
 
@@ -41,6 +42,7 @@
                             Margin="0,0,15,0">
                         <StackPanel>
                             <TextBlock Text="Thông tin khách hàng"
+                                       FontFamily="{StaticResource Open Sans}"
                                        FontSize="18"
                                        FontWeight="Bold"
                                        Margin="0,0,0,12"/>
@@ -69,6 +71,7 @@
                             </Grid.RowDefinitions>
 
                             <TextBlock Text="Danh sách mặt hàng"
+                                       FontFamily="{StaticResource Open Sans}"
                                        FontSize="18"
                                        FontWeight="Bold"/>
 
@@ -91,7 +94,7 @@
                             <StackPanel Grid.Row="2"
                                         Orientation="Horizontal"
                                         HorizontalAlignment="Right">
-                                <TextBlock Text="Tổng tiền:" FontWeight="Bold"/>
+                                <TextBlock Text="Tổng tiền:" FontFamily="{StaticResource Open Sans}" FontWeight="Bold"/>
                                 <TextBox Width="160"
                                          Margin="10,0,0,0"
                                          Text="{Binding TongTien}"

@@ -17,8 +17,9 @@
 
         <Grid Grid.Row="0" Margin="0,0,0,18">
             <TextBlock Text="Chi tiết hoá đơn"
+                       FontFamily="{StaticResource Open Sans}"
                        FontSize="30"
-                       FontWeight="Bold"
+                       FontWeight="ExtraBold"
                        Foreground="#5A7BD8"/>
             <Border HorizontalAlignment="Right"
                     CornerRadius="18"
@@ -54,6 +55,7 @@
                             Padding="10"
                             Margin="0,0,0,14">
                         <TextBlock Text="Tạo hoá đơn mới"
+                                   FontFamily="{StaticResource Open Sans}"
                                    FontSize="20"
                                    FontWeight="Bold"
                                    Foreground="White"/>
@@ -80,6 +82,7 @@
                             Padding="10"
                             Margin="0,0,0,10">
                         <TextBlock Text="Danh sách mặt hàng"
+                                   FontFamily="{StaticResource Open Sans}"
                                    FontSize="20"
                                    FontWeight="Bold"
                                    Foreground="White"/>
@@ -151,6 +154,8 @@
                                 HorizontalAlignment="Right"
                                 Margin="0,14,0,0">
                         <Button Content="Xác nhận"
+                                FontFamily="{StaticResource Open Sans}"
+                                FontStyle="Normal"
                                 Width="130"
                                 Height="34"
                                 Background="#41A67E"
@@ -158,6 +163,7 @@
                                 Click="Button_Click"/>
 
                         <Button Content="Xóa hóa đơn"
+                                FontFamily="{StaticResource Open Sans}"
                                 Width="130"
                                 Height="34"
                                 Margin="0,8,0,0"
@@ -181,8 +187,9 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Text="Thông tin hoá đơn"
+                           FontFamily="{StaticResource Open Sans}"
                            FontSize="20"
-                           FontWeight="Bold"
+                           FontWeight="ExtraBold"
                            Margin="0,0,0,10"/>
 
                 <Border Grid.Row="1"

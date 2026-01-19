@@ -12,6 +12,7 @@ namespace Page_Navigation_App.Model
         public string TenSP { get; set; }
         public string MaLSP { get; set; }
         public int SoLuongCon { get; set; }
+        public string DonViTinh { get; set; }
         public decimal GiaBan { get; set; }
 
         public decimal ThanhTien

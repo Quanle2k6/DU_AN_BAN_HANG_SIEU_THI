@@ -15,9 +15,10 @@
 
             <Border Grid.Row="0" Background="#203A52">
                 <TextBlock Text="THÊM NHẬP HÀNG"
+                           FontFamily="{StaticResource Open Sans}"
                            Foreground="White"
                            FontSize="26"
-                           FontWeight="Bold"
+                           FontWeight="ExtraBold"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"/>
             </Border>
@@ -26,6 +27,7 @@
                 <StackPanel Margin="30">
 
                     <TextBlock Text="Thông tin nhập hàng"
+                               FontFamily="{StaticResource Open Sans}"
                                FontSize="20"
                                FontWeight="Bold"
                                Margin="0,0,0,10"/>
@@ -43,31 +45,31 @@
                         </Grid.RowDefinitions>
 
                         <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,20,10">
-                            <TextBlock Text="Mã nhập hàng"/>
+                            <TextBlock Text="Mã nhập hàng" FontFamily="{StaticResource Open Sans}" FontWeight="SemiBold"/>
                             <TextBox x:Name="txtMaNH" Height="32"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,0,0,10">
-                            <TextBlock Text="Ngày nhập hàng"/>
+                            <TextBlock Text="Ngày nhập hàng" FontFamily="{StaticResource Open Sans}"  FontWeight="SemiBold"/>
                             <DatePicker x:Name="dpNgayNhap" Height="32"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="1" Grid.Column="0" Margin="0,0,20,10">
-                            <TextBlock Text="Nhà cung cấp"/>
+                            <TextBlock Text="Nhà cung cấp" FontFamily="{StaticResource Open Sans}" FontWeight="SemiBold"/>
                             <ComboBox x:Name="cbNhaCungCap"
                                       Height="32"
                                       SelectionChanged="cbNhaCungCap_SelectionChanged"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="1" Grid.Column="1" Margin="0,0,0,10">
-                            <TextBlock Text="Số tài khoản"/>
+                            <TextBlock Text="Số tài khoản" FontFamily="{StaticResource Open Sans}" FontWeight="SemiBold"/>
                             <TextBox x:Name="txtSoTaiKhoan"
                                      Height="32"
                                      IsReadOnly="True"/>
                         </StackPanel>
 
                         <StackPanel Grid.Row="2" Grid.Column="1">
-                            <TextBlock Text="Hạn sử dụng"/>
+                            <TextBlock Text="Hạn sử dụng" FontFamily="{StaticResource Open Sans}" FontWeight="SemiBold"/>
                             <DatePicker x:Name="dpHSD" Height="32"/>
                         </StackPanel>
                     </Grid>

@@ -97,8 +97,10 @@
                 <StackPanel>
 
                     <TextBlock Text="Thông tin nhân viên"
+                               FontFamily="{StaticResource Open Sans}"
                                FontSize="18"
-                               FontWeight="Bold"
+                               Foreground="#5A7BD8"
+                               FontWeight="Black"
                                Margin="0,0,0,15"/>
 
                     <TextBlock Text="Mã nhân viên"/>
@@ -190,8 +192,10 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Text="Danh sách nhân viên"
+                           FontFamily="{StaticResource Open Sans}"
                            FontSize="18"
-                           FontWeight="Bold"
+                           Foreground="#5A7BD8"
+                           FontWeight="Black"
                            Margin="0,0,0,15"/>
 
                 <DataGrid Grid.Row="1"

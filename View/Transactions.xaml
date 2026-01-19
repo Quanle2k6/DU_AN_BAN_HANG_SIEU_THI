@@ -59,9 +59,9 @@
         </Grid.RowDefinitions>
 
         <TextBlock Text="Quản lý nhập kho"
-                   FontSize="32"
-                   FontWeight="Bold"
-                   Foreground="#1F2937"/>
+                   FontSize="30"
+                   FontWeight="Black"
+                   Foreground="#5A7BD8"/>
 
         
         <StackPanel Grid.Row="1"
@@ -70,16 +70,16 @@
             <Button x:Name="btnThem" Content="➕ Thêm"
                     Background="{StaticResource PrimaryColor}"
                     Style="{StaticResource ModernButton}"
-                    Margin="0,0,10,0" Click="btnThem_Click"/>
+                    Margin="0,0,10,0" Click="btnThem_Click" Width="98"/>
 
             <Button x:Name="btnChinhSua" Content="✏️ Chỉnh sửa"
                     Background="{StaticResource PrimaryColor}"
                     Style="{StaticResource ModernButton}"
-                    Margin="0,0,10,0" Click="btnChinhSua_Click"/>
+                    Margin="0,0,10,0" Click="btnChinhSua_Click" Width="118"/>
 
             <Button x:Name="btnXoa" Content="🗑 Xoá"
                     Background="{StaticResource DangerColor}"
-                    Style="{StaticResource ModernButton}" Click="btnXoa_Click"/>
+                    Style="{StaticResource ModernButton}" Click="btnXoa_Click" Width="98" Height="35"/>
         </StackPanel>
 
       
@@ -106,7 +106,7 @@
                 <Button Content="Lấy dữ liệu"
                         VerticalAlignment="Bottom"
                         Background="{StaticResource PrimaryColor}"
-                        Style="{StaticResource ModernButton}"/>
+                        Style="{StaticResource ModernButton}" Width="130" Height="43"/>
             </StackPanel>
         </Border>
 

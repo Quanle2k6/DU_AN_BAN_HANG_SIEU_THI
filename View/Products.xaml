@@ -22,10 +22,11 @@
 
 
         <TextBlock Grid.Row="0" 
-                   Text="Danh mục Kho" 
-                   FontSize="24" 
-                   FontWeight="Bold" 
-                   Foreground="#333333"
+                   Text="Danh mục Kho"
+                   FontFamily="{StaticResource Open Sans}"
+                   FontSize="30" 
+                   FontWeight="ExtraBold" 
+                   Foreground="#5A7BD8"
                    Margin="0,0,0,20"/>
 
 
@@ -39,7 +40,8 @@
             <StackPanel Orientation="Horizontal">
 
 
-                <Button Content="Nhập kho" 
+                <Button Content="Nhập kho"
+                        FontFamily="{StaticResource Open Sans}"
                         Background="#4CAF50" 
                         Foreground="White"
                         FontWeight="Bold"
@@ -55,7 +57,8 @@
                 </Button>
 
 
-                <Button Content="Xem chi tiết nhập kho" 
+                <Button Content="Xem chi tiết nhập kho"
+                        FontFamily="{StaticResource Open Sans}"
                         Background="#2196F3" 
                         Foreground="White"
                         FontWeight="Bold"
@@ -72,7 +75,8 @@
                 </Button>
 
 
-                <Button Content="Sản phẩm sắp hết hàng" 
+                <Button Content="Sản phẩm sắp hết hàng"
+                        FontFamily="{StaticResource Open Sans}"
                         Background="#FF9800" 
                         Foreground="White"
                         FontWeight="Bold"
