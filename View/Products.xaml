@@ -6,7 +6,7 @@
              xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
              mc:Ignorable="d"
              d:DesignHeight="600"
-             d:DesignWidth="622"
+             d:DesignWidth="900"
              Style="{StaticResource Page_Style}">
 
     <UserControl.DataContext>
@@ -14,273 +14,244 @@
     </UserControl.DataContext>
 
     <Grid Margin="15">
+
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-
-        <TextBlock Grid.Row="0" 
-                   Text="Danh mục Kho"
-                   FontFamily="{StaticResource Open Sans}"
-                   FontSize="30" 
-                   FontWeight="ExtraBold" 
+        <TextBlock Grid.Row="0"
+                   Text="Danh mục khuyến mại"
+                   FontSize="24"
+                   FontWeight="Bold"
                    Foreground="#5A7BD8"
                    Margin="0,0,0,20"/>
 
-
-        <Border Grid.Row="1" 
-                Background="#F5F5F5" 
-                BorderBrush="#E0E0E0" 
+        <Border Grid.Row="1"
+                Background="#F5F5F5"
+                BorderBrush="#E0E0E0"
                 BorderThickness="1"
                 CornerRadius="5"
                 Padding="15"
                 Margin="0,0,0,20">
+
             <StackPanel Orientation="Horizontal">
 
+                <Button Content="Thêm khuyến mại"
+                        Command="{Binding AddKhuyenMaiCommand}"
+                        Background="#4CAF50"
+                        Foreground="White"
+                        FontWeight="Bold"
+                        Padding="15,8"
+                        BorderThickness="0" Click="Button_Click"/>
 
-                <Button Content="Nhập kho"
-                        FontFamily="{StaticResource Open Sans}"
-                        Background="#4CAF50" 
+                <Button Content="Xóa khuyến mại"
+                        Command="{Binding DeleteKhuyenMaiCommand}"
+                        Background="#2196F3"
                         Foreground="White"
                         FontWeight="Bold"
                         Padding="15,8"
                         BorderThickness="0"
-                        Cursor="Hand"
-                        Command="{Binding ShowStockEntryCommand}">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="3"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-
-
-                <Button Content="Xem chi tiết nhập kho"
-                        FontFamily="{StaticResource Open Sans}"
-                        Background="#2196F3" 
-                        Foreground="White"
-                        FontWeight="Bold"
-                        Padding="15,8"
-                        BorderThickness="0"
-                        Margin="10,0,0,0"
-                        Cursor="Hand"
-                        Command="{Binding ShowImportDetailCommand}">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="3"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-
-
-                <Button Content="Sản phẩm sắp hết hàng"
-                        FontFamily="{StaticResource Open Sans}"
-                        Background="#FF9800" 
-                        Foreground="White"
-                        FontWeight="Bold"
-                        Padding="15,8"
-                        BorderThickness="0"
-                        Margin="10,0,0,0"
-                        Cursor="Hand"
-                        Command="{Binding ShowLowStockCommand}">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="3"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-
-
-                <Border Background="White" 
-                        BorderBrush="#CCCCCC" 
-                        BorderThickness="1"
-                        CornerRadius="3"
-                        Margin="30,0,0,0"
-                        Width="300">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-
-                        <TextBox Grid.Column="0" 
-                                 Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
-                                 BorderThickness="0"
-                                 Padding="10,8"
-                                 FontSize="14"
-                                 VerticalContentAlignment="Center">
-                            <TextBox.InputBindings>
-                                <KeyBinding Key="Enter" Command="{Binding SearchCommand}"/>
-                            </TextBox.InputBindings>
-                        </TextBox>
-
-                        <Button Grid.Column="1" 
-                                Background="Transparent" 
-                                BorderThickness="0"
-                                Padding="10"
-                                Command="{Binding SearchCommand}">
-                            <TextBlock Text="🔍"
-                                       FontSize="14"/>
-                        </Button>
-                    </Grid>
-                </Border>
+                        Margin="10,0,0,0"/>
 
             </StackPanel>
         </Border>
 
-
-        <Border Grid.Row="2" 
-                BorderBrush="#E0E0E0" 
+        <Border Grid.Row="2"
+                Background="White"
+                BorderBrush="#E0E0E0"
                 BorderThickness="1"
-                CornerRadius="5">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+                CornerRadius="5"
+                Padding="15"
+                Margin="0,0,0,20">
 
+            <StackPanel>
 
-                <Border Grid.Row="0" 
-                        Background="#87BAC3" 
-                        BorderBrush="#E0E0E0" 
-                        BorderThickness="0,0,0,1"
-                        CornerRadius="5,5,0,0">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="80"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="150"/>
-                            <ColumnDefinition Width="120"/>
-                            <ColumnDefinition Width="150"/>
-                            <ColumnDefinition Width="150"/>
-                        </Grid.ColumnDefinitions>
+                <TextBlock Text="Nhập khuyến mãi mới"
+                           FontSize="18"
+                           FontWeight="Bold"
+                           Margin="0,0,0,15"/>
 
-                        <TextBlock Grid.Column="0" 
-                                   Text="Mã số" 
-                                   Foreground="White"
-                                   FontWeight="Bold"
-                                   Padding="15,12"
-                                   HorizontalAlignment="Left"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                        <TextBlock Grid.Column="1" 
-                                   Text="Tên sản phẩm" 
-                                   Foreground="White"
-                                   FontWeight="Bold"
-                                   Padding="15,12"
-                                   HorizontalAlignment="Left"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="12"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="12"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
-                        <TextBlock Grid.Column="2" 
-                                   Text="Số lượng trong kho" 
-                                   Foreground="White"
-                                   FontWeight="Bold"
-                                   Padding="15,12"
-                                   HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Mã khuyến mãi"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding NewMaKM}"/>
 
-                        <TextBlock Grid.Column="3" 
-                                   Text="Đơn vị" 
-                                   Foreground="White"
-                                   FontWeight="Bold"
-                                   Padding="15,12"
-                                   HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Row="0" Grid.Column="2" Text="Tên khuyến mãi"/>
+                    <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding NewTenKM}"/>
 
-                        <TextBlock Grid.Column="4" 
-                                   Text="Loại" 
-                                   Foreground="White"
-                                   FontWeight="Bold"
-                                   Padding="15,12"
-                                   HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Ngày bắt đầu"/>
+                    <DatePicker Grid.Row="2" Grid.Column="1" SelectedDate="{Binding NewNgayBD}"/>
 
-                        <TextBlock Grid.Column="5" 
-                                   Text="Giá nhập" 
-                                   Foreground="White"
-                                   FontWeight="Bold"
-                                   Padding="15,12"
-                                   HorizontalAlignment="Left"/>
-                    </Grid>
-                </Border>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="Ngày kết thúc"/>
+                    <DatePicker Grid.Row="2" Grid.Column="3" SelectedDate="{Binding NewNgayKT}"/>
 
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="Phần trăm giảm"/>
+                    <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding NewPhanTramGiam}"/>
 
-                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-                    <ItemsControl ItemsSource="{Binding StockItems}">
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-                                <Border BorderBrush="#E0E0E0" 
-                                        BorderThickness="0,0,0,1"
-                                        Background="Transparent">
-                                    <Grid Height="45">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="80"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="150"/>
-                                            <ColumnDefinition Width="120"/>
-                                            <ColumnDefinition Width="150"/>
-                                            <ColumnDefinition Width="150"/>
-                                        </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="4" Grid.Column="2" Text="Áp dụng (1 / 0)"/>
+                    <TextBox Grid.Row="4" Grid.Column="3" Text="{Binding NewApDung}"/>
+                </Grid>
 
-
-                                        <TextBlock Grid.Column="0" 
-                                                   Text="{Binding ProductId}"
-                                                   Foreground="#333333"
-                                                   Padding="15,0"
-                                                   VerticalAlignment="Center"/>
-
-
-                                        <TextBlock Grid.Column="1" 
-                                                   Text="{Binding ProductName}"
-                                                   Foreground="#333333"
-                                                   Padding="15,0"
-                                                   VerticalAlignment="Center"/>
-
-
-                                        <Border Grid.Column="2" 
-                                                Background="{Binding QuantityColor}"
-                                                CornerRadius="3"
-                                                Margin="10,5"
-                                                VerticalAlignment="Center"
-                                                Height="30">
-                                            <TextBlock Text="{Binding Quantity}"
-                                                       Foreground="White"
-                                                       FontWeight="Bold"
-                                                       HorizontalAlignment="Center"
-                                                       VerticalAlignment="Center"/>
-                                        </Border>
-
-                                        <TextBlock Grid.Column="3" 
-                                                   Text="{Binding Unit}"
-                                                   Foreground="#333333"
-                                                   Padding="15,0"
-                                                   VerticalAlignment="Center"/>
-
-
-                                        <Border Grid.Column="4" 
-                                                Background="{Binding CategoryColor}"
-                                                CornerRadius="3"
-                                                Margin="10,5"
-                                                VerticalAlignment="Center"
-                                                Height="30">
-                                            <TextBlock Text="{Binding Category}"
-                                                       Foreground="White"
-                                                       FontWeight="Bold"
-                                                       HorizontalAlignment="Center"
-                                                       VerticalAlignment="Center"/>
-                                        </Border>
-
-
-                                        <TextBlock Grid.Column="5" 
-                                                   Text="{Binding ImportPrice, StringFormat='{}{0:N0} VND'}"
-                                                   Foreground="#333333"
-                                                   Padding="15,0"
-                                                   VerticalAlignment="Center"/>
-                                    </Grid>
-                                </Border>
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                    </ItemsControl>
-                </ScrollViewer>
-            </Grid>
+            </StackPanel>
         </Border>
+
+        <DataGrid Grid.Row="3"
+          ItemsSource="{Binding StockItems}"
+          SelectedItem="{Binding SelectedKhuyenMai}"
+          AutoGenerateColumns="False"
+          CanUserAddRows="False"
+          IsReadOnly="True"
+          SelectionMode="Single"
+          GridLinesVisibility="None"
+          RowHeight="45"
+          FontSize="14"
+          BorderThickness="1"
+          BorderBrush="#E0E0E0"
+          HeadersVisibility="Column">
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="Mã khuyến mãi"
+                            Binding="{Binding ProductId}"
+                            Width="120">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#87BAC3"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="Padding" Value="10,12"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Tên khuyến mãi"
+                            Binding="{Binding ProductName}"
+                            Width="*">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#87BAC3"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                            <Setter Property="Padding" Value="15,12"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Ngày bắt đầu"
+                            Binding="{Binding StartDate,StringFormat=dd/MM/yyyy}"
+                            Width="150">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#87BAC3"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Ngày kết thúc"
+                            Binding="{Binding EndDate,StringFormat=dd/MM/yyyy}"
+                            Width="150">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#87BAC3"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTemplateColumn Header="Phần trăm giảm"
+                                Width="180">
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#87BAC3"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Border Background="{Binding DiscountColor}"
+                            CornerRadius="4"
+                            Margin="10,5"
+                            Height="30">
+                                <TextBlock Text="{Binding DiscountPercentage,StringFormat='{}{0}%'}"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Trạng thái"
+                                Width="130">
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#87BAC3"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Border Background="{Binding StatusColor}"
+                            CornerRadius="4"
+                            Margin="10,5"
+                            Height="30">
+                                <TextBlock Text="{Binding Status}"
+                                   Foreground="White"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                            </Border>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                    <Setter Property="BorderBrush" Value="#E0E0E0"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#F5F5F5"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+
+        </DataGrid>
 
     </Grid>
 </UserControl>

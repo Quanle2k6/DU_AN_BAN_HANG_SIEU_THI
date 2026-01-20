@@ -2,6 +2,7 @@
 using System;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -183,5 +184,34 @@ namespace Page_Navigation_App.View
             }
         }
 
+        private void txtSDT_PreviewTextInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
+        private void txtSDT_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox == null) return;
+
+            // Lưu vị trí con trỏ hiện tại
+            int selectionStart = textBox.SelectionStart;
+            int oldLength = textBox.Text.Length;
+
+            // Ép TextBox cập nhật định dạng từ ViewModel (thêm dấu phẩy)
+            // Sau khi ViewModel cập nhật, Text có thể thay đổi độ dài (ví dụ từ 999 lên 1,000)
+
+            int newLength = textBox.Text.Length;
+
+            // Điều chỉnh lại vị trí con trỏ để không bị nhảy
+            int newSelectionStart = selectionStart + (newLength - oldLength);
+
+            if (newSelectionStart >= 0)
+                textBox.SelectionStart = newSelectionStart;
+        }
+
+     
+        
     }
 }

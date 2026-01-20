@@ -198,25 +198,41 @@
                            FontWeight="Black"
                            Margin="0,0,0,15"/>
 
+
                 <DataGrid Grid.Row="1"
-                          ItemsSource="{Binding DanhSachNhanVien}"
-                          SelectedItem="{Binding SelectedNhanVien}"
-                          AutoGenerateColumns="False"
-                          CanUserAddRows="False">
+          ItemsSource="{Binding DanhSachNhanVien}"
+          SelectedItem="{Binding SelectedNhanVien}"
+          AutoGenerateColumns="False"
+          CanUserAddRows="False"
+          Background="White"
+          RowBackground="White"
+          AlternatingRowBackground="White"
+          GridLinesVisibility="None"
+          BorderThickness="0">
+
+                    <DataGrid.Resources>
+                        <Style TargetType="ScrollViewer">
+                            <Setter Property="Background" Value="White"/>
+                        </Style>
+                    </DataGrid.Resources>
 
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Mã NV" Binding="{Binding MaNV}"/>
+                        <DataGridTextColumn Header="Mã NV" Binding="{Binding MaNV}" Width="80"/>
                         <DataGridTextColumn Header="Tên NV" Binding="{Binding TenNV}" Width="2*"/>
-                        <DataGridTextColumn Header="Giới tính" Binding="{Binding GioiTinh}"/>
+                        <DataGridTextColumn Header="Giới tính" Binding="{Binding GioiTinh}" Width="80"/>
                         <DataGridTextColumn Header="Ngày sinh"
-                                            Binding="{Binding NgSinh, StringFormat=dd/MM/yyyy}"/>
+                            Binding="{Binding NgSinh, StringFormat=dd/MM/yyyy}"
+                            Width="120"/>
                         <DataGridTextColumn Header="Ngày vào làm"
-                                            Binding="{Binding NgBDLamViec, StringFormat=dd/MM/yyyy}"/>
+                            Binding="{Binding NgBDLamViec, StringFormat=dd/MM/yyyy}"
+                            Width="120"/>
                         <DataGridTextColumn Header="Lương"
-                                            Binding="{Binding Luong, StringFormat=N0}"/>
+                            Binding="{Binding Luong, StringFormat=N0}"
+                            Width="120"/>
                     </DataGrid.Columns>
 
                 </DataGrid>
+
             </Grid>
         </Border>
 

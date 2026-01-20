@@ -20,7 +20,6 @@ namespace Page_Navigation_App.View
         private void OnPropertyChanged(string prop)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
 
-        // ===== PROPERTY BINDING =====
         private string _maHD;
         public string MaHD
         {
@@ -56,10 +55,12 @@ namespace Page_Navigation_App.View
             set { _tongTien = value; OnPropertyChanged(nameof(TongTien)); }
         }
 
-        // 🔥 COLLECTION BINDING
+   
+
         public ObservableCollection<CTHD> ChiTietHoaDon { get; set; }
 
-        // ===== CONSTRUCTOR =====
+        
+
         public PageCTHD(string maHD)
         {
             InitializeComponent();
@@ -70,13 +71,15 @@ namespace Page_Navigation_App.View
         }
 
 
-        // ===== LOAD DATA =====
+
+
         private void LoadHoaDon()
         {
             using SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
-            // ===== THÔNG TIN HÓA ĐƠN =====
+           
+
             string sqlHD = @"
                 SELECT kh.TenKH, kh.SDT, hd.NgayLapHD, hd.ThanhTien
                 FROM HOADON hd
@@ -96,8 +99,9 @@ namespace Page_Navigation_App.View
             }
             rd.Close();
 
-            // ===== CHI TIẾT HÓA ĐƠN =====
-            ChiTietHoaDon.Clear(); // 🔥 TRÁNH LOAD TRÙNG
+
+            ChiTietHoaDon.Clear(); 
+
 
             string sqlCT = @"
                 SELECT sp.TenSP, ct.SoLuongMua, ct.DonGiaSP
@@ -120,7 +124,7 @@ namespace Page_Navigation_App.View
             }
         }
 
-        // ===== CLOSE OVERLAY =====
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var main = (MainWindow)Application.Current.MainWindow;

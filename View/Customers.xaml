@@ -513,8 +513,23 @@
             VerticalAlignment="Top" Width="129" Style="{StaticResource ViewButton}" Command="{Binding ViewAllCommand}"/>
         <Button x:Name="btn_XoaDuLieu" Content="Xoá dữ liệu nhập" HorizontalAlignment="Left" Height="40" Margin="210,212,0,0" 
             VerticalAlignment="Top" Width="154" Style="{StaticResource ViewButton}" Command="{Binding ClearCommand}" Grid.Column="1"/>
-        <TextBox x:Name="txtSL" IsReadOnly="True" HorizontalAlignment="Left" Height="38" Margin="244,106,0,0" Width="120" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="14" Text="{Binding SoLuongCon, UpdateSourceTrigger=PropertyChanged}" Foreground="Gray" Grid.Column="1"/>
-        <Label Content="Số lượng:" HorizontalAlignment="Left" Margin="143,109,0,0" VerticalAlignment="Top" Width="148" Height="32" FontWeight="ExtraBold" FontSize="14" Grid.Column="1" FontFamily="{StaticResource Open Sans}"/>
+        <TextBox x:Name="txtSL"
+         IsReadOnly="True"
+         HorizontalAlignment="Left"
+         Height="38"
+         Margin="244,106,0,0"
+         Width="120"
+         Style="{StaticResource RoundedTextBox}"
+         VerticalContentAlignment="Center"
+         VerticalAlignment="Top"
+         FontSize="14"
+         Text="{Binding SoLuongCon, Mode=OneWay}"
+         Foreground="#374151"
+         Grid.Column="1"/>
+
+        <Label Content="Số lượng:" HorizontalAlignment="Left" Margin="143,109,0,0" VerticalAlignment="Top" 
+               Width="148" Height="32" FontWeight="ExtraBold" FontSize="14" Grid.Column="1" 
+               FontFamily="{StaticResource Open Sans}"/>
         <TextBox x:Name="txtDVT" HorizontalAlignment="Left" Height="38" Margin="244,151,0,0" Width="120" Style="{StaticResource RoundedTextBox}" VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="14" Text="{Binding DonViTinh, UpdateSourceTrigger=PropertyChanged}" Foreground="Gray" Grid.Column="1"/>
         <Label Content="Đơn vị tính:" HorizontalAlignment="Left" Margin="143,154,0,0" VerticalAlignment="Top" Width="148" Height="32" FontWeight="ExtraBold" FontSize="14" Grid.Column="1" FontFamily="{StaticResource Open Sans}"/>
     </Grid>
