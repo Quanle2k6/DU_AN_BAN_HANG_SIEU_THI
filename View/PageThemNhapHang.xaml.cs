@@ -28,7 +28,8 @@ namespace Page_Navigation_App.View
             LoadNhaCungCap();
         }
 
-        // ================= LOAD NHÀ CUNG CẤP =================
+     
+
         void LoadNhaCungCap()
         {
             cbNhaCungCap.Items.Clear();
@@ -49,7 +50,7 @@ namespace Page_Navigation_App.View
             }
         }
 
-        // ================= CHỌN NCC → HIỆN SỐ TÀI KHOẢN =================
+    
         private void cbNhaCungCap_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (cbNhaCungCap.SelectedItem is DataRowView row)
@@ -58,7 +59,7 @@ namespace Page_Navigation_App.View
             }
         }
 
-        // ================= LƯU =================
+
         private void BtnLuu_Click(object sender, RoutedEventArgs e)
         {
             if (cbNhaCungCap.SelectedItem == null)
@@ -76,13 +77,15 @@ namespace Page_Navigation_App.View
                 {
                     bool tonTai = KiemTraMaNH(conn, tran);
 
+
                     if (tonTai)
                     {
-                        CapNhatNhapHang(conn, tran);
-                        XoaChiTietCu(conn, tran);
-                        ThemChiTiet(conn, tran);
+                        TruTonKhoCu(conn, tran);   
 
-                        tran.Commit();
+                        XoaChiTietCu(conn, tran);
+                        CapNhatNhapHang(conn, tran);
+                        ThemChiTiet(conn, tran);
+                        tran.Commit(); 
                         MessageBox.Show("Cập nhật thành công");
                         ReloadNhapHang?.Invoke();
                     }
@@ -104,7 +107,8 @@ namespace Page_Navigation_App.View
             }
         }
 
-        // ================= KIỂM TRA MÃ NH =================
+        
+
         bool KiemTraMaNH(SqlConnection conn, SqlTransaction tran)
         {
             SqlCommand cmd = new SqlCommand(
@@ -115,7 +119,8 @@ namespace Page_Navigation_App.View
             return (int)cmd.ExecuteScalar() > 0;
         }
 
-        // ================= THÊM NHẬP HÀNG =================
+        
+
         void ThemNhapHang(SqlConnection conn, SqlTransaction tran)
         {
             SqlCommand cmd = new SqlCommand(
@@ -131,7 +136,8 @@ namespace Page_Navigation_App.View
             cmd.ExecuteNonQuery();
         }
 
-        // ================= CẬP NHẬT NHẬP HÀNG =================
+        
+
         void CapNhatNhapHang(SqlConnection conn, SqlTransaction tran)
         {
             SqlCommand cmd = new SqlCommand(
@@ -161,28 +167,69 @@ namespace Page_Navigation_App.View
             cmd.Parameters.AddWithValue("@MaNH", txtMaNH.Text);
             cmd.ExecuteNonQuery();
         }
- 
-       
+
+
         void ThemChiTiet(SqlConnection conn, SqlTransaction tran)
         {
             foreach (var ct in danhSachCT)
             {
-                SqlCommand cmd = new SqlCommand(
+                
+
+                SqlCommand cmdCT = new SqlCommand(
                     @"INSERT INTO CHITIETNHAPHANG
-                      (MaNH, MaSP, SoLuongNhapHang, GiaNhap)
-                      VALUES (@MaNH, @MaSP, @SoLuong, @GiaNhap)",
+              (MaNH, MaSP, SoLuongNhapHang, GiaNhap)
+              VALUES (@MaNH, @MaSP, @SoLuong, @GiaNhap)",
                     conn, tran);
 
-                cmd.Parameters.AddWithValue("@MaNH", txtMaNH.Text);
-                cmd.Parameters.AddWithValue("@MaSP", ct.MaSP);
-                cmd.Parameters.AddWithValue("@SoLuong", ct.SoLuongNhapHang);
-                cmd.Parameters.AddWithValue("@GiaNhap", ct.GiaNhap);
+                cmdCT.Parameters.AddWithValue("@MaNH", txtMaNH.Text);
+                cmdCT.Parameters.AddWithValue("@MaSP", ct.MaSP);
+                cmdCT.Parameters.AddWithValue("@SoLuong", ct.SoLuongNhapHang);
+                cmdCT.Parameters.AddWithValue("@GiaNhap", ct.GiaNhap);
+                cmdCT.ExecuteNonQuery();
 
-                cmd.ExecuteNonQuery();
+                
+
+                SqlCommand cmdUpdate = new SqlCommand(
+                    @"UPDATE SANPHAM
+              SET SoLuongCon = ISNULL(SoLuongCon, 0) + @SoLuong
+              WHERE MaSP = @MaSP",
+                    conn, tran);
+
+                cmdUpdate.Parameters.AddWithValue("@SoLuong", ct.SoLuongNhapHang);
+                cmdUpdate.Parameters.AddWithValue("@MaSP", ct.MaSP);
+                cmdUpdate.ExecuteNonQuery();
             }
         }
 
-        // ================= HỦY =================
+
+        void TruTonKhoCu(SqlConnection conn, SqlTransaction tran)
+        {
+            SqlCommand cmd = new SqlCommand(
+                @"SELECT MaSP, SoLuongNhapHang
+          FROM CHITIETNHAPHANG
+          WHERE MaNH = @MaNH",
+                conn, tran);
+
+            cmd.Parameters.AddWithValue("@MaNH", txtMaNH.Text);
+
+            DataTable dt = new DataTable();
+            new SqlDataAdapter(cmd).Fill(dt);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                SqlCommand cmdUpdate = new SqlCommand(
+                    @"UPDATE SANPHAM
+              SET SoLuongCon = SoLuongCon - @SoLuong
+              WHERE MaSP = @MaSP",
+                    conn, tran);
+
+                cmdUpdate.Parameters.AddWithValue("@MaSP", row["MaSP"]);
+                cmdUpdate.Parameters.AddWithValue("@SoLuong", row["SoLuongNhapHang"]);
+                cmdUpdate.ExecuteNonQuery();
+            }
+        }
+
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             var main = (MainWindow)Application.Current.MainWindow;

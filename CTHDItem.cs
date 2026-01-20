@@ -7,7 +7,8 @@ namespace Page_Navigation_App.Model
         public int STT { get; set; }
 
         private string _tenSP;
-        public string TenSP   // 🔥 ĐỔI TÊN CHO KHỚP
+        public string TenSP   
+
         {
             get => _tenSP;
             set

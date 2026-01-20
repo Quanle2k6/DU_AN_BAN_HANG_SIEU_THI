@@ -95,6 +95,11 @@ namespace Page_Navigation_App.View
                 cbMaLSP.Items.Add(row["MaLSP"].ToString());
             }
         }
+
+        private void txtSL_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
 

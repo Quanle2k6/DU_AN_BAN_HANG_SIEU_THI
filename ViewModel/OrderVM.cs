@@ -8,7 +8,7 @@ using System.Windows.Input;
 
 namespace Page_Navigation_App.ViewModel
 {
-   
+
     public class SanPhamItem
     {
         public string TenSP { get; set; }
@@ -28,7 +28,8 @@ namespace Page_Navigation_App.ViewModel
         public decimal TongTien => MatHang.Sum(x => x.ThanhTien);
     }
 
-    // ===== VIEWMODEL CHÍNH =====
+
+
     public class OrderVM : Utilities.ViewModelBase
     {
         private string connStr =
@@ -37,10 +38,11 @@ namespace Page_Navigation_App.ViewModel
 
         public ObservableCollection<HoaDonView> Orders { get; set; }
 
-        // ===== TẠO HÓA ĐƠN MỚI (CHỈ TÊN SP + SỐ LƯỢNG) =====
+
+
         public ObservableCollection<SanPhamThem> OrderDetails { get; set; }
 
-        // ===== DANH SÁCH TÊN SẢN PHẨM CHO COMBOBOX =====
+
         public ObservableCollection<string> TenSanPhamList { get; set; }
 
         public ICommand CreateOrderCommand { get; }
@@ -57,10 +59,99 @@ namespace Page_Navigation_App.ViewModel
 
             CreateOrderCommand = new Utilities.RelayCommand(CreateOrder);
             DeleteOrderCommand = new Utilities.RelayCommand(DeleteOrder);
+            SearchOrderCommand = new Utilities.RelayCommand(SearchOrder);
 
         }
+     
 
-        // ===== LOAD HÓA ĐƠN PHÍA DƯỚI =====
+
+        private string _searchText;
+        public string SearchText
+        {
+            get => _searchText;
+            set
+            {
+                _searchText = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ICommand SearchOrderCommand { get; }
+        private void SearchOrder(object obj)
+        {
+            Orders.Clear();
+
+            if (string.IsNullOrWhiteSpace(SearchText))
+            {
+                LoadHoaDon();
+                return;
+            }
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                conn.Open();
+
+                string sql = @"
+        SELECT hd.MaHD, kh.TenKH, kh.DiaChi, kh.SDT,
+               sp.TenSP, sp.GiaBan, ct.SoLuongMua
+        FROM HOADON hd
+        JOIN KHACHHANG kh ON hd.MaKH = kh.MaKH
+        JOIN CTHD ct ON hd.MaHD = ct.MaHD
+        JOIN SANPHAM sp ON ct.MaSP = sp.MaSP
+        WHERE hd.MaHD LIKE @MaHD
+        ORDER BY hd.MaHD";
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@MaHD", "%" + SearchText + "%");
+
+                SqlDataReader rd = cmd.ExecuteReader();
+
+                while (rd.Read())
+                {
+                    string maHD = rd["MaHD"].ToString();
+
+                    var hd = Orders.FirstOrDefault(x => x.MaHD == maHD);
+
+                    if (hd == null)
+                    {
+                        hd = new HoaDonView
+                        {
+                            STT = Orders.Count + 1,
+                            MaHD = maHD,
+                            TenKH = rd["TenKH"].ToString(),
+                            DiaChi = rd["DiaChi"].ToString(),
+                            SDT = rd["SDT"].ToString(),
+                            MatHang = new ObservableCollection<SanPhamItem>()
+                        };
+                        Orders.Add(hd);
+                    }
+
+                    hd.MatHang.Add(new SanPhamItem
+                    {
+                        TenSP = rd["TenSP"].ToString(),
+                        SoLuong = Convert.ToInt32(rd["SoLuongMua"]),
+                        GiaBan = Convert.ToDecimal(rd["GiaBan"])
+                    });
+                }
+            }
+
+            if (Orders.Count == 0)
+            {
+                Orders.Add(new HoaDonView
+                {
+                    STT = 1,
+                    MaHD = "Không tìm thấy",
+                    TenKH = "",
+                    DiaChi = "",
+                    SDT = "",
+                    MatHang = new ObservableCollection<SanPhamItem>()
+                });
+            }
+
+            OnPropertyChanged(nameof(Orders));
+        }
+
+
         private void LoadHoaDon()
         {
             Orders = new ObservableCollection<HoaDonView>();
@@ -113,7 +204,8 @@ namespace Page_Navigation_App.ViewModel
             OnPropertyChanged(nameof(Orders));
         }
 
-        // ===== LOAD TÊN SẢN PHẨM (CHO COMBOBOX) =====
+     
+
         private void LoadTenSanPham()
         {
             TenSanPhamList = new ObservableCollection<string>();
@@ -209,7 +301,7 @@ namespace Page_Navigation_App.ViewModel
 
                 try
                 {
-                   
+
 
                     SqlCommand cmdCT = new SqlCommand(
                         "DELETE FROM CTHD WHERE MaHD = @MaHD",
@@ -217,7 +309,7 @@ namespace Page_Navigation_App.ViewModel
                     cmdCT.Parameters.AddWithValue("@MaHD", SelectedOrder.MaHD);
                     cmdCT.ExecuteNonQuery();
 
-                   
+
 
                     SqlCommand cmdHD = new SqlCommand(
                         "DELETE FROM HOADON WHERE MaHD = @MaHD",
@@ -234,7 +326,7 @@ namespace Page_Navigation_App.ViewModel
                 }
             }
 
-           
+
 
             LoadHoaDon();
 

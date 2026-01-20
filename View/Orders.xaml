@@ -8,6 +8,7 @@
         <vm:OrderVM/>
     </UserControl.DataContext>
 
+
     <Grid Margin="24">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -15,26 +16,68 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+       
+        
         <Grid Grid.Row="0" Margin="0,0,0,18">
             <TextBlock Text="Chi tiết hoá đơn"
                        FontFamily="{StaticResource Open Sans}"
                        FontSize="30"
                        FontWeight="ExtraBold"
                        Foreground="#5A7BD8"/>
+
+           
             <Border HorizontalAlignment="Right"
                     CornerRadius="18"
                     Background="White"
-                    Padding="8,4">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="/Images/find.png"
-                           Width="18"
-                           Height="18"
-                           Margin="0,0,6,0"/>
-                    <TextBox Width="210"
-                             BorderThickness="0"
-                             VerticalContentAlignment="Center"
-                             Text="Tìm kiếm theo mã hoá đơn"/>
-                </StackPanel>
+                    Padding="10,4"
+                    Height="41"
+                    VerticalAlignment="Bottom">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- BUTTON SEARCH -->
+                    <Button Grid.Column="0"
+                            Command="{Binding SearchOrderCommand}"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Padding="4">
+                        <Image Source="/Images/find.png"
+                               Width="18"
+                               Height="18"/>
+                    </Button>
+
+                   
+                    <Grid Grid.Column="1" Margin="6,0,0,0">
+                        <TextBox x:Name="txtSearch"
+                                 Width="210"
+                                 BorderThickness="0"
+                                 FontSize="14"
+                                 VerticalContentAlignment="Center"
+                                 Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"/>
+
+                        <TextBlock Text="Tìm kiếm theo mã hoá đơn"
+                                   Margin="4,0,0,0"
+                                   VerticalAlignment="Center"
+                                   Foreground="Gray"
+                                   IsHitTestVisible="False">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text, ElementName=txtSearch}" Value="">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </Grid>
+                </Grid>
             </Border>
         </Grid>
 
@@ -73,7 +116,7 @@
 
                     <TextBlock Text="Số điện thoại"/>
                     <TextBox x:Name="txtSDT"
-                             Height="32"/>
+                             Height="32" TextChanged="txtSDT_TextChanged" PreviewTextInput="txtSDT_PreviewTextInput"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">

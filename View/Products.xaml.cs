@@ -15,14 +15,20 @@ using System.Windows.Shapes;
 
 namespace Page_Navigation_App.View
 {
-    /// <summary>
-    /// Interaction logic for Products.xaml
-    /// </summary>
+  
+
+
+
     public partial class Products : UserControl
     {
         public Products()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

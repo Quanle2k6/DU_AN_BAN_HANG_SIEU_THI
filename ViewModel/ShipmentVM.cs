@@ -190,7 +190,9 @@ namespace Page_Navigation_App.ViewModel
 
             for (int i = 0; i < 4; i++)
             {
-                ThongKeTheoQuy[0].Values.Add(revenueByQuarter[i]);
+                ThongKeTheoQuy[0].Values.Add(
+          revenueByQuarter[i] == 0 ? 0.0001 : revenueByQuarter[i]
+      );
             }
         }
 

@@ -95,18 +95,26 @@
 
                 <StackPanel Margin="0,0,12,0">
                     <TextBlock Text="Từ ngày" FontSize="12"/>
-                    <DatePicker Width="140"/>
+                    <DatePicker x:Name="dpTuNgay" Width="140"/>
                 </StackPanel>
 
                 <StackPanel Margin="0,0,12,0">
                     <TextBlock Text="Đến ngày" FontSize="12"/>
-                    <DatePicker Width="140"/>
+                    <DatePicker x:Name="dpDenNgay" Width="140"/>
                 </StackPanel>
 
                 <Button Content="Lấy dữ liệu"
                         VerticalAlignment="Bottom"
                         Background="{StaticResource PrimaryColor}"
-                        Style="{StaticResource ModernButton}" Width="130" Height="43"/>
+                        Style="{StaticResource ModernButton}" Width="130" Height="43" Click="Button_Click"/>
+                <Button Content="Xem tất cả"
+                VerticalAlignment="Bottom"
+                Background="#10B981"
+                Style="{StaticResource ModernButton}"
+                Width="120"
+                Height="43"
+                Click="btnXemTatCa_Click"/>
+                
             </StackPanel>
         </Border>
 
@@ -178,11 +186,11 @@
                                             Width="120"/>
 
                         <DataGridTextColumn Header="Đơn giá"
-                                            Binding="{Binding GiaNhap}"
+                                            Binding="{Binding GiaNhap,StringFormat={}{0:N0} VNĐ}"
                                             Width="150"/>
 
                         <DataGridTextColumn Header="Thành tiền"
-                                            Binding="{Binding ThanhTien}"
+                                            Binding="{Binding ThanhTien,StringFormat={}{0:N0} VNĐ}"
                                             Width="180"/>
                     </DataGrid.Columns>
                 </DataGrid>
