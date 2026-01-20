@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\customervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\customervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\orders.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\orders.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\orders.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -15,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\orders.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\orders.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\customervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\customervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\pagethemnhaphang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\transactions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\shipmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\shipmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -50,28 +50,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HOME\\AppData\\Local\\Temp\\.vsdbgsrc\\322467f2f0ff3a5e25c957bc22f206f4ea97f7e0913122ec8a210a8849f21412\\ChartUpdater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\sanphamthem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\sanphamthem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\view\\transactions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:view\\transactions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\khuyenmaiitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\khuyenmaiitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\cthd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\cthd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\navigationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\nhanvienmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|solutionrelative:viewmodel\\nhanvienmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCEAC2F7-98D2-16A9-B43B-2EB303C978C1}|Page Navigation App.csproj|c:\\users\\home\\pictures\\page navigation app\\viewmodel\\settingvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -209,7 +193,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -229,20 +213,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "CustomerVM.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\CustomerVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\CustomerVM.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\CustomerVM.cs",
               "RelativeToolTip": "ViewModel\\CustomerVM.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAADwv+IAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAN0AAAAAAAAAAADwv+4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T21:31:32.139Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Customers.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Customers.xaml.cs",
               "RelativeDocumentMoniker": "View\\Customers.xaml.cs",
@@ -255,33 +239,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "TransactionVM.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\TransactionVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\TransactionVM.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\TransactionVM.cs",
               "RelativeToolTip": "ViewModel\\TransactionVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-19T22:33:51.022Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "OrderVM.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\OrderVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\OrderVM.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\OrderVM.cs",
               "RelativeToolTip": "ViewModel\\OrderVM.cs",
-              "ViewState": "AgIAACsBAAAAAAAAAAAswFUBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANkAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T06:45:26.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Orders.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Orders.xaml",
               "RelativeDocumentMoniker": "View\\Orders.xaml",
@@ -299,53 +283,53 @@
               "RelativeDocumentMoniker": "View\\Orders.xaml.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Orders.xaml.cs",
               "RelativeToolTip": "View\\Orders.xaml.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAAAL8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwNIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T19:25:14.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProductVM.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\ProductVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\ProductVM.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\ProductVM.cs",
               "RelativeToolTip": "ViewModel\\ProductVM.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAwwMQAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T19:37:31.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PageThemNhapHang.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\PageThemNhapHang.xaml.cs",
               "RelativeDocumentMoniker": "View\\PageThemNhapHang.xaml.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\PageThemNhapHang.xaml.cs",
               "RelativeToolTip": "View\\PageThemNhapHang.xaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T20:41:14.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Transactions.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Transactions.xaml.cs",
               "RelativeDocumentMoniker": "View\\Transactions.xaml.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Transactions.xaml.cs",
               "RelativeToolTip": "View\\Transactions.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAGMAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAGkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T08:59:10.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Customers.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Customers.xaml",
               "RelativeDocumentMoniker": "View\\Customers.xaml",
@@ -384,32 +368,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "SanPhamThem.cs",
-              "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\SanPhamThem.cs",
-              "RelativeDocumentMoniker": "ViewModel\\SanPhamThem.cs",
-              "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\SanPhamThem.cs",
-              "RelativeToolTip": "ViewModel\\SanPhamThem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T16:23:54.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "KhuyenMaiItem.cs",
-              "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\KhuyenMaiItem.cs",
-              "RelativeDocumentMoniker": "ViewModel\\KhuyenMaiItem.cs",
-              "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\KhuyenMaiItem.cs",
-              "RelativeToolTip": "ViewModel\\KhuyenMaiItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T18:28:46.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "Transactions.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Transactions.xaml",
               "RelativeDocumentMoniker": "View\\Transactions.xaml",
@@ -421,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "NavigationVM.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\NavigationVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\NavigationVM.cs",
@@ -434,46 +392,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CTHD.cs",
-              "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\CTHD.cs",
-              "RelativeDocumentMoniker": "ViewModel\\CTHD.cs",
-              "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\CTHD.cs",
-              "RelativeToolTip": "ViewModel\\CTHD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T21:34:15.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "NhanVienModel.cs",
-              "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\NhanVienModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\NhanVienModel.cs",
-              "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\NhanVienModel.cs",
-              "RelativeToolTip": "ViewModel\\NhanVienModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T18:51:27.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "SettingVM.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\SettingVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\SettingVM.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\SettingVM.cs",
               "RelativeToolTip": "ViewModel\\SettingVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T06:47:22.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 15,
               "Title": "HoaDonItem.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\HoaDonItem.cs",
               "RelativeDocumentMoniker": "HoaDonItem.cs",
@@ -486,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 16,
               "Title": "Products.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Products.xaml",
               "RelativeDocumentMoniker": "View\\Products.xaml",
@@ -498,20 +430,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "Products.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Products.xaml.cs",
               "RelativeDocumentMoniker": "View\\Products.xaml.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Products.xaml.cs",
               "RelativeToolTip": "View\\Products.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAADwvxwAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvyAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T20:41:11.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "Shipments.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Shipments.xaml.cs",
               "RelativeDocumentMoniker": "View\\Shipments.xaml.cs",
@@ -524,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "Shipments.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Shipments.xaml",
               "RelativeDocumentMoniker": "View\\Shipments.xaml",
@@ -536,20 +468,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "Settings.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Settings.xaml.cs",
               "RelativeDocumentMoniker": "View\\Settings.xaml.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Settings.xaml.cs",
               "RelativeToolTip": "View\\Settings.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T18:49:09.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 21,
               "Title": "Settings.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Settings.xaml",
               "RelativeDocumentMoniker": "View\\Settings.xaml",
@@ -561,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 22,
               "Title": "PageThemNhapHang.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\PageThemNhapHang.xaml",
               "RelativeDocumentMoniker": "View\\PageThemNhapHang.xaml",
@@ -573,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
               "Title": "PageCTHD.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\PageCTHD.xaml",
               "RelativeDocumentMoniker": "View\\PageCTHD.xaml",
@@ -585,20 +517,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 24,
               "Title": "PageCTHD.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\PageCTHD.xaml.cs",
               "RelativeDocumentMoniker": "View\\PageCTHD.xaml.cs",
               "ToolTip": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\PageCTHD.xaml.cs",
               "RelativeToolTip": "View\\PageCTHD.xaml.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAowHUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAowHsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T23:35:59.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 25,
               "Title": "Home.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Home.xaml.cs",
               "RelativeDocumentMoniker": "View\\Home.xaml.cs",
@@ -611,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 26,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\View\\Home.xaml",
               "RelativeDocumentMoniker": "View\\Home.xaml",
@@ -623,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 27,
               "Title": "DBConnection.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\Database\\DBConnection.cs",
               "RelativeDocumentMoniker": "Database\\DBConnection.cs",
@@ -636,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 28,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\Database\\App.config",
               "RelativeDocumentMoniker": "Database\\App.config",
@@ -649,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 29,
               "Title": "CTHDItem.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\CTHDItem.cs",
               "RelativeDocumentMoniker": "CTHDItem.cs",
@@ -662,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 30,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -674,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 31,
               "Title": "CSDL_QLBH.sql ",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\Database\\CSDL_QLBH.sql",
               "RelativeDocumentMoniker": "Database\\CSDL_QLBH.sql",
@@ -686,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 32,
               "Title": "ViewModelBase.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\Utilities\\ViewModelBase.cs",
               "RelativeDocumentMoniker": "Utilities\\ViewModelBase.cs",
@@ -698,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 33,
               "Title": "PageModel.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\Model\\PageModel.cs",
               "RelativeDocumentMoniker": "Model\\PageModel.cs",
@@ -710,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 34,
               "Title": "HomeVM.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ViewModel\\HomeVM.cs",
               "RelativeDocumentMoniker": "ViewModel\\HomeVM.cs",
@@ -722,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 35,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -734,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 36,
               "Title": "Page Navigation App.csproj",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\Page Navigation App.csproj",
               "RelativeDocumentMoniker": "Page Navigation App.csproj",
@@ -747,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 37,
               "Title": "System.Configuration.ConfigurationManager.targets",
               "DocumentMoniker": "C:\\Users\\HOME\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.0\\buildTransitive\\netcoreapp2.0\\System.Configuration.ConfigurationManager.targets",
               "RelativeDocumentMoniker": "..\\..\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.0\\buildTransitive\\netcoreapp2.0\\System.Configuration.ConfigurationManager.targets",
@@ -759,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 38,
               "Title": "NhapHangModel.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\NhapHangModel.cs",
               "RelativeDocumentMoniker": "NhapHangModel.cs",
@@ -771,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 39,
               "Title": "ChiTietNhapHangModel.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\ChiTietNhapHangModel.cs",
               "RelativeDocumentMoniker": "ChiTietNhapHangModel.cs",
@@ -783,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 40,
               "Title": "ClrBindingWorker.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\AppData\\Local\\Temp\\.vsdbgsrc\\b953637785be4844d69e57f9f5242ec02a5af52da420689b7c2ff5aa9235e50a\\ClrBindingWorker.cs",
               "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b953637785be4844d69e57f9f5242ec02a5af52da420689b7c2ff5aa9235e50a\\ClrBindingWorker.cs",
@@ -796,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 41,
               "Title": "Microsoft.NET.EolTargetFrameworks.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
@@ -808,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 42,
               "Title": ".gitattributes",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\.gitattributes",
               "RelativeDocumentMoniker": ".gitattributes",
@@ -820,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 43,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\Utilities\\RelayCommand.cs",
               "RelativeDocumentMoniker": "Utilities\\RelayCommand.cs",
@@ -832,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 44,
               "Title": ".gitattributes",
               "DocumentMoniker": "C:\\Users\\HOME\\Pictures\\Page Navigation App\\26.12\\.gitattributes",
               "RelativeDocumentMoniker": "26.12\\.gitattributes",
@@ -844,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 45,
               "Title": "Chart.cs",
               "DocumentMoniker": "C:\\Users\\HOME\\AppData\\Local\\Temp\\.vsdbgsrc\\c6546e0628b1e4cf1eef0308f1ba421647b20fe4b7cab2ade0ddfa78257c5d25\\Chart.cs",
               "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c6546e0628b1e4cf1eef0308f1ba421647b20fe4b7cab2ade0ddfa78257c5d25\\Chart.cs",
