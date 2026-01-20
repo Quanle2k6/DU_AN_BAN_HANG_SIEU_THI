@@ -18,7 +18,8 @@ Dự án là một ứng dụng Desktop (Windows) được xây dựng để h�
 * **Giao diện:** **WPF (Windows Presentation Foundation)** với thư viện **Material Design in XAML** giúp giao diện chuyên nghiệp.
 * **Cơ sở dữ liệu:** **Microsoft SQL Server**.
 * **Mô hình thiết kế:** **MVVM (Model - View - ViewModel)** giúp tách biệt rõ ràng giữa logic xử lý và giao diện người dùng.
-* **Thư viện hỗ trợ:** * `LiveCharts`: Hiển thị biểu đồ thống kê doanh thu.
+* **Thư viện hỗ trợ:**
+    * `LiveCharts`: Hiển thị biểu đồ thống kê doanh thu.
     * `MaterialDesignThemes`: Cung cấp các UI components theo phong cách Google.
 
 ## ✨ Các tính năng chính
