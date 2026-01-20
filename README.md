@@ -52,4 +52,4 @@ Hệ thống sử dụng SQL Server với các bảng thực thể chính:
 4. **Chạy ứng dụng:** Mở file `.sln` bằng Visual Studio, nhấn `F5` hoặc `Start` để bắt đầu.
 
 ---
-© 2026 - Nhóm Đồ án IT008 - UIT
+© 2026 - Nhóm Đồ án Bán hàng siêu thị - UIT
